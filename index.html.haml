@@ -8,8 +8,36 @@
     - desc = 'desc'
     %meta{:name => "description", content: desc}
     %meta{property:"og:description", content: desc}
+    %link{:rel => "stylesheet", :href => "/styles.css"}/
+    %script{src:"//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"}
+    / Latest compiled and minified CSS
+    %link{:crossorigin => "anonymous", :href => "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css", :integrity => "sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u", :rel => "stylesheet"}/
+    / Optional theme
+    %link{:crossorigin => "anonymous", :href => "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css", :integrity => "sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp", :rel => "stylesheet"}/
+    / Latest compiled and minified JavaScript
+    %script{:crossorigin => "anonymous", :integrity => "sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa", :src => "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"}
+
     :javascript
       document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')
 
   %body{:class => %w{test}.join(' ')}
-    %p testa
+    %form
+      .tab-content
+        .step#step-1.tab-pane.active
+          .container
+            %h1 STEP 1
+            - %w{aviateur bonnet casquette neutre}.each do |src|
+              .duck
+                %input{type: 'radio', value: src, name: 'duck', id: src}
+                %label.animated{for: src}
+                  %img{src: "/assets/duck/#{src}.png"}
+          %a.next{href: '#step-2', data:{toggle: 'tab'}} NEXT
+        .step#step-2.tab-pane
+          .container
+            %h1 STEP 2
+            %img{src: "/assets/duck/neutre.png"}
+
+          %a.next{href: '#step-3', data:{toggle: 'tab'}} NEXT
+        .step#step-3.tab-pane
+          %h1 STEP 3
+          %a.next{href: '#step-3', data:{toggle: 'tab'}} NEXT

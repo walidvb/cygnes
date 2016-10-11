@@ -1,0 +1,14 @@
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+input[type='radio']{
+  display: none;
+  & + label{
+    opacity: 0.2;
+  }
+  &:checked + label{
+    opacity: 1;
+  }
+}

@@ -6,11 +6,63 @@
     <meta content="The Pigeonhole" property="og:site_name">
     <meta content="desc" name="description">
     <meta content="desc" property="og:description">
+    <link href="/styles.css" rel="stylesheet">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link crossorigin="anonymous" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" rel="stylesheet">
+    <!-- Optional theme -->
+    <link crossorigin="anonymous" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" rel="stylesheet">
+    <!-- Latest compiled and minified JavaScript -->
+    <script crossorigin="anonymous" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script>
       document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')
     </script>
   </head>
   <body class="test">
-    <p>testa</p>
+    <form>
+      <div class="tab-content">
+        <div class="step tab-pane active" id="step-1">
+          <div class="container">
+            <h1>STEP 1</h1>
+            <div class="duck">
+              <input id="aviateur" name="duck" type="radio" value="aviateur">
+              <label class="animated" for="aviateur">
+                <img src="/assets/duck/aviateur.png">
+              </label>
+            </div>
+            <div class="duck">
+              <input id="bonnet" name="duck" type="radio" value="bonnet">
+              <label class="animated" for="bonnet">
+                <img src="/assets/duck/bonnet.png">
+              </label>
+            </div>
+            <div class="duck">
+              <input id="casquette" name="duck" type="radio" value="casquette">
+              <label class="animated" for="casquette">
+                <img src="/assets/duck/casquette.png">
+              </label>
+            </div>
+            <div class="duck">
+              <input id="neutre" name="duck" type="radio" value="neutre">
+              <label class="animated" for="neutre">
+                <img src="/assets/duck/neutre.png">
+              </label>
+            </div>
+          </div>
+          <a class="next" data-toggle="tab" href="#step-2">NEXT</a>
+        </div>
+        <div class="step tab-pane" id="step-2">
+          <div class="container">
+            <h1>STEP 2</h1>
+            <img src="/assets/duck/neutre.png">
+          </div>
+          <a class="next" data-toggle="tab" href="#step-3">NEXT</a>
+        </div>
+        <div class="step tab-pane" id="step-3">
+          <h1>STEP 3</h1>
+          <a class="next" data-toggle="tab" href="#step-3">NEXT</a>
+        </div>
+      </div>
+    </form>
   </body>
 </html>
