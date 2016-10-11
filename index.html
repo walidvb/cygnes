@@ -14,53 +14,187 @@
     <link crossorigin="anonymous" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" rel="stylesheet">
     <!-- Latest compiled and minified JavaScript -->
     <script crossorigin="anonymous" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
     <script>
       document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')
     </script>
+    <script src="/js/scripts.js"></script>
+    <script src="skate.hyperesources/snowfall.min.js" type="text/javascript"></script>
   </head>
   <body class="test">
     <form>
-      <div class="tab-content">
-        <div class="step tab-pane active" id="step-1">
-          <div class="container">
-            <h1>STEP 1</h1>
-            <div class="duck">
-              <input id="aviateur" name="duck" type="radio" value="aviateur">
-              <label class="animated" for="aviateur">
-                <img src="/assets/duck/aviateur.png">
-              </label>
+      <div class="step hidden" id="step-1">
+        <div class="container">
+          <h1>STEP 1</h1>
+          <div class="duck">
+            <input id="aviateur" name="duck" type="radio" value="aviateur">
+            <label class="animated" for="aviateur">
+              <img src="/assets/duck/aviateur.png">
+            </label>
+          </div>
+          <div class="duck">
+            <input id="bonnet" name="duck" type="radio" value="bonnet">
+            <label class="animated" for="bonnet">
+              <img src="/assets/duck/bonnet.png">
+            </label>
+          </div>
+          <div class="duck">
+            <input id="casquette" name="duck" type="radio" value="casquette">
+            <label class="animated" for="casquette">
+              <img src="/assets/duck/casquette.png">
+            </label>
+          </div>
+          <div class="duck">
+            <input id="neutre" name="duck" type="radio" value="neutre">
+            <label class="animated" for="neutre">
+              <img src="/assets/duck/neutre.png">
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="step hidden" id="step-2">
+        <div class="container">
+          <h1>STEP 2</h1>
+          <img src="/assets/duck/neutre.png">
+        </div>
+      </div>
+      <div class="step hidden" id="step-3">
+        <h1>STEP 3</h1>
+        <div class="container">
+          <div class="duck">
+            <input id="avion" name="duck" type="radio" value="avion">
+            <label class="animated" for="avion">
+              <img src="/assets/scenes/avion.png">
+            </label>
+          </div>
+          <div class="duck">
+            <input id="batons" name="duck" type="radio" value="batons">
+            <label class="animated" for="batons">
+              <img src="/assets/scenes/batons.png">
+            </label>
+          </div>
+          <div class="duck">
+            <input id="bouee" name="duck" type="radio" value="bouee">
+            <label class="animated" for="bouee">
+              <img src="/assets/scenes/bouee.png">
+            </label>
+          </div>
+          <div class="duck">
+            <input id="skate" name="duck" type="radio" value="skate">
+            <label class="animated" for="skate">
+              <img src="/assets/scenes/skate.png">
+            </label>
+          </div>
+          <div class="duck">
+            <input id="voiture" name="duck" type="radio" value="voiture">
+            <label class="animated" for="voiture">
+              <img src="/assets/scenes/voiture.png">
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="fa fa-icon fa-arrow-right" id="next"></div>
+      <div aria-labelledby="myModalLabel" class="modal fade" id="contact-details" role="dialog" tabindex="-1">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button aria-label="Close" class="close" data-dismiss="modal" type="button">
+                <span aria-hidden="true">&#215;</span>
+              </button>
+              <h4 class="modal-title" id="myModalLabel">Modal title</h4>
             </div>
-            <div class="duck">
-              <input id="bonnet" name="duck" type="radio" value="bonnet">
-              <label class="animated" for="bonnet">
-                <img src="/assets/duck/bonnet.png">
-              </label>
+            <div class="modal-body">
+              <div class="form-group">
+                <label for="name">Nom</label>
+                <input class="form-control" id="name" name="name" placeholder="Nom" type="text">
+              </div>
+              <div class="form-group">
+                <label for="day">Date de Naissance</label>
+                <select class="form-control" id="day" name="birthday" type="select">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
+                  <option value="13">13</option>
+                  <option value="14">14</option>
+                  <option value="15">15</option>
+                  <option value="16">16</option>
+                  <option value="17">17</option>
+                  <option value="18">18</option>
+                  <option value="19">19</option>
+                  <option value="20">20</option>
+                  <option value="21">21</option>
+                  <option value="22">22</option>
+                  <option value="23">23</option>
+                  <option value="24">24</option>
+                  <option value="25">25</option>
+                  <option value="26">26</option>
+                  <option value="27">27</option>
+                  <option value="28">28</option>
+                  <option value="29">29</option>
+                  <option value="30">30</option>
+                  <option value="31">31</option>
+                </select>
+                <select class="form-control" id="month" name="birthday" type="select">
+                  <option value="1">Janvier</option>
+                  <option value="2">Février</option>
+                  <option value="3">Mars</option>
+                  <option value="4">Avril</option>
+                  <option value="5">Mai</option>
+                  <option value="6">Juin</option>
+                  <option value="7">Juillet</option>
+                  <option value="8">Août</option>
+                  <option value="9">Septembre</option>
+                  <option value="10">Octobre</option>
+                  <option value="11">Novembre</option>
+                  <option value="12">Décembre</option>
+                </select>
+                <select class="form-control" id="day" name="birthday" type="select">
+                  <option value="1996">1996</option>
+                  <option value="1997">1997</option>
+                  <option value="1998">1998</option>
+                  <option value="1999">1999</option>
+                  <option value="2000">2000</option>
+                  <option value="2001">2001</option>
+                  <option value="2002">2002</option>
+                  <option value="2003">2003</option>
+                  <option value="2004">2004</option>
+                  <option value="2005">2005</option>
+                  <option value="2006">2006</option>
+                  <option value="2007">2007</option>
+                  <option value="2008">2008</option>
+                  <option value="2009">2009</option>
+                  <option value="2010">2010</option>
+                  <option value="2011">2011</option>
+                  <option value="2012">2012</option>
+                  <option value="2013">2013</option>
+                  <option value="2014">2014</option>
+                  <option value="2015">2015</option>
+                  <option value="2016">2016</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="address">Adresse</label>
+                <input class="form-control" id="address" name="address" placeholder="Addresse" type="text">
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input class="form-control" id="email" name="email" placeholder="Email" type="email">
+              </div>
             </div>
-            <div class="duck">
-              <input id="casquette" name="duck" type="radio" value="casquette">
-              <label class="animated" for="casquette">
-                <img src="/assets/duck/casquette.png">
-              </label>
-            </div>
-            <div class="duck">
-              <input id="neutre" name="duck" type="radio" value="neutre">
-              <label class="animated" for="neutre">
-                <img src="/assets/duck/neutre.png">
-              </label>
+            <div class="modal-footer">
+              <button class="btn btn-default" data-dismiss="modal" type="button">Annuler</button>
+              <button class="btn btn-primary" type="button">Participer au concours!</button>
             </div>
           </div>
-          <a class="next" data-toggle="tab" href="#step-2">NEXT</a>
-        </div>
-        <div class="step tab-pane" id="step-2">
-          <div class="container">
-            <h1>STEP 2</h1>
-            <img src="/assets/duck/neutre.png">
-          </div>
-          <a class="next" data-toggle="tab" href="#step-3">NEXT</a>
-        </div>
-        <div class="step tab-pane" id="step-3">
-          <h1>STEP 3</h1>
-          <a class="next" data-toggle="tab" href="#step-3">NEXT</a>
         </div>
       </div>
     </form>

@@ -16,28 +16,67 @@
     %link{:crossorigin => "anonymous", :href => "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css", :integrity => "sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp", :rel => "stylesheet"}/
     / Latest compiled and minified JavaScript
     %script{:crossorigin => "anonymous", :integrity => "sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa", :src => "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"}
-
+    %link{:rel => "stylesheet", :href => "https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"}
     :javascript
       document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')
 
+    %script{src: '/js/scripts.js'}
+    -# Hype scripts
+    %script{:src => "skate.hyperesources/snowfall.min.js", :type => "text/javascript"}
+
+
   %body{:class => %w{test}.join(' ')}
     %form
-      .tab-content
-        .step#step-1.tab-pane.active
-          .container
-            %h1 STEP 1
-            - %w{aviateur bonnet casquette neutre}.each do |src|
-              .duck
-                %input{type: 'radio', value: src, name: 'duck', id: src}
-                %label.animated{for: src}
-                  %img{src: "/assets/duck/#{src}.png"}
-          %a.next{href: '#step-2', data:{toggle: 'tab'}} NEXT
-        .step#step-2.tab-pane
-          .container
-            %h1 STEP 2
-            %img{src: "/assets/duck/neutre.png"}
+      .step#step-1.hidden
+        .container
+          %h1 STEP 1
+          - %w{aviateur bonnet casquette neutre}.each do |src|
+            .duck
+              %input{type: 'radio', value: src, name: 'duck', id: src}
+              %label.animated{for: src}
+                %img{src: "/assets/duck/#{src}.png"}
+      .step#step-2.hidden
+        .container
+          %h1 STEP 2
+          %img{src: "/assets/duck/neutre.png"}
+      .step#step-3.hidden
+        %h1 STEP 3
+        .container
+          - %w{avion batons bouee skate voiture}.each do |src|
+            .duck
+              %input{type: 'radio', value: src, name: 'duck', id: src}
+              %label.animated{for: src}
+                %img{src: "/assets/scenes/#{src}.png"}
 
-          %a.next{href: '#step-3', data:{toggle: 'tab'}} NEXT
-        .step#step-3.tab-pane
-          %h1 STEP 3
-          %a.next{href: '#step-3', data:{toggle: 'tab'}} NEXT
+      #next.fa.fa-icon.fa-arrow-right
+      #contact-details.modal.fade{"aria-labelledby" => "myModalLabel", :role => "dialog", :tabindex => "-1"}
+        .modal-dialog{:role => "document"}
+          .modal-content
+            .modal-header
+              %button.close{"aria-label" => "Close", "data-dismiss" => "modal", :type => "button"}
+                %span{"aria-hidden" => "true"} &#215;
+              %h4#myModalLabel.modal-title Modal title
+            .modal-body
+              .form-group
+                %label{for: 'name'} Nom
+                %input#name.form-control{type: 'text', name: 'name', placeholder: 'Nom'}
+              .form-group
+                %label{for: 'day'} Date de Naissance
+                %select#day.form-control{type: 'select', name: 'birthday'}
+                  - (1..31).each do |d|
+                    %option{value: d}= d
+                %select#month.form-control{type: 'select', name: 'birthday'}
+                  - [['Janvier', 1], ['Février', 2], ['Mars', 3], ['Avril', 4], ['Mai', 5], ['Juin', 6], ['Juillet', 7], ['Août', 8], ['Septembre', 9], ['Octobre', 10], ['Novembre', 11], ['Décembre', 12]].each do |d|
+                    %option{value: d[1]}= d[0]
+                %select#day.form-control{type: 'select', name: 'birthday'}
+                  - (1996..2016).each do |d|
+                    %option{value: d}= d
+              .form-group
+                %label{for: 'address'} Adresse
+                %input#address.form-control{type: 'text', name: 'address', placeholder: 'Addresse'}
+              .form-group
+                %label{for: 'email'} Email
+                %input#email.form-control{type: 'email', name: 'email', placeholder: 'Email'}
+            .modal-footer
+              %button.btn.btn-default{"data-dismiss" => "modal", :type => "button"} Annuler
+              %button.btn.btn-primary{:type => "button"} Participer au concours!

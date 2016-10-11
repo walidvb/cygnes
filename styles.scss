@@ -8,17 +8,23 @@ body{
 .container{
   display: flex;
 }
-#step-1{
-  //padding: 1rem;
-  .duck{
-    flex: 0 1 auto;
-    padding: 0 1rem;
-  }
+
+.duck{
+  flex: 0 1 auto;
+  padding: 0 1rem;
 }
+
 input + label img{
   @extend .animated;
 }
 
 input:checked + label img{
   @extend .rubberBand;
+}
+
+#next{
+  position: fixed;
+  font-size: 3rem;
+  right: 2rem;
+  bottom: 2rem;
 }

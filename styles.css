@@ -2532,6 +2532,12 @@ body {
 .container {
   display: flex; }
 
-#step-1 .duck {
+.duck {
   flex: 0 1 auto;
   padding: 0 1rem; }
+
+#next {
+  position: fixed;
+  font-size: 3rem;
+  right: 2rem;
+  bottom: 2rem; }
