@@ -1,6 +1,6 @@
 function init(){
   var states = [1, 2, 3];
-  var currentState = 0;
+  var currentState = 1;
 
   var $steps = $('.step');
 
@@ -15,8 +15,10 @@ function init(){
       $('#contact-details').modal();
     }
   }
-  $('#contact-details').modal();
   $($steps[currentState]).removeClass('hidden');
+  window.drawing = drawingApp.init({
+    outlineImageSrc: '/assets/duck/neutre.png'
+  });
 }
 
 $(document).ready(init);
