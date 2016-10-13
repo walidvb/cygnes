@@ -13,6 +13,7 @@ function Api(){
   var storeImage = function(data, cb){
     var now = new Date();
     var fileName = data.name + '_' + [now.getDay(), now.getMonth()].join('-') + '_' + [now.getHours(), now.getMinutes(), now.getSeconds()].join('-');
+    fileName = fileName.replace(/[^a-z0-9]/gi, '_').toLowerCase();
     var uploadTask = storage.ref().child('images/'+fileName).put(data.image)
     uploadTask.on(firebase.storage.TaskEvent.STATE_CHANGED,
     function(){}, // state changed
