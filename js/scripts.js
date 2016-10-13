@@ -8,7 +8,8 @@
       VIEW_RESULT = 4;
   var statesCount = 5;
 
-  var formData = new FormData();
+  var api = new Api();
+  var formData = {}
   function init(){
     var currentState = 0,
       $steps = $('.step'),
@@ -20,59 +21,45 @@
       img.appendTo($('body'))
     }
     function duckSelected(){
-      var duck = $('input[name="duck"]').val();
-      formData.append('duck', duck);
+      formData.duck = $('input[name="duck"]').val();
       drawing = drawingApp.init({
-        outlineImageSrc: '/assets/duck/'+duck+'.png'
+        outlineImageSrc: '/assets/duck/'+formData.duck+'.png'
       });
     };
     function finishPaint(){
       drawing.getDrawing(formData);
     };
     function sceneSelected(){
-      var scene = $('input[name="scene"]').val();
-      formData.append('scene', scene)
+      formData.scene = $('input[name="scene"]').val();
     };
     function submitForm(){
       var data = $('form').serializeArray();
       for(var i = 0; i < data.length; i++){
         var val = data[i];
-        formData.append([val.name], val.value)
+        formData[val.name] = val.value
       }
-      $.ajax({
-        url: '/test',
-        data: formData,
-        type: 'POST',
-        method: 'POST',
-        processData: false,
-        success: function(data, e){
-          console.log('success:', data, e);
-        },
-        error: function(data, e){
-          console.log('error:', data, e);
-        },
-        contentType:"application/x-www-form-urlencoded"
-      })
-    }
-    $next.add('#submit').on('click', goToNextState);
+      api.save(formData, displayResult);
+    };
+    function displayResult(){
+      console.log('image uploaded!');
+    };
+    $next.on('click', goToNextState);
     function goToNextState(){
-      switch(++currentState){
-        case PAINT:
+      switch(currentState++){
+        case CHOOSE_DUCK:
           duckSelected();
           break;
-        case CHOOSE_SCENE:
+        case PAINT:
           finishPaint();
           break;
-        case ENTER_DETAILS:
+        case CHOOSE_SCENE:
           sceneSelected();
           $('#contact-details').modal();
           break;
-        case VIEW_RESULT:
+        case ENTER_DETAILS:
           submitForm();
-          displayResult();
           break;
         default:
-
           console.error('wtf?');
       }
       if(currentState < statesCount){

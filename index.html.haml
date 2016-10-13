@@ -9,7 +9,8 @@
     %meta{:name => "description", content: desc}
     %meta{property:"og:description", content: desc}
     %link{:rel => "stylesheet", :href => "/styles.css"}/
-    %script{src:"//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.js"}
+    %script{src:"//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"}
+    %script{src:"//www.gstatic.com/firebasejs/3.4.1/firebase.js"}
     / Latest compiled and minified CSS
     %link{:crossorigin => "anonymous", :href => "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css", :integrity => "sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u", :rel => "stylesheet"}/
     / Optional theme
@@ -21,6 +22,7 @@
       document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')
 
     %script{src: '/lib/sketch.js'}
+    %script{src: '/js/firebase.js'}
     %script{src: '/js/scripts.js'}
     -# Hype scripts
     %script{:src => "skate.hyperesources/snowfall.min.js", :type => "text/javascript"}
@@ -45,7 +47,7 @@
         .container
           - %w{avion batons bouee skate voiture}.each do |src|
             .duck
-              %input{type: 'radio', value: src, name: 'duck', id: src}
+              %input{type: 'radio', value: src, name: 'scene', id: src}
               %label.animated{for: src}
                 %img{src: "/assets/scenes/#{src}.png"}
 

@@ -7,7 +7,8 @@
     <meta content="desc" name="description">
     <meta content="desc" property="og:description">
     <link href="/styles.css" rel="stylesheet">
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="//www.gstatic.com/firebasejs/3.4.1/firebase.js"></script>
     <!-- Latest compiled and minified CSS -->
     <link crossorigin="anonymous" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" rel="stylesheet">
     <!-- Optional theme -->
@@ -19,6 +20,7 @@
       document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')
     </script>
     <script src="/lib/sketch.js"></script>
+    <script src="/js/firebase.js"></script>
     <script src="/js/scripts.js"></script>
     <script src="skate.hyperesources/snowfall.min.js" type="text/javascript"></script>
   </head>
@@ -63,31 +65,31 @@
         <h1>STEP 3</h1>
         <div class="container">
           <div class="duck">
-            <input id="avion" name="duck" type="radio" value="avion">
+            <input id="avion" name="scene" type="radio" value="avion">
             <label class="animated" for="avion">
               <img src="/assets/scenes/avion.png">
             </label>
           </div>
           <div class="duck">
-            <input id="batons" name="duck" type="radio" value="batons">
+            <input id="batons" name="scene" type="radio" value="batons">
             <label class="animated" for="batons">
               <img src="/assets/scenes/batons.png">
             </label>
           </div>
           <div class="duck">
-            <input id="bouee" name="duck" type="radio" value="bouee">
+            <input id="bouee" name="scene" type="radio" value="bouee">
             <label class="animated" for="bouee">
               <img src="/assets/scenes/bouee.png">
             </label>
           </div>
           <div class="duck">
-            <input id="skate" name="duck" type="radio" value="skate">
+            <input id="skate" name="scene" type="radio" value="skate">
             <label class="animated" for="skate">
               <img src="/assets/scenes/skate.png">
             </label>
           </div>
           <div class="duck">
-            <input id="voiture" name="duck" type="radio" value="voiture">
+            <input id="voiture" name="scene" type="radio" value="voiture">
             <label class="animated" for="voiture">
               <img src="/assets/scenes/voiture.png">
             </label>
