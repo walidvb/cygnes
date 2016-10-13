@@ -23,6 +23,7 @@
 
     %script{src: '/lib/sketch.js'}
     %script{src: '/js/firebase.js'}
+    %script{src: '/js/hypeHandler.js'}
     %script{src: '/js/scripts.js'}
     -# Hype scripts
     %script{:src => "skate.hyperesources/snowfall.min.js", :type => "text/javascript"}
@@ -45,7 +46,7 @@
       .step#step-3.hidden
         %h1 STEP 3
         .container
-          - %w{avion batons bouee skate voiture}.each do |src|
+          - %w{avion ski piscine skate voiture}.each do |src|
             .duck
               %input{type: 'radio', value: src, name: 'scene', id: src}
               %label.animated{for: src}

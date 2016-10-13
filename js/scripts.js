@@ -1,6 +1,4 @@
 (function(){
-
-
   var CHOOSE_DUCK = 0,
       PAINT = 1,
       CHOOSE_SCENE = 2,
@@ -9,6 +7,7 @@
   var statesCount = 5;
 
   var api = new Api();
+  var hyper = new Hyper();
   var formData = {}
   function init(){
     var currentState = 0,
@@ -38,10 +37,11 @@
         var val = data[i];
         formData[val.name] = val.value
       }
-      api.save(formData, displayResult);
+      api.save(formData, displayResult());
     };
     function displayResult(){
       console.log('image uploaded!');
+      hyper.play(formData.scene);
     };
     $next.on('click', goToNextState);
     function goToNextState(){
@@ -69,6 +69,5 @@
     }
     $($steps[currentState]).removeClass('hidden');
   }
-
   $(document).ready(init);
 })()
