@@ -8,7 +8,7 @@
       VIEW_RESULT = 4;
   var statesCount = 5;
 
-  var formData = {}
+  var formData = new FormData();
   function init(){
     var currentState = 0,
       $steps = $('.step'),
@@ -20,43 +20,59 @@
       img.appendTo($('body'))
     }
     function duckSelected(){
-      formData.duck = $('input[name="duck"]').val();
+      var duck = $('input[name="duck"]').val();
+      formData.append('duck', duck);
       drawing = drawingApp.init({
-        outlineImageSrc: '/assets/duck/'+formData.duck+'.png'
+        outlineImageSrc: '/assets/duck/'+duck+'.png'
       });
     };
     function finishPaint(){
-      formData.drawing = drawing.getDrawing();
+      drawing.getDrawing(formData);
     };
     function sceneSelected(){
-      formData.scene = $('input[name="scene"]').val();
+      var scene = $('input[name="scene"]').val();
+      formData.append('scene', scene)
     };
     function submitForm(){
       var data = $('form').serializeArray();
       for(var i = 0; i < data.length; i++){
         var val = data[i];
-        formData[val.name] = val.value
+        formData.append([val.name], val.value)
       }
-      console.log(formData);
+      $.ajax({
+        url: '/test',
+        data: formData,
+        type: 'POST',
+        method: 'POST',
+        processData: false,
+        success: function(data, e){
+          console.log('success:', data, e);
+        },
+        error: function(data, e){
+          console.log('error:', data, e);
+        },
+        contentType:"application/x-www-form-urlencoded"
+      })
     }
-    $next.on('click', goToNextState);
+    $next.add('#submit').on('click', goToNextState);
     function goToNextState(){
-      switch(currentState++){
-        case CHOOSE_DUCK:
+      switch(++currentState){
+        case PAINT:
           duckSelected();
           break;
-        case PAINT:
+        case CHOOSE_SCENE:
           finishPaint();
           break;
-        case CHOOSE_SCENE:
+        case ENTER_DETAILS:
           sceneSelected();
           $('#contact-details').modal();
           break;
-        case ENTER_DETAILS:
+        case VIEW_RESULT:
           submitForm();
           displayResult();
           break;
         default:
+
           console.error('wtf?');
       }
       if(currentState < statesCount){

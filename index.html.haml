@@ -9,7 +9,7 @@
     %meta{:name => "description", content: desc}
     %meta{property:"og:description", content: desc}
     %link{:rel => "stylesheet", :href => "/styles.css"}/
-    %script{src:"//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"}
+    %script{src:"//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.js"}
     / Latest compiled and minified CSS
     %link{:crossorigin => "anonymous", :href => "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css", :integrity => "sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u", :rel => "stylesheet"}/
     / Optional theme
@@ -80,4 +80,4 @@
                 %input#email.form-control{type: 'email', name: 'email', placeholder: 'Email'}
             .modal-footer
               %button.btn.btn-default{"data-dismiss" => "modal", :type => "button"} Annuler
-              %button.btn.btn-primary{:type => "button"} Participer au concours!
+              %button.btn.btn-primary#submit{:type => "button"} Participer au concours!
