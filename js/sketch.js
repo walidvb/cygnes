@@ -25,6 +25,10 @@ var drawingApp = (function () {
       var target = options.target || document.getElementById('canvasDiv');
       container = $(target);
 			var outlineImageSrc = options.outlineImageSrc;
+      duck.onload = function(){
+        canvas.width = duck.width
+        canvas.height = duck.height;
+      }
       duck.src = outlineImageSrc;
 			// Create the canvas (Neccessary for IE because it doesn't know what a canvas element is)
 			canvasWidth = target.clientWidth;
@@ -32,6 +36,7 @@ var drawingApp = (function () {
 			canvas = document.createElement('canvas');
 			canvas.setAttribute('width', canvasWidth);
 			canvas.setAttribute('height', canvasHeight);
+
 			canvas.setAttribute('id', 'canvas');
       container.append(initInterface(canvas));
 			target.appendChild(canvas);
@@ -45,6 +50,7 @@ var drawingApp = (function () {
       var url = canvas.toBlob(function(blob){
         formData.image = blob;
       });
+      formData.base64 = canvas.toDataURL();
     },
     setOutlineImage: function(newSrc){
       sketch.setOutlineImage(newSrc);

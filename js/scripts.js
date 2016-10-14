@@ -7,7 +7,7 @@
 
   var api = new Api();
   var hyper = new Hyper();
-
+  var base64;
   var formData = {}
   function init(){
     var currentState = 0,
@@ -47,11 +47,24 @@
         var val = data[i];
         formData[val.name] = val.value
       }
-      api.save(formData, displayResult);
+      console.log('image uploaded!', formData);
+
+
+      base64 = formData.base64.valueOf();
+      delete formData.base64;
+      api.save(formData, function(){});
+      displayResult();
     };
     function displayResult(){
-      console.log('image uploaded!', formData);
+
       hyper.play(formData.scene);
+      $('.HYPE_element.fond').css({
+        backgroundImage: 'url(/assets/fonds/'+formData.duck+'.png)',
+      })
+      console.log(base64);
+      $('.HYPE_element.dessin').css({
+        backgroundImage: 'url('+base64+')',
+      });
       $('#contact-details').modal('hide');
     };
     $('#submit').on('click', submitForm);
