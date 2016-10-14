@@ -12,11 +12,13 @@
   function init(){
     var currentState = 0,
       $steps = $('.step'),
-      $next = $('#next'),
-      drawing = drawingApp.init({
-        outlineImageSrc: '/assets/duck/neutre.png',
-        target: document.getElementById('canvasDiv')
-      });
+      $next = $('#next')
+      ;
+
+    drawingApp.init({
+      outlineImageSrc: '/assets/duck/neutre.png',
+      target: document.getElementById('canvasDiv')
+    })
     function storeImage(url){
       var img = $('<img src="'+url+'"/>');
       img.appendTo($('body'))
@@ -26,14 +28,14 @@
     function duckSelected(e){
       formData.duck = $(this).val();
       console.log(formData);
-      drawing.setOutlineImage('/assets/duck/'+formData.duck+'.png')
+      drawingApp.setOutlineImage('/assets/duck/'+formData.duck+'.png')
 
     };
 
 
     // Story
     function finishPaint(){
-      drawing.getDrawing(formData);
+      drawingApp.getDrawing(formData);
     };
     function sceneSelected(){
       formData.scene = $('input[name="scene"]').val();
