@@ -9,7 +9,7 @@
 	<key>createOfflineApplicationCache</key>
 	<false/>
 	<key>currentSceneContainer</key>
-	<string>238</string>
+	<string>1</string>
 	<key>customExportSlices</key>
 	<array>
 		<dict>
@@ -38,11 +38,11 @@
 			<key>sceneControllerOidsToExport</key>
 			<array>
 				<string>3</string>
-				<string>183</string>
+				<string>67</string>
 				<string>252</string>
 				<string>169</string>
+				<string>183</string>
 				<string>142</string>
-				<string>67</string>
 			</array>
 			<key>supportInternetExplorer6789</key>
 			<true/>
@@ -52,9 +52,9 @@
 	</array>
 	<key>displayedAttributes</key>
 	<array>
-		<string>kPropertiesMenuItemIdentifierAnimated</string>
 		<string>kPropertiesMenuItemIdentifierPosition</string>
 		<string>RotationAngleZ</string>
+		<string>kPropertiesMenuItemIdentifierAnimated</string>
 	</array>
 	<key>documentVersion</key>
 	<string>530</string>
@@ -79,15 +79,15 @@
 	<key>hasManuallyChangedCSSPositioning</key>
 	<false/>
 	<key>lastCheckDate</key>
-	<date>2016-10-11T09:25:18Z</date>
+	<date>2016-10-14T08:46:06Z</date>
 	<key>layout</key>
 	<dict>
 		<key>currentInspectorPane</key>
-		<integer>7</integer>
+		<integer>1</integer>
 		<key>customizableLayout</key>
 		<dict>
 			<key>frame</key>
-			<string>{{0, 0}, {1920, 1097}}</string>
+			<string>{{0, 0}, {1440, 796}}</string>
 			<key>identifier</key>
 			<string>container 41</string>
 			<key>isCustomizableViewContainer</key>
@@ -100,7 +100,7 @@
 			<array>
 				<dict>
 					<key>frame</key>
-					<string>{{0, 0}, {1649, 1097}}</string>
+					<string>{{0, 0}, {1169, 796}}</string>
 					<key>identifier</key>
 					<string>container 7</string>
 					<key>isCustomizableViewContainer</key>
@@ -113,7 +113,7 @@
 					<array>
 						<dict>
 							<key>frame</key>
-							<string>{{0, 0}, {135, 1097}}</string>
+							<string>{{0, 0}, {135, 796}}</string>
 							<key>identifier</key>
 							<string>container 2</string>
 							<key>isCustomizableViewContainer</key>
@@ -126,7 +126,7 @@
 							<array>
 								<dict>
 									<key>frame</key>
-									<string>{{0, 0}, {135, 1097}}</string>
+									<string>{{0, 0}, {135, 796}}</string>
 									<key>identifier</key>
 									<string>sceneSelectorCustomizableContainer</string>
 									<key>isCustomizableViewContainer</key>
@@ -136,7 +136,7 @@
 						</dict>
 						<dict>
 							<key>frame</key>
-							<string>{{136, 0}, {1513, 1097}}</string>
+							<string>{{136, 0}, {1033, 796}}</string>
 							<key>identifier</key>
 							<string>container 5</string>
 							<key>isCustomizableViewContainer</key>
@@ -149,7 +149,7 @@
 							<array>
 								<dict>
 									<key>frame</key>
-									<string>{{136, 0}, {1513, 404.83203125}}</string>
+									<string>{{136, 0}, {1033, 135}}</string>
 									<key>identifier</key>
 									<string>container 4</string>
 									<key>isCustomizableViewContainer</key>
@@ -162,7 +162,7 @@
 									<array>
 										<dict>
 											<key>frame</key>
-											<string>{{136, 0}, {1513, 404.83203125}}</string>
+											<string>{{136, 0}, {1033, 135}}</string>
 											<key>identifier</key>
 											<string>timelineCustomizableContainer</string>
 											<key>isCustomizableViewContainer</key>
@@ -172,7 +172,7 @@
 								</dict>
 								<dict>
 									<key>frame</key>
-									<string>{{136, 405.83203125}, {1513, 691.16796875}}</string>
+									<string>{{136, 136}, {1033, 660}}</string>
 									<key>identifier</key>
 									<string>container 3</string>
 									<key>isCustomizableViewContainer</key>
@@ -185,7 +185,7 @@
 									<array>
 										<dict>
 											<key>frame</key>
-											<string>{{136, 405.83203125}, {1513, 691.16796875}}</string>
+											<string>{{136, 136}, {1033, 660}}</string>
 											<key>identifier</key>
 											<string>sceneEditorCustomizableContainer</string>
 											<key>isCustomizableViewContainer</key>
@@ -199,7 +199,7 @@
 				</dict>
 				<dict>
 					<key>frame</key>
-					<string>{{1650, 0}, {270, 1097}}</string>
+					<string>{{1170, 0}, {270, 796}}</string>
 					<key>identifier</key>
 					<string>container 96</string>
 					<key>isCustomizableViewContainer</key>
@@ -212,7 +212,7 @@
 					<array>
 						<dict>
 							<key>frame</key>
-							<string>{{1650, 0}, {270, 1097}}</string>
+							<string>{{1170, 0}, {270, 796}}</string>
 							<key>identifier</key>
 							<string>inspectorCustomizableContainer</string>
 							<key>isCustomizableViewContainer</key>
@@ -225,7 +225,7 @@
 		<key>keyframeTimelineHeight</key>
 		<real>121</real>
 		<key>mainWindowFrame</key>
-		<string>0 59 1920 1119 0 0 1920 1178 </string>
+		<string>0 59 1440 818 0 0 1440 877 </string>
 		<key>openTabs</key>
 		<array/>
 		<key>selectedTabIndex</key>
@@ -270,11 +270,11 @@
 			<key>sceneControllerOidsToExport</key>
 			<array>
 				<string>3</string>
-				<string>183</string>
+				<string>67</string>
 				<string>252</string>
 				<string>169</string>
+				<string>183</string>
 				<string>142</string>
-				<string>67</string>
 			</array>
 			<key>supportInternetExplorer6789</key>
 			<true/>
@@ -3869,9 +3869,9 @@
 						<key>sceneSize</key>
 						<string>{1920, 1080}</string>
 						<key>shouldScaleSceneHeight</key>
-						<false/>
+						<true/>
 						<key>shouldScaleSceneWidth</key>
-						<false/>
+						<true/>
 					</dict>
 					<key>oid</key>
 					<string>169</string>
@@ -3905,7 +3905,7 @@
 						<integer>20</integer>
 					</dict>
 					<key>canvasSize</key>
-					<string>{3734, 1654}</string>
+					<string>{3254, 1555}</string>
 					<key>hypeScene</key>
 					<dict>
 						<key>backgroundColor</key>
@@ -3921,9 +3921,9 @@
 						<key>sceneSize</key>
 						<string>{1920, 1080}</string>
 						<key>shouldScaleSceneHeight</key>
-						<false/>
+						<true/>
 						<key>shouldScaleSceneWidth</key>
-						<false/>
+						<true/>
 					</dict>
 					<key>oid</key>
 					<string>3</string>
@@ -3973,9 +3973,9 @@
 						<key>sceneSize</key>
 						<string>{1920, 1080}</string>
 						<key>shouldScaleSceneHeight</key>
-						<false/>
+						<true/>
 						<key>shouldScaleSceneWidth</key>
-						<false/>
+						<true/>
 					</dict>
 					<key>oid</key>
 					<string>67</string>
@@ -4027,9 +4027,9 @@
 						<key>sceneSize</key>
 						<string>{1920, 1080}</string>
 						<key>shouldScaleSceneHeight</key>
-						<false/>
+						<true/>
 						<key>shouldScaleSceneWidth</key>
-						<false/>
+						<true/>
 					</dict>
 					<key>oid</key>
 					<string>142</string>
@@ -4081,9 +4081,9 @@
 						<key>sceneSize</key>
 						<string>{1920, 1080}</string>
 						<key>shouldScaleSceneHeight</key>
-						<false/>
+						<true/>
 						<key>shouldScaleSceneWidth</key>
-						<false/>
+						<true/>
 					</dict>
 					<key>oid</key>
 					<string>183</string>
@@ -4119,7 +4119,7 @@
 						<integer>20</integer>
 					</dict>
 					<key>canvasSize</key>
-					<string>{7720, 1382}</string>
+					<string>{7720, 1321}</string>
 					<key>hypeScene</key>
 					<dict>
 						<key>backgroundColor</key>
@@ -4135,16 +4135,16 @@
 						<key>sceneSize</key>
 						<string>{1920, 1080}</string>
 						<key>shouldScaleSceneHeight</key>
-						<false/>
+						<true/>
 						<key>shouldScaleSceneWidth</key>
-						<false/>
+						<true/>
 					</dict>
 					<key>oid</key>
 					<string>252</string>
 					<key>rootSymbolControllerOid</key>
 					<string>239</string>
 					<key>scrollViewOffset</key>
-					<string>{0, 0.16796875}</string>
+					<string>{967, 0.5}</string>
 					<key>userGuides</key>
 					<array/>
 				</dict>
@@ -4393,7 +4393,7 @@ function neige(hypeDocument, element, event) {
 	<array>
 		<dict>
 			<key>documentIdentifier</key>
-			<string>BA4ABAC9-46BE-46BC-BE9C-EAC2C15F038B-154-00005A704428A545</string>
+			<string>A2370EB1-5900-4B1B-B58F-A4C65980D03C-19640-00005367D24F11FC</string>
 			<key>selectedObjects</key>
 			<array>
 				<string>8</string>
@@ -5228,9 +5228,9 @@ function neige(hypeDocument, element, event) {
 						</dict>
 						<dict>
 							<key>identifier</key>
-							<string>RotationAngleZ</string>
+							<string>ClassType</string>
 							<key>objectValue</key>
-							<string>0deg</string>
+							<string>Group</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
@@ -5300,15 +5300,15 @@ function neige(hypeDocument, element, event) {
 						</dict>
 						<dict>
 							<key>identifier</key>
-							<string>MotionPathRotation</string>
+							<string>RotationAngleZ</string>
 							<key>objectValue</key>
-							<string>-14deg</string>
+							<string>0deg</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
-							<string>ClassType</string>
+							<string>MotionPathRotation</string>
 							<key>objectValue</key>
-							<string>Group</string>
+							<string>-14deg</string>
 						</dict>
 					</array>
 					<key>56</key>
@@ -5432,9 +5432,9 @@ function neige(hypeDocument, element, event) {
 					<array>
 						<dict>
 							<key>identifier</key>
-							<string>TagName</string>
+							<string>OriginalWidth</string>
 							<key>objectValue</key>
-							<string>div</string>
+							<string>534px</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
@@ -5552,9 +5552,9 @@ function neige(hypeDocument, element, event) {
 						</dict>
 						<dict>
 							<key>identifier</key>
-							<string>OriginalWidth</string>
+							<string>TagName</string>
 							<key>objectValue</key>
-							<string>534px</string>
+							<string>div</string>
 						</dict>
 					</array>
 					<key>6</key>
@@ -7801,7 +7801,7 @@ function neige(hypeDocument, element, event) {
 						<key>identifier</key>
 						<string>kTimelineDefaultIdentifier</string>
 						<key>name</key>
-						<string>Timeline principale</string>
+						<string>Main Timeline</string>
 						<key>userDefinedDuration</key>
 						<real>0.0</real>
 					</dict>
@@ -7810,7 +7810,7 @@ function neige(hypeDocument, element, event) {
 		</dict>
 		<dict>
 			<key>documentIdentifier</key>
-			<string>BA4ABAC9-46BE-46BC-BE9C-EAC2C15F038B-154-00005A704428A545</string>
+			<string>A2370EB1-5900-4B1B-B58F-A4C65980D03C-19640-00005367D24F11FC</string>
 			<key>selectedObjects</key>
 			<array>
 				<string>71</string>
@@ -8138,9 +8138,9 @@ function neige(hypeDocument, element, event) {
 					<array>
 						<dict>
 							<key>identifier</key>
-							<string>TagName</string>
+							<string>OriginalWidth</string>
 							<key>objectValue</key>
-							<string>div</string>
+							<string>215px</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
@@ -8270,9 +8270,9 @@ function neige(hypeDocument, element, event) {
 						</dict>
 						<dict>
 							<key>identifier</key>
-							<string>OriginalWidth</string>
+							<string>TagName</string>
 							<key>objectValue</key>
-							<string>215px</string>
+							<string>div</string>
 						</dict>
 					</array>
 					<key>174</key>
@@ -8876,15 +8876,15 @@ function neige(hypeDocument, element, event) {
 					<array>
 						<dict>
 							<key>identifier</key>
-							<string>Overflow</string>
+							<string>OriginalHeight</string>
 							<key>objectValue</key>
-							<string>visible</string>
+							<string>274px</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
-							<string>TagName</string>
+							<string>OriginalWidth</string>
 							<key>objectValue</key>
-							<string>div</string>
+							<string>315px</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
@@ -8978,9 +8978,9 @@ function neige(hypeDocument, element, event) {
 						</dict>
 						<dict>
 							<key>identifier</key>
-							<string>BackgroundSize</string>
+							<string>Overflow</string>
 							<key>objectValue</key>
-							<string>100% 100%</string>
+							<string>visible</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
@@ -8996,30 +8996,30 @@ function neige(hypeDocument, element, event) {
 						</dict>
 						<dict>
 							<key>identifier</key>
-							<string>OriginalHeight</string>
+							<string>BackgroundSize</string>
 							<key>objectValue</key>
-							<string>274px</string>
-						</dict>
-						<dict>
-							<key>identifier</key>
-							<string>OriginalWidth</string>
-							<key>objectValue</key>
-							<string>315px</string>
-						</dict>
-					</array>
-					<key>78</key>
-					<array>
-						<dict>
-							<key>identifier</key>
-							<string>DisplayName</string>
-							<key>objectValue</key>
-							<string>nuage1</string>
+							<string>100% 100%</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
 							<string>TagName</string>
 							<key>objectValue</key>
 							<string>div</string>
+						</dict>
+					</array>
+					<key>78</key>
+					<array>
+						<dict>
+							<key>identifier</key>
+							<string>OriginalHeight</string>
+							<key>objectValue</key>
+							<string>37px</string>
+						</dict>
+						<dict>
+							<key>identifier</key>
+							<string>OriginalWidth</string>
+							<key>objectValue</key>
+							<string>64px</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
@@ -9135,36 +9135,36 @@ function neige(hypeDocument, element, event) {
 						</dict>
 						<dict>
 							<key>identifier</key>
+							<string>DisplayName</string>
+							<key>objectValue</key>
+							<string>nuage1</string>
+						</dict>
+						<dict>
+							<key>identifier</key>
 							<string>BackgroundSize</string>
 							<key>objectValue</key>
 							<string>100% 100%</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
-							<string>OriginalHeight</string>
+							<string>TagName</string>
 							<key>objectValue</key>
-							<string>37px</string>
-						</dict>
-						<dict>
-							<key>identifier</key>
-							<string>OriginalWidth</string>
-							<key>objectValue</key>
-							<string>64px</string>
+							<string>div</string>
 						</dict>
 					</array>
 					<key>79</key>
 					<array>
 						<dict>
 							<key>identifier</key>
-							<string>DisplayName</string>
+							<string>OriginalHeight</string>
 							<key>objectValue</key>
-							<string>nuage2</string>
+							<string>80px</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
-							<string>TagName</string>
+							<string>OriginalWidth</string>
 							<key>objectValue</key>
-							<string>div</string>
+							<string>201px</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
@@ -9276,36 +9276,36 @@ function neige(hypeDocument, element, event) {
 						</dict>
 						<dict>
 							<key>identifier</key>
+							<string>DisplayName</string>
+							<key>objectValue</key>
+							<string>nuage2</string>
+						</dict>
+						<dict>
+							<key>identifier</key>
 							<string>BackgroundSize</string>
 							<key>objectValue</key>
 							<string>100% 100%</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
-							<string>OriginalHeight</string>
+							<string>TagName</string>
 							<key>objectValue</key>
-							<string>80px</string>
-						</dict>
-						<dict>
-							<key>identifier</key>
-							<string>OriginalWidth</string>
-							<key>objectValue</key>
-							<string>201px</string>
+							<string>div</string>
 						</dict>
 					</array>
 					<key>80</key>
 					<array>
 						<dict>
 							<key>identifier</key>
-							<string>DisplayName</string>
+							<string>OriginalHeight</string>
 							<key>objectValue</key>
-							<string>nuage3</string>
+							<string>69px</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
-							<string>TagName</string>
+							<string>OriginalWidth</string>
 							<key>objectValue</key>
-							<string>div</string>
+							<string>120px</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
@@ -9417,30 +9417,30 @@ function neige(hypeDocument, element, event) {
 						</dict>
 						<dict>
 							<key>identifier</key>
+							<string>DisplayName</string>
+							<key>objectValue</key>
+							<string>nuage3</string>
+						</dict>
+						<dict>
+							<key>identifier</key>
 							<string>BackgroundSize</string>
 							<key>objectValue</key>
 							<string>100% 100%</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
-							<string>OriginalHeight</string>
+							<string>TagName</string>
 							<key>objectValue</key>
-							<string>69px</string>
-						</dict>
-						<dict>
-							<key>identifier</key>
-							<string>OriginalWidth</string>
-							<key>objectValue</key>
-							<string>120px</string>
+							<string>div</string>
 						</dict>
 					</array>
 					<key>82</key>
 					<array>
 						<dict>
 							<key>identifier</key>
-							<string>OriginalWidth</string>
+							<string>TagName</string>
 							<key>objectValue</key>
-							<string>534px</string>
+							<string>div</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
@@ -9558,18 +9558,18 @@ function neige(hypeDocument, element, event) {
 						</dict>
 						<dict>
 							<key>identifier</key>
-							<string>TagName</string>
+							<string>OriginalWidth</string>
 							<key>objectValue</key>
-							<string>div</string>
+							<string>534px</string>
 						</dict>
 					</array>
 					<key>84</key>
 					<array>
 						<dict>
 							<key>identifier</key>
-							<string>TagName</string>
+							<string>OriginalWidth</string>
 							<key>objectValue</key>
-							<string>div</string>
+							<string>534px</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
@@ -9687,9 +9687,9 @@ function neige(hypeDocument, element, event) {
 						</dict>
 						<dict>
 							<key>identifier</key>
-							<string>OriginalWidth</string>
+							<string>TagName</string>
 							<key>objectValue</key>
-							<string>534px</string>
+							<string>div</string>
 						</dict>
 					</array>
 					<key>85</key>
@@ -9858,9 +9858,9 @@ function neige(hypeDocument, element, event) {
 					<array>
 						<dict>
 							<key>identifier</key>
-							<string>OriginalWidth</string>
+							<string>TagName</string>
 							<key>objectValue</key>
-							<string>534px</string>
+							<string>div</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
@@ -9978,18 +9978,18 @@ function neige(hypeDocument, element, event) {
 						</dict>
 						<dict>
 							<key>identifier</key>
-							<string>TagName</string>
+							<string>OriginalWidth</string>
 							<key>objectValue</key>
-							<string>div</string>
+							<string>534px</string>
 						</dict>
 					</array>
 					<key>88</key>
 					<array>
 						<dict>
 							<key>identifier</key>
-							<string>TagName</string>
+							<string>OriginalWidth</string>
 							<key>objectValue</key>
-							<string>div</string>
+							<string>534px</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
@@ -10107,9 +10107,9 @@ function neige(hypeDocument, element, event) {
 						</dict>
 						<dict>
 							<key>identifier</key>
-							<string>OriginalWidth</string>
+							<string>TagName</string>
 							<key>objectValue</key>
-							<string>534px</string>
+							<string>div</string>
 						</dict>
 					</array>
 				</dict>
@@ -10362,7 +10362,7 @@ function neige(hypeDocument, element, event) {
 										<false/>
 									</dict>
 									<key>oid</key>
-									<string>B6D9790D-A47F-48B9-BFD8-F6FC4FCFB426-154-00005A7023883F5F</string>
+									<string>69AF0534-87F4-40CD-A506-5E4E45161CB9-19640-000053678DC9FF75</string>
 								</dict>
 								<key>referenceOid</key>
 								<string>78</string>
@@ -10611,7 +10611,7 @@ function neige(hypeDocument, element, event) {
 										<false/>
 									</dict>
 									<key>oid</key>
-									<string>8CEE20EF-A46A-49B0-9BC8-7969FE245E8E-154-00005A70238A302A</string>
+									<string>B06C5CA7-C54A-4BC5-B19D-6B20A9DA57EE-19640-000053678DCDBE79</string>
 								</dict>
 								<key>referenceOid</key>
 								<string>79</string>
@@ -10786,7 +10786,7 @@ function neige(hypeDocument, element, event) {
 										<false/>
 									</dict>
 									<key>oid</key>
-									<string>EE927701-41CA-4A19-BFFD-2663E080FCF9-154-00005A70238B7B7E</string>
+									<string>2A12B9E5-AD71-415C-8D47-05B7C8E0E503-19640-000053678DD03DCB</string>
 								</dict>
 								<key>referenceOid</key>
 								<string>80</string>
@@ -10863,7 +10863,7 @@ function neige(hypeDocument, element, event) {
 										<false/>
 									</dict>
 									<key>oid</key>
-									<string>B6D9790D-A47F-48B9-BFD8-F6FC4FCFB426-154-00005A7023883F5F</string>
+									<string>69AF0534-87F4-40CD-A506-5E4E45161CB9-19640-000053678DC9FF75</string>
 								</dict>
 								<key>referenceOid</key>
 								<string>78</string>
@@ -10940,7 +10940,7 @@ function neige(hypeDocument, element, event) {
 										<false/>
 									</dict>
 									<key>oid</key>
-									<string>B6D9790D-A47F-48B9-BFD8-F6FC4FCFB426-154-00005A7023883F5F</string>
+									<string>69AF0534-87F4-40CD-A506-5E4E45161CB9-19640-000053678DC9FF75</string>
 								</dict>
 								<key>referenceOid</key>
 								<string>78</string>
@@ -11043,7 +11043,7 @@ function neige(hypeDocument, element, event) {
 										<false/>
 									</dict>
 									<key>oid</key>
-									<string>8CEE20EF-A46A-49B0-9BC8-7969FE245E8E-154-00005A70238A302A</string>
+									<string>B06C5CA7-C54A-4BC5-B19D-6B20A9DA57EE-19640-000053678DCDBE79</string>
 								</dict>
 								<key>referenceOid</key>
 								<string>79</string>
@@ -11110,7 +11110,7 @@ function neige(hypeDocument, element, event) {
 										<false/>
 									</dict>
 									<key>oid</key>
-									<string>8CEE20EF-A46A-49B0-9BC8-7969FE245E8E-154-00005A70238A302A</string>
+									<string>B06C5CA7-C54A-4BC5-B19D-6B20A9DA57EE-19640-000053678DCDBE79</string>
 								</dict>
 								<key>referenceOid</key>
 								<string>79</string>
@@ -11177,7 +11177,7 @@ function neige(hypeDocument, element, event) {
 										<false/>
 									</dict>
 									<key>oid</key>
-									<string>EE927701-41CA-4A19-BFFD-2663E080FCF9-154-00005A70238B7B7E</string>
+									<string>2A12B9E5-AD71-415C-8D47-05B7C8E0E503-19640-000053678DD03DCB</string>
 								</dict>
 								<key>referenceOid</key>
 								<string>80</string>
@@ -11244,7 +11244,7 @@ function neige(hypeDocument, element, event) {
 										<false/>
 									</dict>
 									<key>oid</key>
-									<string>EE927701-41CA-4A19-BFFD-2663E080FCF9-154-00005A70238B7B7E</string>
+									<string>2A12B9E5-AD71-415C-8D47-05B7C8E0E503-19640-000053678DD03DCB</string>
 								</dict>
 								<key>referenceOid</key>
 								<string>80</string>
@@ -18298,7 +18298,7 @@ function neige(hypeDocument, element, event) {
 										<false/>
 									</dict>
 									<key>oid</key>
-									<string>33403736-0F80-4B42-A833-80AD64FB9D26-154-00005A7023B98198</string>
+									<string>F818FD92-137D-4903-B414-5057FB18CCC2-19640-000053678E28091C</string>
 								</dict>
 								<key>referenceOid</key>
 								<string>78</string>
@@ -18365,7 +18365,7 @@ function neige(hypeDocument, element, event) {
 										<false/>
 									</dict>
 									<key>oid</key>
-									<string>EBC17075-5853-4D64-8288-087BBBDCFD68-154-00005A7023BA1CD4</string>
+									<string>D2F687CE-E206-440D-8C51-47D12DA53162-19640-000053678E296961</string>
 								</dict>
 								<key>referenceOid</key>
 								<string>80</string>
@@ -18478,7 +18478,7 @@ function neige(hypeDocument, element, event) {
 										<false/>
 									</dict>
 									<key>oid</key>
-									<string>33403736-0F80-4B42-A833-80AD64FB9D26-154-00005A7023B98198</string>
+									<string>F818FD92-137D-4903-B414-5057FB18CCC2-19640-000053678E28091C</string>
 								</dict>
 								<key>referenceOid</key>
 								<string>78</string>
@@ -18555,7 +18555,7 @@ function neige(hypeDocument, element, event) {
 										<false/>
 									</dict>
 									<key>oid</key>
-									<string>33403736-0F80-4B42-A833-80AD64FB9D26-154-00005A7023B98198</string>
+									<string>F818FD92-137D-4903-B414-5057FB18CCC2-19640-000053678E28091C</string>
 								</dict>
 								<key>referenceOid</key>
 								<string>78</string>
@@ -18622,7 +18622,7 @@ function neige(hypeDocument, element, event) {
 										<false/>
 									</dict>
 									<key>oid</key>
-									<string>EBC17075-5853-4D64-8288-087BBBDCFD68-154-00005A7023BA1CD4</string>
+									<string>D2F687CE-E206-440D-8C51-47D12DA53162-19640-000053678E296961</string>
 								</dict>
 								<key>referenceOid</key>
 								<string>80</string>
@@ -18689,7 +18689,7 @@ function neige(hypeDocument, element, event) {
 										<false/>
 									</dict>
 									<key>oid</key>
-									<string>EBC17075-5853-4D64-8288-087BBBDCFD68-154-00005A7023BA1CD4</string>
+									<string>D2F687CE-E206-440D-8C51-47D12DA53162-19640-000053678E296961</string>
 								</dict>
 								<key>referenceOid</key>
 								<string>80</string>
@@ -18828,7 +18828,7 @@ function neige(hypeDocument, element, event) {
 										<false/>
 									</dict>
 									<key>oid</key>
-									<string>639EC434-E109-4D5E-A3A5-56F770CBDEA6-154-00005A7023BDA94E</string>
+									<string>4C4A79B4-1647-4250-BAEA-F1E2D725B3DE-19640-000053678E2DC41E</string>
 								</dict>
 								<key>referenceOid</key>
 								<string>79</string>
@@ -18895,7 +18895,7 @@ function neige(hypeDocument, element, event) {
 										<false/>
 									</dict>
 									<key>oid</key>
-									<string>639EC434-E109-4D5E-A3A5-56F770CBDEA6-154-00005A7023BDA94E</string>
+									<string>4C4A79B4-1647-4250-BAEA-F1E2D725B3DE-19640-000053678E2DC41E</string>
 								</dict>
 								<key>referenceOid</key>
 								<string>79</string>
@@ -18962,7 +18962,7 @@ function neige(hypeDocument, element, event) {
 										<false/>
 									</dict>
 									<key>oid</key>
-									<string>639EC434-E109-4D5E-A3A5-56F770CBDEA6-154-00005A7023BDA94E</string>
+									<string>4C4A79B4-1647-4250-BAEA-F1E2D725B3DE-19640-000053678E2DC41E</string>
 								</dict>
 								<key>referenceOid</key>
 								<string>79</string>
@@ -25879,7 +25879,7 @@ function neige(hypeDocument, element, event) {
 										<false/>
 									</dict>
 									<key>oid</key>
-									<string>A42FF049-924E-4C37-8547-4B2888C17B35-154-00005A7023EC81DB</string>
+									<string>6250EA72-902F-4E08-9413-474D0457B60D-19640-000053678E6B0D8F</string>
 								</dict>
 								<key>referenceOid</key>
 								<string>78</string>
@@ -25946,7 +25946,7 @@ function neige(hypeDocument, element, event) {
 										<false/>
 									</dict>
 									<key>oid</key>
-									<string>D3352655-F61D-4FE9-9A10-A56787FB36A3-154-00005A7023ED273B</string>
+									<string>00790F18-A560-47E9-833A-72AE58E9B46D-19640-000053678E6C1D46</string>
 								</dict>
 								<key>referenceOid</key>
 								<string>80</string>
@@ -26599,7 +26599,7 @@ function neige(hypeDocument, element, event) {
 										<false/>
 									</dict>
 									<key>oid</key>
-									<string>A42FF049-924E-4C37-8547-4B2888C17B35-154-00005A7023EC81DB</string>
+									<string>6250EA72-902F-4E08-9413-474D0457B60D-19640-000053678E6B0D8F</string>
 								</dict>
 								<key>referenceOid</key>
 								<string>78</string>
@@ -26676,7 +26676,7 @@ function neige(hypeDocument, element, event) {
 										<false/>
 									</dict>
 									<key>oid</key>
-									<string>A42FF049-924E-4C37-8547-4B2888C17B35-154-00005A7023EC81DB</string>
+									<string>6250EA72-902F-4E08-9413-474D0457B60D-19640-000053678E6B0D8F</string>
 								</dict>
 								<key>referenceOid</key>
 								<string>78</string>
@@ -26743,7 +26743,7 @@ function neige(hypeDocument, element, event) {
 										<false/>
 									</dict>
 									<key>oid</key>
-									<string>D3352655-F61D-4FE9-9A10-A56787FB36A3-154-00005A7023ED273B</string>
+									<string>00790F18-A560-47E9-833A-72AE58E9B46D-19640-000053678E6C1D46</string>
 								</dict>
 								<key>referenceOid</key>
 								<string>80</string>
@@ -26810,7 +26810,7 @@ function neige(hypeDocument, element, event) {
 										<false/>
 									</dict>
 									<key>oid</key>
-									<string>D3352655-F61D-4FE9-9A10-A56787FB36A3-154-00005A7023ED273B</string>
+									<string>00790F18-A560-47E9-833A-72AE58E9B46D-19640-000053678E6C1D46</string>
 								</dict>
 								<key>referenceOid</key>
 								<string>80</string>
@@ -27165,7 +27165,7 @@ function neige(hypeDocument, element, event) {
 										<false/>
 									</dict>
 									<key>oid</key>
-									<string>EABECC34-EDA8-4611-BA17-685F0DB13FC5-154-00005A7023F5B6DB</string>
+									<string>E8ECA9B4-1686-4D99-96AF-A4A00470A237-19640-000053678E742339</string>
 								</dict>
 								<key>referenceOid</key>
 								<string>79</string>
@@ -27232,7 +27232,7 @@ function neige(hypeDocument, element, event) {
 										<false/>
 									</dict>
 									<key>oid</key>
-									<string>EABECC34-EDA8-4611-BA17-685F0DB13FC5-154-00005A7023F5B6DB</string>
+									<string>E8ECA9B4-1686-4D99-96AF-A4A00470A237-19640-000053678E742339</string>
 								</dict>
 								<key>referenceOid</key>
 								<string>79</string>
@@ -27299,7 +27299,7 @@ function neige(hypeDocument, element, event) {
 										<false/>
 									</dict>
 									<key>oid</key>
-									<string>EABECC34-EDA8-4611-BA17-685F0DB13FC5-154-00005A7023F5B6DB</string>
+									<string>E8ECA9B4-1686-4D99-96AF-A4A00470A237-19640-000053678E742339</string>
 								</dict>
 								<key>referenceOid</key>
 								<string>79</string>
@@ -34252,7 +34252,7 @@ function neige(hypeDocument, element, event) {
 										<false/>
 									</dict>
 									<key>oid</key>
-									<string>A3E34C4E-02D7-4200-A2D4-F379E051C448-154-00005A7024475013</string>
+									<string>90177979-A60A-4256-837F-F63AB0CFFCA7-19640-000053678EAE595E</string>
 								</dict>
 								<key>referenceOid</key>
 								<string>78</string>
@@ -34319,7 +34319,7 @@ function neige(hypeDocument, element, event) {
 										<false/>
 									</dict>
 									<key>oid</key>
-									<string>8D85BF1E-A8C7-4C2F-8ABD-7CD8D5405CC3-154-00005A702447F781</string>
+									<string>152891C8-A0F0-42BA-A2FA-054E8D335591-19640-000053678EAF5B37</string>
 								</dict>
 								<key>referenceOid</key>
 								<string>79</string>
@@ -34386,7 +34386,7 @@ function neige(hypeDocument, element, event) {
 										<false/>
 									</dict>
 									<key>oid</key>
-									<string>A0A61639-8CDE-449A-8161-6BEA7EFEF3C9-154-00005A702448B308</string>
+									<string>87C5330A-2F5E-4912-9E0C-6C65C471F888-19640-000053678EB00C73</string>
 								</dict>
 								<key>referenceOid</key>
 								<string>80</string>
@@ -34499,7 +34499,7 @@ function neige(hypeDocument, element, event) {
 										<false/>
 									</dict>
 									<key>oid</key>
-									<string>A3E34C4E-02D7-4200-A2D4-F379E051C448-154-00005A7024475013</string>
+									<string>90177979-A60A-4256-837F-F63AB0CFFCA7-19640-000053678EAE595E</string>
 								</dict>
 								<key>referenceOid</key>
 								<string>78</string>
@@ -34576,7 +34576,7 @@ function neige(hypeDocument, element, event) {
 										<false/>
 									</dict>
 									<key>oid</key>
-									<string>A3E34C4E-02D7-4200-A2D4-F379E051C448-154-00005A7024475013</string>
+									<string>90177979-A60A-4256-837F-F63AB0CFFCA7-19640-000053678EAE595E</string>
 								</dict>
 								<key>referenceOid</key>
 								<string>78</string>
@@ -34643,7 +34643,7 @@ function neige(hypeDocument, element, event) {
 										<false/>
 									</dict>
 									<key>oid</key>
-									<string>8D85BF1E-A8C7-4C2F-8ABD-7CD8D5405CC3-154-00005A702447F781</string>
+									<string>152891C8-A0F0-42BA-A2FA-054E8D335591-19640-000053678EAF5B37</string>
 								</dict>
 								<key>referenceOid</key>
 								<string>79</string>
@@ -34710,7 +34710,7 @@ function neige(hypeDocument, element, event) {
 										<false/>
 									</dict>
 									<key>oid</key>
-									<string>8D85BF1E-A8C7-4C2F-8ABD-7CD8D5405CC3-154-00005A702447F781</string>
+									<string>152891C8-A0F0-42BA-A2FA-054E8D335591-19640-000053678EAF5B37</string>
 								</dict>
 								<key>referenceOid</key>
 								<string>79</string>
@@ -34777,7 +34777,7 @@ function neige(hypeDocument, element, event) {
 										<false/>
 									</dict>
 									<key>oid</key>
-									<string>A0A61639-8CDE-449A-8161-6BEA7EFEF3C9-154-00005A702448B308</string>
+									<string>87C5330A-2F5E-4912-9E0C-6C65C471F888-19640-000053678EB00C73</string>
 								</dict>
 								<key>referenceOid</key>
 								<string>80</string>
@@ -34844,7 +34844,7 @@ function neige(hypeDocument, element, event) {
 										<false/>
 									</dict>
 									<key>oid</key>
-									<string>A0A61639-8CDE-449A-8161-6BEA7EFEF3C9-154-00005A702448B308</string>
+									<string>87C5330A-2F5E-4912-9E0C-6C65C471F888-19640-000053678EB00C73</string>
 								</dict>
 								<key>referenceOid</key>
 								<string>80</string>
@@ -41869,7 +41869,7 @@ function neige(hypeDocument, element, event) {
 										<false/>
 									</dict>
 									<key>oid</key>
-									<string>F7C6361C-FB1A-40AE-AC6D-6FEE8F56E5BF-154-00005A702483D3BF</string>
+									<string>1503556E-070D-46C0-8ECA-5273FD231FE3-19640-000053678F0C5302</string>
 								</dict>
 								<key>referenceOid</key>
 								<string>78</string>
@@ -41929,7 +41929,7 @@ function neige(hypeDocument, element, event) {
 										<false/>
 									</dict>
 									<key>oid</key>
-									<string>198EFCE1-7996-4770-A39E-E16BD78FF531-154-00005A702484831D</string>
+									<string>D63EC458-FCDE-4EB9-9CC9-A1FCF2A36558-19640-000053678F0EC30A</string>
 								</dict>
 								<key>referenceOid</key>
 								<string>79</string>
@@ -41989,7 +41989,7 @@ function neige(hypeDocument, element, event) {
 										<false/>
 									</dict>
 									<key>oid</key>
-									<string>746FF876-79DC-4CE1-B557-3005D3B0BC40-154-00005A7024857189</string>
+									<string>061E6BAF-F773-468F-AFE3-4C6FDEC28BD6-19640-000053678F1075E6</string>
 								</dict>
 								<key>referenceOid</key>
 								<string>80</string>
@@ -42281,7 +42281,7 @@ function neige(hypeDocument, element, event) {
 										<false/>
 									</dict>
 									<key>oid</key>
-									<string>F7C6361C-FB1A-40AE-AC6D-6FEE8F56E5BF-154-00005A702483D3BF</string>
+									<string>1503556E-070D-46C0-8ECA-5273FD231FE3-19640-000053678F0C5302</string>
 								</dict>
 								<key>referenceOid</key>
 								<string>78</string>
@@ -42341,7 +42341,7 @@ function neige(hypeDocument, element, event) {
 										<false/>
 									</dict>
 									<key>oid</key>
-									<string>F7C6361C-FB1A-40AE-AC6D-6FEE8F56E5BF-154-00005A702483D3BF</string>
+									<string>1503556E-070D-46C0-8ECA-5273FD231FE3-19640-000053678F0C5302</string>
 								</dict>
 								<key>referenceOid</key>
 								<string>78</string>
@@ -42401,7 +42401,7 @@ function neige(hypeDocument, element, event) {
 										<false/>
 									</dict>
 									<key>oid</key>
-									<string>198EFCE1-7996-4770-A39E-E16BD78FF531-154-00005A702484831D</string>
+									<string>D63EC458-FCDE-4EB9-9CC9-A1FCF2A36558-19640-000053678F0EC30A</string>
 								</dict>
 								<key>referenceOid</key>
 								<string>79</string>
@@ -42461,7 +42461,7 @@ function neige(hypeDocument, element, event) {
 										<false/>
 									</dict>
 									<key>oid</key>
-									<string>198EFCE1-7996-4770-A39E-E16BD78FF531-154-00005A702484831D</string>
+									<string>D63EC458-FCDE-4EB9-9CC9-A1FCF2A36558-19640-000053678F0EC30A</string>
 								</dict>
 								<key>referenceOid</key>
 								<string>79</string>
@@ -42521,7 +42521,7 @@ function neige(hypeDocument, element, event) {
 										<false/>
 									</dict>
 									<key>oid</key>
-									<string>746FF876-79DC-4CE1-B557-3005D3B0BC40-154-00005A7024857189</string>
+									<string>061E6BAF-F773-468F-AFE3-4C6FDEC28BD6-19640-000053678F1075E6</string>
 								</dict>
 								<key>referenceOid</key>
 								<string>80</string>
@@ -42581,7 +42581,7 @@ function neige(hypeDocument, element, event) {
 										<false/>
 									</dict>
 									<key>oid</key>
-									<string>746FF876-79DC-4CE1-B557-3005D3B0BC40-154-00005A7024857189</string>
+									<string>061E6BAF-F773-468F-AFE3-4C6FDEC28BD6-19640-000053678F1075E6</string>
 								</dict>
 								<key>referenceOid</key>
 								<string>80</string>
@@ -42731,7 +42731,7 @@ function neige(hypeDocument, element, event) {
 						<key>identifier</key>
 						<string>kTimelineDefaultIdentifier</string>
 						<key>name</key>
-						<string>Timeline principale</string>
+						<string>Main Timeline</string>
 						<key>userDefinedDuration</key>
 						<real>0.0</real>
 					</dict>
@@ -42742,7 +42742,7 @@ function neige(hypeDocument, element, event) {
 			<key>currentGroupElement</key>
 			<string>153</string>
 			<key>documentIdentifier</key>
-			<string>BA4ABAC9-46BE-46BC-BE9C-EAC2C15F038B-154-00005A704428A545</string>
+			<string>A2370EB1-5900-4B1B-B58F-A4C65980D03C-19640-00005367D24F11FC</string>
 			<key>selectedObjects</key>
 			<array>
 				<string>150</string>
@@ -43112,9 +43112,9 @@ function neige(hypeDocument, element, event) {
 					<array>
 						<dict>
 							<key>identifier</key>
-							<string>OriginalWidth</string>
+							<string>TagName</string>
 							<key>objectValue</key>
-							<string>534px</string>
+							<string>div</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
@@ -43232,18 +43232,18 @@ function neige(hypeDocument, element, event) {
 						</dict>
 						<dict>
 							<key>identifier</key>
-							<string>TagName</string>
+							<string>OriginalWidth</string>
 							<key>objectValue</key>
-							<string>div</string>
+							<string>534px</string>
 						</dict>
 					</array>
 					<key>152</key>
 					<array>
 						<dict>
 							<key>identifier</key>
-							<string>OriginalWidth</string>
+							<string>TagName</string>
 							<key>objectValue</key>
-							<string>534px</string>
+							<string>div</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
@@ -43361,9 +43361,9 @@ function neige(hypeDocument, element, event) {
 						</dict>
 						<dict>
 							<key>identifier</key>
-							<string>TagName</string>
+							<string>OriginalWidth</string>
 							<key>objectValue</key>
-							<string>div</string>
+							<string>534px</string>
 						</dict>
 					</array>
 					<key>153</key>
@@ -43439,21 +43439,21 @@ function neige(hypeDocument, element, event) {
 					<array>
 						<dict>
 							<key>identifier</key>
-							<string>BorderWidthLeft</string>
+							<string>TagName</string>
 							<key>objectValue</key>
-							<string>0px</string>
-						</dict>
-						<dict>
-							<key>identifier</key>
-							<string>ExplicitDimensions</string>
-							<key>objectValue</key>
-							<string>YES</string>
+							<string>div</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
 							<string>BorderColorBottom</string>
 							<key>objectValue</key>
 							<string>#D8DDE4</string>
+						</dict>
+						<dict>
+							<key>identifier</key>
+							<string>ExplicitDimensions</string>
+							<key>objectValue</key>
+							<string>YES</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
@@ -43583,15 +43583,15 @@ function neige(hypeDocument, element, event) {
 						</dict>
 						<dict>
 							<key>identifier</key>
-							<string>BorderWidthBottom</string>
+							<string>BorderWidthLeft</string>
 							<key>objectValue</key>
 							<string>0px</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
-							<string>TagName</string>
+							<string>BorderWidthBottom</string>
 							<key>objectValue</key>
-							<string>div</string>
+							<string>0px</string>
 						</dict>
 					</array>
 					<key>160</key>
@@ -43715,21 +43715,21 @@ function neige(hypeDocument, element, event) {
 					<array>
 						<dict>
 							<key>identifier</key>
-							<string>TagName</string>
+							<string>BorderWidthBottom</string>
 							<key>objectValue</key>
-							<string>div</string>
-						</dict>
-						<dict>
-							<key>identifier</key>
-							<string>BorderColorBottom</string>
-							<key>objectValue</key>
-							<string>#D8DDE4</string>
+							<string>0px</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
 							<string>ExplicitDimensions</string>
 							<key>objectValue</key>
 							<string>YES</string>
+						</dict>
+						<dict>
+							<key>identifier</key>
+							<string>BorderColorBottom</string>
+							<key>objectValue</key>
+							<string>#D8DDE4</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
@@ -43865,9 +43865,9 @@ function neige(hypeDocument, element, event) {
 						</dict>
 						<dict>
 							<key>identifier</key>
-							<string>BorderWidthBottom</string>
+							<string>TagName</string>
 							<key>objectValue</key>
-							<string>0px</string>
+							<string>div</string>
 						</dict>
 					</array>
 					<key>163</key>
@@ -44096,9 +44096,9 @@ function neige(hypeDocument, element, event) {
 					<array>
 						<dict>
 							<key>identifier</key>
-							<string>BorderWidthBottom</string>
+							<string>TagName</string>
 							<key>objectValue</key>
-							<string>0px</string>
+							<string>div</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
@@ -44240,15 +44240,15 @@ function neige(hypeDocument, element, event) {
 						</dict>
 						<dict>
 							<key>identifier</key>
-							<string>BorderWidthLeft</string>
+							<string>BorderWidthBottom</string>
 							<key>objectValue</key>
 							<string>0px</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
-							<string>TagName</string>
+							<string>BorderWidthLeft</string>
 							<key>objectValue</key>
-							<string>div</string>
+							<string>0px</string>
 						</dict>
 					</array>
 					<key>177</key>
@@ -44366,9 +44366,9 @@ function neige(hypeDocument, element, event) {
 					<array>
 						<dict>
 							<key>identifier</key>
-							<string>TagName</string>
+							<string>OriginalWidth</string>
 							<key>objectValue</key>
-							<string>div</string>
+							<string>295px</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
@@ -44486,9 +44486,9 @@ function neige(hypeDocument, element, event) {
 						</dict>
 						<dict>
 							<key>identifier</key>
-							<string>OriginalWidth</string>
+							<string>TagName</string>
 							<key>objectValue</key>
-							<string>295px</string>
+							<string>div</string>
 						</dict>
 					</array>
 				</dict>
@@ -44820,7 +44820,7 @@ function neige(hypeDocument, element, event) {
 						<key>identifier</key>
 						<string>kTimelineDefaultIdentifier</string>
 						<key>name</key>
-						<string>Timeline principale</string>
+						<string>Main Timeline</string>
 						<key>userDefinedDuration</key>
 						<real>0.0</real>
 					</dict>
@@ -44829,7 +44829,7 @@ function neige(hypeDocument, element, event) {
 		</dict>
 		<dict>
 			<key>documentIdentifier</key>
-			<string>BA4ABAC9-46BE-46BC-BE9C-EAC2C15F038B-154-00005A704428A545</string>
+			<string>A2370EB1-5900-4B1B-B58F-A4C65980D03C-19640-00005367D24F11FC</string>
 			<key>selectedObjects</key>
 			<array/>
 			<key>symbol</key>
@@ -46310,7 +46310,7 @@ function neige(hypeDocument, element, event) {
 						<key>identifier</key>
 						<string>kTimelineDefaultIdentifier</string>
 						<key>name</key>
-						<string>Timeline principale</string>
+						<string>Main Timeline</string>
 						<key>userDefinedDuration</key>
 						<real>0.0</real>
 					</dict>
@@ -46319,7 +46319,7 @@ function neige(hypeDocument, element, event) {
 		</dict>
 		<dict>
 			<key>documentIdentifier</key>
-			<string>BA4ABAC9-46BE-46BC-BE9C-EAC2C15F038B-154-00005A704428A545</string>
+			<string>A2370EB1-5900-4B1B-B58F-A4C65980D03C-19640-00005367D24F11FC</string>
 			<key>selectedObjects</key>
 			<array/>
 			<key>symbol</key>
@@ -47263,9 +47263,9 @@ function neige(hypeDocument, element, event) {
 					<array>
 						<dict>
 							<key>identifier</key>
-							<string>OriginalWidth</string>
+							<string>TagName</string>
 							<key>objectValue</key>
-							<string>534px</string>
+							<string>div</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
@@ -47383,18 +47383,18 @@ function neige(hypeDocument, element, event) {
 						</dict>
 						<dict>
 							<key>identifier</key>
-							<string>TagName</string>
+							<string>OriginalWidth</string>
 							<key>objectValue</key>
-							<string>div</string>
+							<string>534px</string>
 						</dict>
 					</array>
 					<key>229</key>
 					<array>
 						<dict>
 							<key>identifier</key>
-							<string>OriginalWidth</string>
+							<string>TagName</string>
 							<key>objectValue</key>
-							<string>534px</string>
+							<string>div</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
@@ -47512,9 +47512,9 @@ function neige(hypeDocument, element, event) {
 						</dict>
 						<dict>
 							<key>identifier</key>
-							<string>TagName</string>
+							<string>OriginalWidth</string>
 							<key>objectValue</key>
-							<string>div</string>
+							<string>534px</string>
 						</dict>
 					</array>
 					<key>230</key>
@@ -48722,7 +48722,7 @@ function neige(hypeDocument, element, event) {
 						<key>identifier</key>
 						<string>kTimelineDefaultIdentifier</string>
 						<key>name</key>
-						<string>Timeline principale</string>
+						<string>Main Timeline</string>
 						<key>userDefinedDuration</key>
 						<real>0.0</real>
 					</dict>
@@ -48733,7 +48733,7 @@ function neige(hypeDocument, element, event) {
 			<key>currentGroupElement</key>
 			<string>442</string>
 			<key>documentIdentifier</key>
-			<string>BA4ABAC9-46BE-46BC-BE9C-EAC2C15F038B-154-00005A704428A545</string>
+			<string>A2370EB1-5900-4B1B-B58F-A4C65980D03C-19640-00005367D24F11FC</string>
 			<key>selectedObjects</key>
 			<array>
 				<string>254</string>
@@ -49562,9 +49562,9 @@ function neige(hypeDocument, element, event) {
 					<array>
 						<dict>
 							<key>identifier</key>
-							<string>TagName</string>
+							<string>OriginalWidth</string>
 							<key>objectValue</key>
-							<string>div</string>
+							<string>534px</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
@@ -49682,18 +49682,18 @@ function neige(hypeDocument, element, event) {
 						</dict>
 						<dict>
 							<key>identifier</key>
-							<string>OriginalWidth</string>
+							<string>TagName</string>
 							<key>objectValue</key>
-							<string>534px</string>
+							<string>div</string>
 						</dict>
 					</array>
 					<key>254</key>
 					<array>
 						<dict>
 							<key>identifier</key>
-							<string>TagName</string>
+							<string>OriginalWidth</string>
 							<key>objectValue</key>
-							<string>div</string>
+							<string>534px</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
@@ -49811,9 +49811,9 @@ function neige(hypeDocument, element, event) {
 						</dict>
 						<dict>
 							<key>identifier</key>
-							<string>OriginalWidth</string>
+							<string>TagName</string>
 							<key>objectValue</key>
-							<string>534px</string>
+							<string>div</string>
 						</dict>
 					</array>
 					<key>256</key>
@@ -50789,42 +50789,6 @@ function neige(hypeDocument, element, event) {
 							</dict>
 							<dict>
 								<key>duration</key>
-								<real>60</real>
-								<key>endValue</key>
-								<dict>
-									<key>identifier</key>
-									<string>RotationAngleZ</string>
-									<key>objectValue</key>
-									<string>-10800deg</string>
-								</dict>
-								<key>identifier</key>
-								<string>RotationAngleZ</string>
-								<key>isRelative</key>
-								<false/>
-								<key>referenceOid</key>
-								<string>266</string>
-								<key>startTime</key>
-								<real>0.0</real>
-								<key>startValue</key>
-								<dict>
-									<key>identifier</key>
-									<string>RotationAngleZ</string>
-									<key>objectValue</key>
-									<string>0deg</string>
-								</dict>
-								<key>symbolElementActionAttributesBySymbolTimeline</key>
-								<dict/>
-								<key>timingFunctionOid</key>
-								<string>b</string>
-								<key>type</key>
-								<integer>0</integer>
-								<key>uuid</key>
-								<string>F67BC842-F7AA-40D3-A840-172FB1CB0135-154-000059577173797D</string>
-								<key>zIndex</key>
-								<integer>2</integer>
-							</dict>
-							<dict>
-								<key>duration</key>
 								<real>1.1666666269302368</real>
 								<key>endValue</key>
 								<dict>
@@ -50858,6 +50822,42 @@ function neige(hypeDocument, element, event) {
 								<string>525AF1FF-A92F-47DF-9032-0F9A3DBEE020-154-00005969648D941F</string>
 								<key>zIndex</key>
 								<integer>1</integer>
+							</dict>
+							<dict>
+								<key>duration</key>
+								<real>60</real>
+								<key>endValue</key>
+								<dict>
+									<key>identifier</key>
+									<string>RotationAngleZ</string>
+									<key>objectValue</key>
+									<string>-10800deg</string>
+								</dict>
+								<key>identifier</key>
+								<string>RotationAngleZ</string>
+								<key>isRelative</key>
+								<false/>
+								<key>referenceOid</key>
+								<string>266</string>
+								<key>startTime</key>
+								<real>0.0</real>
+								<key>startValue</key>
+								<dict>
+									<key>identifier</key>
+									<string>RotationAngleZ</string>
+									<key>objectValue</key>
+									<string>0deg</string>
+								</dict>
+								<key>symbolElementActionAttributesBySymbolTimeline</key>
+								<dict/>
+								<key>timingFunctionOid</key>
+								<string>b</string>
+								<key>type</key>
+								<integer>0</integer>
+								<key>uuid</key>
+								<string>F67BC842-F7AA-40D3-A840-172FB1CB0135-154-000059577173797D</string>
+								<key>zIndex</key>
+								<integer>2</integer>
 							</dict>
 							<dict>
 								<key>duration</key>
@@ -54847,7 +54847,7 @@ function neige(hypeDocument, element, event) {
 						<key>identifier</key>
 						<string>kTimelineDefaultIdentifier</string>
 						<key>name</key>
-						<string>Timeline principale</string>
+						<string>Main Timeline</string>
 						<key>userDefinedDuration</key>
 						<real>0.0</real>
 					</dict>

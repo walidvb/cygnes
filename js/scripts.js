@@ -37,12 +37,13 @@
         var val = data[i];
         formData[val.name] = val.value
       }
-      api.save(formData, displayResult());
+      api.save(formData, displayResult);
     };
     function displayResult(){
       console.log('image uploaded!');
       hyper.play(formData.scene);
     };
+    $('#submit').on('click', submitForm);
     $next.on('click', goToNextState);
     function goToNextState(){
       switch(currentState++){
