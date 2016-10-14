@@ -20,29 +20,28 @@
     %link{:rel => "stylesheet", :href => "https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"}
     :javascript
       document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')
-
     %script{src: '/lib/sketch.js'}
     %script{src: '/js/firebase.js'}
     %script{src: '/js/hypeHandler.js'}
     %script{src: '/js/scripts.js'}
     -# Hype scripts
-    %script{:src => "skate.hyperesources/snowfall.min.js", :type => "text/javascript"}
+    %script{type:"text/javascript", src:"anims2.hyperesources/snowfall.min.js"}
 
 
   %body{:class => %w{test}.join(' ')}
     %form
-      .step#step-1.hidden
+      .step#step-1
         .container
-          %h1 STEP 1
-          - %w{aviateur bonnet casquette neutre}.each do |src|
-            .duck
-              %input{type: 'radio', value: src, name: 'duck', id: src}
-              %label.animated{for: src}
-                %img{src: "/assets/duck/#{src}.png"}
-      .step#step-2.hidden
-        .container
-          %h1 STEP 2
-          #canvasDiv
+          %h1 Choisis tes accessoires!
+          .row
+            .col-md-2
+              .duck-list
+                - %w{aviateur bonnet casquette neutre}.each do |src|
+                  .duck
+                    %input{type: 'radio', value: src, name: 'duck', id: src}
+                    %label.animated{for: src}
+                      %img{src: "/assets/duck/#{src}.png"}
+            .col-md-10#canvasDiv
       .step#step-3.hidden
         %h1 STEP 3
         .container
@@ -51,7 +50,9 @@
               %input{type: 'radio', value: src, name: 'scene', id: src}
               %label.animated{for: src}
                 %img{src: "/assets/scenes/#{src}.png"}
-
+      .step#result.hidden
+        #anims2_hype_container{style: "margin:auto;position:relative;width:100vw;height:100vh;overflow:hidden;", "aria-live"=>"polite"}
+          %script{type: "text/javascript", charset:"utf-8", src:"anims2.hyperesources/anims2_hype_generated_script.js?13002"}
       #next.fa.fa-icon.fa-arrow-right
       #contact-details.modal.fade{"aria-labelledby" => "myModalLabel", :role => "dialog", :tabindex => "-1"}
         .modal-dialog{:role => "document"}

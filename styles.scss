@@ -6,12 +6,18 @@ body{
 }
 
 .container{
-  display: flex;
+
 }
 
-.duck{
-  flex: 0 1 auto;
-  padding: 0 1rem;
+#canvasDiv{
+  height: 100vh;
+}
+.duck-list{
+  display: flex;
+  flex-direction: column;
+  .duck{
+    padding: 0 1rem;
+  }
 }
 
 input + label img{
@@ -27,4 +33,10 @@ input:checked + label img{
   font-size: 3rem;
   right: 2rem;
   bottom: 2rem;
+}
+
+
+#result{
+  width: 100vw;
+  height: 100vh;
 }

@@ -1,7 +1,7 @@
-function Hyper(hyperDocument){
-  
+function Hyper(){
+
   function play(choice){
-    $('body').append(getHTML(choice));
+    hypeDocument.showSceneNamed(choice)
   }
 
   return {

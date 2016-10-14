@@ -2529,15 +2529,21 @@ input[type='radio'] {
 body {
   max-width: 100%; }
 
-.container {
-  display: flex; }
+#canvasDiv {
+  height: 100vh; }
 
-.duck {
-  flex: 0 1 auto;
-  padding: 0 1rem; }
+.duck-list {
+  display: flex;
+  flex-direction: column; }
+  .duck-list .duck {
+    padding: 0 1rem; }
 
 #next {
   position: fixed;
   font-size: 3rem;
   right: 2rem;
   bottom: 2rem; }
+
+#result {
+  width: 100vw;
+  height: 100vh; }

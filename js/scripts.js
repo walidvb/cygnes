@@ -1,36 +1,44 @@
 (function(){
-  var CHOOSE_DUCK = 0,
-      PAINT = 1,
-      CHOOSE_SCENE = 2,
-      ENTER_DETAILS = 3,
-      VIEW_RESULT = 4;
-  var statesCount = 5;
+  var PAINT = 0,
+      CHOOSE_SCENE = 1,
+      ENTER_DETAILS = 2,
+      VIEW_RESULT = 3;
+  var statesCount = 4;
 
   var api = new Api();
   var hyper = new Hyper();
+
   var formData = {}
   function init(){
     var currentState = 0,
       $steps = $('.step'),
-      $next = $('#next')
-      ;
-
+      $next = $('#next'),
+      drawing = drawingApp.init({
+        outlineImageSrc: '/assets/duck/neutre.png',
+        target: document.getElementById('canvasDiv')
+      });
     function storeImage(url){
       var img = $('<img src="'+url+'"/>');
       img.appendTo($('body'))
     }
-    function duckSelected(){
-      formData.duck = $('input[name="duck"]').val();
-      drawing = drawingApp.init({
-        outlineImageSrc: '/assets/duck/'+formData.duck+'.png'
-      });
+
+    $('input[name= "duck"]').on('change', duckSelected)
+    function duckSelected(e){
+      formData.duck = $(this).val();
+      console.log(formData);
+      drawing.setOutlineImage('/assets/duck/'+formData.duck+'.png')
+
     };
+
+
+    // Story
     function finishPaint(){
       drawing.getDrawing(formData);
     };
     function sceneSelected(){
       formData.scene = $('input[name="scene"]').val();
     };
+    $('#submit').on('click', submitForm);
     function submitForm(){
       var data = $('form').serializeArray();
       for(var i = 0; i < data.length; i++){
@@ -40,16 +48,14 @@
       api.save(formData, displayResult);
     };
     function displayResult(){
-      console.log('image uploaded!');
+      console.log('image uploaded!', formData);
       hyper.play(formData.scene);
+      $('#contact-details').modal('hide');
     };
     $('#submit').on('click', submitForm);
     $next.on('click', goToNextState);
     function goToNextState(){
       switch(currentState++){
-        case CHOOSE_DUCK:
-          duckSelected();
-          break;
         case PAINT:
           finishPaint();
           break;
@@ -68,7 +74,7 @@
         $($steps[currentState]).removeClass('hidden');
       }
     }
-    $($steps[currentState]).removeClass('hidden');
+
   }
   $(document).ready(init);
 })()
