@@ -62,14 +62,7 @@
       $('.step').fadeOut(800, function(){
         $('body').addClass('on-screen')
       });
-      hyper.play(formData.scene);
-      $('.HYPE_element.fond').css({
-        backgroundImage: 'url(/anims2.hyperesources/'+formData.duck+'_fond.png)',
-      })
-      console.log(base64);
-      $('.HYPE_element.dessin').css({
-        backgroundImage: 'url('+base64+')',
-      });
+      hyper.play(formData, base64);
       $('#contact-details').modal('hide');
     };
     $('#submit').on('click', submitForm);

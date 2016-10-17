@@ -28,7 +28,6 @@ var drawingApp = (function () {
 			var outlineImageSrc = options.outlineImageSrc;
       canvas = document.createElement('canvas');
       duck.onload = function(){
-        console.log('test');
         canvas.width = duck.width
         canvas.height = duck.height;
   			// Create the canvas (Neccessary for IE because it doesn't know what a canvas element is)

@@ -6,11 +6,14 @@ function Api(){
       storageBucket: "cygnes-8fced.appspot.com",
       messagingSenderId: "953624553996"
     };
+  var initialItemsFetched = false;
   firebase.initializeApp(config);
   var db = firebase.database(),
     storage = firebase.storage();
 
-  var storeImage = function(data, cb){
+  var drawingsRef = db.ref('drawing/');
+
+  function storeImage(data, cb){
     var now = new Date();
     var fileName = data.name + '_' + [now.getDay(), now.getMonth()].join('-') + '_' + [now.getHours(), now.getMinutes(), now.getSeconds()].join('-');
     fileName = fileName.replace(/[^a-z0-9]/gi, '_').toLowerCase();
@@ -22,15 +25,33 @@ function Api(){
       cb(uploadTask.snapshot.downloadURL);
     })
   }
+  
   return {
     firebase: firebase,
+    getDrawings: function(cb){
+      drawingsRef.once('value', function(snapshot){
+        var elems = []
+        var values = snapshot.val();
+        for(key in values){
+          elems.push(values[key])
+        }
+        cb(elems)
+        initialItemsFetched = true;
+      })
+    },
+    listenToNew: function(cb){
+        drawingsRef.on('child_added', function(elem){
+          if(initialItemsFetched){
+            cb(elem.val());
+          }
+        })
+    },
     save: function(data, cb){
       storeImage(data, function(dlUrl){
         data.imagePath = dlUrl;
-        db.ref('drawing/').push(data);
+        drawingsRef.push(data);
         cb();
       });
-
     },
   }
 }

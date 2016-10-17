@@ -1,0 +1,31 @@
+!!!
+%html
+  %head
+    %meta{:content => "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no", :name => "viewport"}
+
+    %title= "Les Cygnes"
+    %meta{property:"og:site_name", content:"The Pigeonhole"}
+    - desc = 'desc'
+    %meta{:name => "description", content: desc}
+    %meta{property:"og:description", content: desc}
+    %link{:rel => "stylesheet", :href => "/styles.css"}/
+    %script{src:"//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"}
+    %script{src:"//www.gstatic.com/firebasejs/3.4.1/firebase.js"}
+
+    :javascript
+      document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')
+    %script{src: '/js/firebase.js'}
+    %script{src: '/js/hypeHandler.js'}
+    %script{src: '/js/watcher.js'}
+    :css
+      body{
+        height: 100vh;
+        width: 100vw;
+      }
+    -# Hype scripts
+    %script{type:"text/javascript", src:"anims2.hyperesources/snowfall.min.js"}
+
+
+  %body
+    #anims2_hype_container{style: "margin:auto;position:relative;width:100vw;height:100vh;overflow:hidden;", "aria-live"=>"polite"}
+      %script{type: "text/javascript", charset:"utf-8", src:"anims2.hyperesources/anims2_hype_generated_script.js?13002"}
