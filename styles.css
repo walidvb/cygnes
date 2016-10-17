@@ -2561,3 +2561,11 @@ body {
   display: inline-block;
   flex: 0 0 100%;
   padding: 2rem; }
+
+.color-picker {
+  padding-top: 6rem;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+  vertical-align: top; }
