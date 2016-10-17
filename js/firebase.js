@@ -25,7 +25,7 @@ function Api(){
       cb(uploadTask.snapshot.downloadURL);
     })
   }
-  
+
   return {
     firebase: firebase,
     getDrawings: function(cb){

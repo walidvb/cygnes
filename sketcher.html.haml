@@ -1,0 +1,93 @@
+!!!
+%html
+  %head
+    %meta{:content => "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no", :name => "viewport"}
+
+    %title= "Les Cygnes"
+    %meta{property:"og:site_name", content:"The Pigeonhole"}
+    - desc = 'desc'
+    %meta{:name => "description", content: desc}
+    %meta{property:"og:description", content: desc}
+    %link{:rel => "stylesheet", :href => "/styles.css"}/
+    %script{src:"//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"}
+    %script{src:"//www.gstatic.com/firebasejs/3.4.1/firebase.js"}
+    / Latest compiled and minified CSS
+    %link{:crossorigin => "anonymous", :href => "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css", :integrity => "sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u", :rel => "stylesheet"}/
+    / Optional theme
+    %link{:crossorigin => "anonymous", :href => "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css", :integrity => "sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp", :rel => "stylesheet"}/
+    / Latest compiled and minified JavaScript
+    %script{:crossorigin => "anonymous", :integrity => "sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa", :src => "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"}
+    %link{:rel => "stylesheet", :href => "https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"}
+    :javascript
+      document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')
+    %script{src: '/lib/sketchLib.js'}
+    %script{src: '/js/sketch.js'}
+    %script{src: '/js/firebase.js'}
+    %script{src: '/js/hypeHandler.js'}
+    %script{src: '/js/scripts.js'}
+    -# Hype scripts
+    %script{type:"text/javascript", src:"anims2.hyperesources/snowfall.min.js"}
+
+
+  %body{:class => %w{test}.join(' ')}
+    %form
+      .step#step-1
+        .container
+          .row
+            .col-xs-2
+              .duck-list
+                - %w{aviateur bonnet casquette neutre}.each do |src|
+                  .duck
+                    %input{type: 'radio', value: src, name: 'duck', id: src}
+                    %label.animated{for: src}
+                      %img{src: "/assets/duck/#{src}.png"}
+            .col-xs-10#canvasDiv
+      .step#step-3.hidden
+        %h1 STEP 3
+        .container
+          - %w{avion ski piscine skate voiture}.each do |src|
+            .duck
+              %input{type: 'radio', value: src, name: 'scene', id: src}
+              %label.animated{for: src}
+                %img{src: "/assets/scenes/#{src}.png"}
+      #result
+        #anims2_hype_container{style: "margin:auto;position:relative;width:100vw;height:100vh;overflow:hidden;", "aria-live"=>"polite"}
+          %script{type: "text/javascript", charset:"utf-8", src:"anims2.hyperesources/anims2_hype_generated_script.js?13002"}
+      #reset.fa.fa-icon.fa-refresh{onclick: 'window.location.reload()'}
+      #next.fa.fa-icon.fa-arrow-right
+      #contact-details.modal.fade{"aria-labelledby" => "myModalLabel", :role => "dialog", :tabindex => "-1"}
+        .modal-dialog{:role => "document"}
+          .modal-content
+            .form-step#form-step-1
+              .modal-header.hidden
+                %button.close{"aria-label" => "Close", "data-dismiss" => "modal", :type => "button"}
+                  %span{"aria-hidden" => "true"} &#215;
+                %h4#myModalLabel.modal-title Modal title
+              .modal-body
+                .form-group
+                  %label{for: 'name'} Nom
+                  %input#name.form-control{type: 'text', name: 'name', placeholder: 'Nom'}
+              .modal-footer
+                %button.btn.btn-primary#next-form{:type => "button"} Je participe au concours!
+                %button.btn.btn-primary.submit{:type => "button"} Voir mon dessin!
+            .form-step#form-step-2
+              .modal-body
+                .form-group
+                  %label{for: 'day'} Date de Naissance
+                  %select#day.form-control{type: 'select', name: 'birthday'}
+                    - (1..31).each do |d|
+                      %option{value: d}= d
+                  %select#month.form-control{type: 'select', name: 'birthday'}
+                    - [['Janvier', 1], ['Février', 2], ['Mars', 3], ['Avril', 4], ['Mai', 5], ['Juin', 6], ['Juillet', 7], ['Août', 8], ['Septembre', 9], ['Octobre', 10], ['Novembre', 11], ['Décembre', 12]].each do |d|
+                      %option{value: d[1]}= d[0]
+                  %select#day.form-control{type: 'select', name: 'birthday'}
+                    - (1996..2016).each do |d|
+                      %option{value: d}= d
+                .form-group
+                  %label{for: 'address'} Adresse
+                  %input#address.form-control{type: 'text', name: 'address', placeholder: 'Addresse'}
+                .form-group
+                  %label{for: 'email'} Email
+                  %input#email.form-control{type: 'email', name: 'email', placeholder: 'Email'}
+              .modal-footer
+                %button.btn.btn-primary.submit{:type => "button"} Envoyer!

@@ -2528,7 +2528,35 @@ input[type='radio'] {
 
 body {
   max-width: 100%;
+  min-height: 100vh;
+  font-family: Helvetica; }
+
+#result {
+  position: fixed;
+  top: 100%;
+  left: 0;
+  width: 100vw;
   height: 100vh;
+  transition: top .5s ease-out; }
+  .on-screen #result {
+    top: 0%; }
+
+#name {
+  background-color: white;
+  border-radius: 5px;
+  border: 2px #DDDDDD solid;
+  position: fixed;
+  bottom: 3rem;
+  right: 3rem;
+  z-index: 1000;
+  font-size: 3em;
+  padding: .5rem 2rem; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+body {
   overflow: hidden; }
 
 #result {

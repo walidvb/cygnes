@@ -3,28 +3,35 @@ var api = new Api(),
 
 function initWatcher(){
   var drawings = [],
+    notPlayed = [],
     timer;
   function showDrawing(drawing){
     hyper.play(drawing);
   };
 
   api.getDrawings(function(elems){
-    drawings = elems;
-    playRandom()
+    drawings = elems.slice(0);
+    notPlayed = elems.slice(0);
+    playRandom();
+    timer = setInterval(playRandom, 10000);
   });
 
   api.listenToNew(function(elem){
-    clearTimeout(timer);
+    drawings.push(elem);
+    clearInterval(timer);
     showDrawing(elem);
     setTimeout(playRandom, 20000);
   })
 
+  
   function playRandom(){
-    timer = setTimeout(function(){
-      var elem = drawings[Math.floor(Math.random()*drawings.length)];
-      showDrawing(elem);
-      playRandom();
-    }, 10000)
+    var index = Math.floor(Math.random()*notPlayed.length);
+    var elem = notPlayed.pop(index);
+    showDrawing(elem);
+    // refill array once all have been played
+    if(notPlayed.length == 0){
+      notPlayed = drawings.slice(0);
+    }
   }
 }
 $(document).ready(initWatcher)
