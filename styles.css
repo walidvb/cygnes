@@ -2548,7 +2548,7 @@ body {
   width: 100vw;
   height: 100vh; }
 
-.modal-body {
+.modal-content {
   display: flex;
   overflow: hidden; }
 
