@@ -10,7 +10,10 @@ body{
   left: 0;
   width: 100vw;
   height: 100vh;
-  transition: top .5s ease-out;
+  transition: top .1s ease-out;
+  body:not(.on-screen) &{
+    top: 100%!important;
+  }
   .on-screen &{
     top: 0%;
   }
@@ -20,7 +23,7 @@ body{
   background-color: white;
   border-radius: 5px;
   border: 2px #DDDDDD solid;
-  position: fixed;
+  position: absolute;
   bottom: 3rem;
   right: 3rem;
   z-index: 1000;

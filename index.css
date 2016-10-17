@@ -9,7 +9,9 @@ body {
   left: 0;
   width: 100vw;
   height: 100vh;
-  transition: top .5s ease-out; }
+  transition: top .1s ease-out; }
+  body:not(.on-screen) #result {
+    top: 100% !important; }
   .on-screen #result {
     top: 0%; }
 
@@ -17,7 +19,7 @@ body {
   background-color: white;
   border-radius: 5px;
   border: 2px #DDDDDD solid;
-  position: fixed;
+  position: absolute;
   bottom: 3rem;
   right: 3rem;
   z-index: 1000;
@@ -32,3 +34,32 @@ img {
   width: 20%;
   display: inline-block;
   text-align: center; }
+
+#result {
+  position: fixed;
+  top: 100%;
+  left: 0;
+  width: 90vw;
+  transition: top .5s ease-out; }
+  .on-screen #result {
+    top: 0%; }
+
+#result-background {
+  opacity: 0;
+  pointer-events: none;
+  transition: all .25s ease-out;
+  background-color: rgba(0, 0, 0, 0.75);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0; }
+  .on-screen #result-background {
+    opacity: 1;
+    pointer-events: auto; }
+  #result-background .close {
+    position: fixed;
+    top: 3rem;
+    right: 3rem;
+    color: white;
+    font-size: 4rem; }

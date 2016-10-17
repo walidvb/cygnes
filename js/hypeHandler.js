@@ -11,6 +11,7 @@ function Hyper(){
       img.src = url;
     }
     function actuallyPlay(){
+      $('body').addClass('on-screen')
       hypeDocument.showSceneNamed(drawing.scene)
       $('.HYPE_element.dessin').css({
         backgroundImage: 'url('+url+')',

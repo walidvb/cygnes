@@ -39,9 +39,9 @@ function Api(){
         initialItemsFetched = true;
       })
     },
-    listenToNew: function(cb){
+    listenToNew: function(cb, hearAll){
         drawingsRef.on('child_added', function(elem){
-          if(initialItemsFetched){
+          if(hearAll || initialItemsFetched){
             cb(elem.val());
           }
         })
