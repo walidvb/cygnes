@@ -2527,7 +2527,19 @@ input[type='radio'] {
     opacity: 1; }
 
 body {
-  max-width: 100%; }
+  max-width: 100%;
+  height: 100vh;
+  overflow: hidden; }
+
+#result {
+  position: fixed;
+  top: 100%;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  transition: top .5s ease-out; }
+  .on-screen #result {
+    top: 0%; }
 
 #canvasDiv {
   height: 100vh; }
@@ -2537,6 +2549,9 @@ body {
   flex-direction: column; }
   .duck-list .duck {
     padding: 0 1rem; }
+
+form {
+  height: 100vh; }
 
 #next, #reset {
   position: fixed;
@@ -2569,3 +2584,10 @@ body {
   justify-content: space-around;
   height: 100%;
   vertical-align: top; }
+
+label[for="day"] {
+  display: block; }
+
+select.form-control {
+  display: inline-block;
+  width: auto; }

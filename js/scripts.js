@@ -43,7 +43,7 @@
     $('#next-form').click(function(){
       $('.modal #form-step-1').animate({'marginLeft': "-100%"})
     });
-    $('#submit').on('click', submitForm);
+    $('.submit').on('click', submitForm);
     function submitForm(){
       var data = $('form').serializeArray();
       for(var i = 0; i < data.length; i++){
@@ -59,7 +59,9 @@
       displayResult();
     };
     function displayResult(){
-
+      $('.step').fadeOut(800, function(){
+        $('body').addClass('on-screen')
+      });
       hyper.play(formData.scene);
       $('.HYPE_element.fond').css({
         backgroundImage: 'url(/anims2.hyperesources/'+formData.duck+'_fond.png)',
@@ -87,7 +89,7 @@
         default:
           console.error('wtf?');
       }
-      if(currentState < statesCount){
+      if(currentState < statesCount -2){
         $steps.addClass('hidden');
         $($steps[currentState]).removeClass('hidden');
       }

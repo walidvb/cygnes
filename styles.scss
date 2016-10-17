@@ -3,9 +3,20 @@
 
 body{
   max-width: 100%;
+  height: 100vh;
+  overflow: hidden;
 }
 
-.container{
+#result{
+  position: fixed;
+  top:100%;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  transition: top .5s ease-out;
+  .on-screen &{
+    top: 0%;
+  }
 }
 
 #canvasDiv{
@@ -27,6 +38,9 @@ input:checked + label img{
   @extend .rubberBand;
 }
 
+form{
+  height: 100vh;
+}
 #next, #reset{
   position: fixed;
   font-size: 3rem;
@@ -62,4 +76,12 @@ input:checked + label img{
   justify-content: space-around;
   height: 100%;
   vertical-align: top;
+}
+
+label[for="day"]{
+  display: block;
+}
+select.form-control{
+  display: inline-block;
+  width: auto;
 }

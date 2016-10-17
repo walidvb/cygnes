@@ -50,7 +50,7 @@
               %input{type: 'radio', value: src, name: 'scene', id: src}
               %label.animated{for: src}
                 %img{src: "/assets/scenes/#{src}.png"}
-      .step#result.hidden
+      #result
         #anims2_hype_container{style: "margin:auto;position:relative;width:100vw;height:100vh;overflow:hidden;", "aria-live"=>"polite"}
           %script{type: "text/javascript", charset:"utf-8", src:"anims2.hyperesources/anims2_hype_generated_script.js?13002"}
       #reset.fa.fa-icon.fa-refresh{onclick: 'window.location.reload()'}
@@ -68,8 +68,8 @@
                   %label{for: 'name'} Nom
                   %input#name.form-control{type: 'text', name: 'name', placeholder: 'Nom'}
               .modal-footer
-                %button.btn.btn-primary#next-form{:type => "button"} Participer au concours
-                %button.btn.btn-primary#submit{:type => "button"} Terminer
+                %button.btn.btn-primary#next-form{:type => "button"} Je participe au concours!
+                %button.btn.btn-primary.submit{:type => "button"} Voir mon dessin!
             .form-step#form-step-2
               .modal-body
                 .form-group
@@ -89,3 +89,5 @@
                 .form-group
                   %label{for: 'email'} Email
                   %input#email.form-control{type: 'email', name: 'email', placeholder: 'Email'}
+              .modal-footer
+                %button.btn.btn-primary.submit{:type => "button"} Envoyer!
