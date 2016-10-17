@@ -27,13 +27,18 @@ input:checked + label img{
   @extend .rubberBand;
 }
 
-#next{
+#next, #reset{
   position: fixed;
   font-size: 3rem;
-  right: 2rem;
   bottom: 2rem;
 }
 
+#next{
+  right: 2rem;
+}
+#reset{
+  left: 2rem;
+}
 
 #result{
   width: 100vw;

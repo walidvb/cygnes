@@ -2538,11 +2538,16 @@ body {
   .duck-list .duck {
     padding: 0 1rem; }
 
-#next {
+#next, #reset {
   position: fixed;
   font-size: 3rem;
-  right: 2rem;
   bottom: 2rem; }
+
+#next {
+  right: 2rem; }
+
+#reset {
+  left: 2rem; }
 
 #result {
   width: 100vw;
