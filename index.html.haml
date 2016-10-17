@@ -35,14 +35,14 @@
         .container
           %h1 Choisis tes accessoires!
           .row
-            .col-md-2
+            .col-xs-2
               .duck-list
                 - %w{aviateur bonnet casquette neutre}.each do |src|
                   .duck
                     %input{type: 'radio', value: src, name: 'duck', id: src}
                     %label.animated{for: src}
                       %img{src: "/assets/duck/#{src}.png"}
-            .col-md-10#canvasDiv
+            .col-xs-10#canvasDiv
       .step#step-3.hidden
         %h1 STEP 3
         .container

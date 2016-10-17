@@ -59,7 +59,7 @@
 
       hyper.play(formData.scene);
       $('.HYPE_element.fond').css({
-        backgroundImage: 'url(/assets/fonds/'+formData.duck+'.png)',
+        backgroundImage: 'url(/anims2.hyperesources/'+formData.duck+'_fond.png)',
       })
       console.log(base64);
       $('.HYPE_element.dessin').css({
