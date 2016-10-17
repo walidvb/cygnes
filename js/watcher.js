@@ -1,20 +1,30 @@
 var api = new Api(),
-  hyper = new Hyper,
-  drawings = [];
+  hyper = new Hyper();
 
 function initWatcher(){
+  var drawings = [],
+    timer;
   function showDrawing(drawing){
-    console.log(drawing);
-    hyper.play(drawing)
+    hyper.play(drawing);
   };
 
   api.getDrawings(function(elems){
     drawings = elems;
+    playRandom()
   });
 
   api.listenToNew(function(elem){
-    showDrawing(elem)
+    clearTimeout(timer);
+    showDrawing(elem);
+    setTimeout(playRandom, 20000);
   })
 
+  function playRandom(){
+    timer = setTimeout(function(){
+      var elem = drawings[Math.floor(Math.random()*drawings.length)];
+      showDrawing(elem);
+      playRandom();
+    }, 10000)
+  }
 }
 $(document).ready(initWatcher)
