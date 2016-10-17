@@ -58,31 +58,34 @@
       #contact-details.modal.fade{"aria-labelledby" => "myModalLabel", :role => "dialog", :tabindex => "-1"}
         .modal-dialog{:role => "document"}
           .modal-content
-            .modal-header
-              %button.close{"aria-label" => "Close", "data-dismiss" => "modal", :type => "button"}
-                %span{"aria-hidden" => "true"} &#215;
-              %h4#myModalLabel.modal-title Modal title
-            .modal-body
-              .form-group
-                %label{for: 'name'} Nom
-                %input#name.form-control{type: 'text', name: 'name', placeholder: 'Nom'}
-              .form-group
-                %label{for: 'day'} Date de Naissance
-                %select#day.form-control{type: 'select', name: 'birthday'}
-                  - (1..31).each do |d|
-                    %option{value: d}= d
-                %select#month.form-control{type: 'select', name: 'birthday'}
-                  - [['Janvier', 1], ['Février', 2], ['Mars', 3], ['Avril', 4], ['Mai', 5], ['Juin', 6], ['Juillet', 7], ['Août', 8], ['Septembre', 9], ['Octobre', 10], ['Novembre', 11], ['Décembre', 12]].each do |d|
-                    %option{value: d[1]}= d[0]
-                %select#day.form-control{type: 'select', name: 'birthday'}
-                  - (1996..2016).each do |d|
-                    %option{value: d}= d
-              .form-group
-                %label{for: 'address'} Adresse
-                %input#address.form-control{type: 'text', name: 'address', placeholder: 'Addresse'}
-              .form-group
-                %label{for: 'email'} Email
-                %input#email.form-control{type: 'email', name: 'email', placeholder: 'Email'}
-            .modal-footer
-              %button.btn.btn-default{"data-dismiss" => "modal", :type => "button"} Annuler
-              %button.btn.btn-primary#submit{:type => "button"} Participer au concours!
+            .form-step#form-step-1
+              .modal-header.hidden
+                %button.close{"aria-label" => "Close", "data-dismiss" => "modal", :type => "button"}
+                  %span{"aria-hidden" => "true"} &#215;
+                %h4#myModalLabel.modal-title Modal title
+              .modal-body
+                .form-group
+                  %label{for: 'name'} Nom
+                  %input#name.form-control{type: 'text', name: 'name', placeholder: 'Nom'}
+              .modal-footer
+                %button.btn.btn-primary#next-form{:type => "button"} Participer au concours
+                %button.btn.btn-primary#submit{:type => "button"} Terminer
+            .form-step#form-step-2
+              .modal-body
+                .form-group
+                  %label{for: 'day'} Date de Naissance
+                  %select#day.form-control{type: 'select', name: 'birthday'}
+                    - (1..31).each do |d|
+                      %option{value: d}= d
+                  %select#month.form-control{type: 'select', name: 'birthday'}
+                    - [['Janvier', 1], ['Février', 2], ['Mars', 3], ['Avril', 4], ['Mai', 5], ['Juin', 6], ['Juillet', 7], ['Août', 8], ['Septembre', 9], ['Octobre', 10], ['Novembre', 11], ['Décembre', 12]].each do |d|
+                      %option{value: d[1]}= d[0]
+                  %select#day.form-control{type: 'select', name: 'birthday'}
+                    - (1996..2016).each do |d|
+                      %option{value: d}= d
+                .form-group
+                  %label{for: 'address'} Adresse
+                  %input#address.form-control{type: 'text', name: 'address', placeholder: 'Addresse'}
+                .form-group
+                  %label{for: 'email'} Email
+                  %input#email.form-control{type: 'email', name: 'email', placeholder: 'Email'}

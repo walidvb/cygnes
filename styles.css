@@ -2547,3 +2547,12 @@ body {
 #result {
   width: 100vw;
   height: 100vh; }
+
+.modal-body {
+  display: flex;
+  overflow: hidden; }
+
+.form-step {
+  display: inline-block;
+  flex: 0 0 100%;
+  padding: 2rem; }

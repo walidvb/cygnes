@@ -40,6 +40,9 @@
     function sceneSelected(){
       formData.scene = $('input[name="scene"]').val();
     };
+    $('#next-form').click(function(){
+      $('.modal #form-step-1').animate({'marginLeft': "-100%"})
+    });
     $('#submit').on('click', submitForm);
     function submitForm(){
       var data = $('form').serializeArray();
