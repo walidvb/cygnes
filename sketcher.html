@@ -120,14 +120,6 @@
                   <label for="name">Nom</label>
                   <input class="form-control" id="name" name="name" placeholder="Nom" type="text">
                 </div>
-              </div>
-              <div class="modal-footer">
-                <button class="btn btn-primary" id="next-form" type="button">Je participe au concours!</button>
-                <button class="btn btn-primary submit" type="button">Voir mon dessin!</button>
-              </div>
-            </div>
-            <div class="form-step" id="form-step-2">
-              <div class="modal-body">
                 <div class="form-group">
                   <label for="day">Date de Naissance</label>
                   <select class="form-control" id="day" name="birthday" type="select">
@@ -201,6 +193,14 @@
                     <option value="2016">2016</option>
                   </select>
                 </div>
+              </div>
+              <div class="modal-footer">
+                <button class="btn btn-primary disabled" id="next-form" type="button">Je participe au concours!</button>
+                <button class="btn btn-primary submit disabled" id="no-contest" type="button">Voir mon dessin!</button>
+              </div>
+            </div>
+            <div class="form-step" id="form-step-2">
+              <div class="modal-body">
                 <div class="form-group">
                   <label for="address">Adresse</label>
                   <input class="form-control" id="address" name="address" placeholder="Addresse" type="text">
@@ -211,7 +211,7 @@
                 </div>
               </div>
               <div class="modal-footer">
-                <button class="btn btn-primary submit" type="button">Envoyer!</button>
+                <button class="btn btn-primary submit disabled" type="button">Envoyer!</button>
               </div>
             </div>
           </div>

@@ -8,7 +8,9 @@
   var api = new Api();
   var hyper = new Hyper();
   var base64;
-  var formData = {}
+  var formData = {
+    duck: 'neutre'
+  }
   function init(){
     var currentState = 0,
       $steps = $('.step'),
@@ -40,10 +42,16 @@
     function sceneSelected(){
       formData.scene = $('input[name="scene"]').val();
     };
-    $('#next-form').click(function(){
+
+    $('input[name="name"]').on('keyup', function(){
+      if($('input[name="name"]').val().length >= 2){
+        $('#next-form, #no-contest').removeClass('disabled')
+      }
+    })
+    $(document).on('click', '#next-form:not(.disabled)',function(){
       $('.modal #form-step-1').animate({'marginLeft': "-100%"})
     });
-    $('.submit').on('click', submitForm);
+    $(document).on('click', '.submit:not(.disabled)', submitForm);
     function submitForm(){
       var data = $('form').serializeArray();
       for(var i = 0; i < data.length; i++){

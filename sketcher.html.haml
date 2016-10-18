@@ -79,8 +79,8 @@
                     - (1996..2016).each do |d|
                       %option{value: d}= d
               .modal-footer
-                %button.btn.btn-primary#next-form{:type => "button"} Je participe au concours!
-                %button.btn.btn-primary.submit{:type => "button"} Voir mon dessin!
+                %button.btn.btn-primary#next-form.disabled{:type => "button"} Je participe au concours!
+                %button.btn.btn-primary#no-contest.submit.disabled{:type => "button"} Voir mon dessin!
             .form-step#form-step-2
               .modal-body
 
@@ -91,4 +91,4 @@
                   %label{for: 'email'} Email
                   %input#email.form-control{type: 'email', name: 'email', placeholder: 'Email'}
               .modal-footer
-                %button.btn.btn-primary.submit{:type => "button"} Envoyer!
+                %button.btn.btn-primary.submit.disabled{:type => "button"} Envoyer!
