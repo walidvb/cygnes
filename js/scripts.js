@@ -12,6 +12,10 @@
     duck: 'neutre'
   }
   function init(){
+    $('input').keyboard({
+      usePreview : false,
+    });
+
     var currentState = 0,
       $steps = $('.step'),
       $next = $('#next')
