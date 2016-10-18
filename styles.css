@@ -2519,6 +2519,29 @@ img {
   max-width: 100%;
   height: auto; }
 
+input[type='radio'] {
+  display: none; }
+  input[type='radio'].imaged + label {
+    transform: scale(1);
+    transition: all 0.2s 0.1s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+    animation-duration: .4s; }
+  input[type='radio'].imaged:checked + label {
+    transform: scale(1.4); }
+
+label.for-checkbox {
+  cursor: pointer; }
+  label.for-checkbox:before {
+    font-size: 1em; }
+  label.for-checkbox:before {
+    content: '\f096';
+    font-family: FontAwesome;
+    vertical-align: middle;
+    margin-right: 5px;
+    float: right; }
+  input:checked + label.for-checkbox:before {
+    content: '\f046';
+    font-weight: normal; }
+
 body {
   max-width: 100%;
   min-height: 100vh;
@@ -2558,7 +2581,12 @@ html body {
   html body .modal-dialog {
     margin: 130px auto; }
   html body .ui-keyboard {
-    font-size: 28px; }
+    font-size: 24px;
+    background: transparent; }
+  html body button.ui-keyboard-button {
+    background: #FBE63A;
+    border-radius: 37px;
+    color: #111111; }
 
 #result {
   position: fixed;
@@ -2574,11 +2602,27 @@ html body {
   height: 80vh; }
 
 canvas {
-  background: white; }
+  background: white;
+  padding: 1rem; }
 
 .step {
   display: flex;
-  height: 100vh; }
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  padding-top: 15vh; }
+
+.question {
+  flex: 0 0 100%;
+  text-align: center;
+  margin-bottom: 5rem; }
+  #step-2 .question {
+    margin-bottom: 15rem; }
+
+#step-1 {
+  padding-top: 0vh; }
 
 .shadow {
   box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.25); }
@@ -2622,14 +2666,18 @@ form {
   width: 100vw;
   height: 100vh; }
 
-.modal-content {
+.form-content {
   display: flex;
-  overflow: hidden; }
+  overflow: hidden;
+  background: white; }
 
 .form-step {
   display: inline-block;
   flex: 0 0 100%;
   padding: 2rem; }
+
+#step-3 {
+  max-height: 0vh; }
 
 .color-picker {
   padding-top: 6rem;
@@ -2674,8 +2722,11 @@ form {
 .ui-column {
   max-width: 15rem; }
 
-.color:not(.sketch-active) {
-  box-shadow: inset 0 0 3rem 0.2rem rgba(0, 0, 0, 0.25); }
+.color {
+  box-shadow: inset 0 0 0 0 rgba(0, 0, 0, 0.25);
+  transition: all .1s ease-out; }
+  .color:not(.sketch-active) {
+    box-shadow: inset 0 0 3rem 0.2rem rgba(0, 0, 0, 0.25); }
 
 label[for="day"] {
   display: block; }
@@ -2683,3 +2734,6 @@ label[for="day"] {
 select.form-control {
   display: inline-block;
   width: auto; }
+
+.scenes {
+  display: flex; }

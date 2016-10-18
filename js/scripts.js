@@ -1,9 +1,10 @@
 (function(){
-  var PAINT = 0,
-      CHOOSE_SCENE = 1,
+  var PAINT         = 0,
+      CHOOSE_SCENE  = 1,
       ENTER_DETAILS = 2,
-      VIEW_RESULT = 3;
-  var statesCount = 4;
+      CONTEST       = 3,
+      VIEW_RESULT   = 4;
+  var statesCount   = 5;
 
   var api = new Api();
   var hyper = new Hyper();
@@ -37,11 +38,12 @@
       img.appendTo($('body'))
     }
 
-    $('input[name= "duck"]').on('change', duckSelected)
-    function duckSelected(e){
-      formData.duck = $(this).val();
+    $('.duck-list .duck').on('click', duckSelected)
+    function duckSelected(){
+      var selection = $(this).data('duck');
+      formData.duck = selection;
       console.log(formData);
-      drawingApp.setOutlineImage('/assets/duck/'+formData.duck+'.png')
+      drawingApp.setOutlineImage('/assets/duck/'+selection+'.png')
 
     };
 
@@ -55,8 +57,9 @@
     };
 
     $(document).on('click', '#next-form:not(.disabled)',function(){
-      $('.modal #form-step-1').animate({'marginLeft': "-100%"})
+      $('#form-step-1').animate({'marginLeft': "-100%"})
     });
+
     $(document).on('click', '.submit:not(.disabled)', submitForm);
     function submitForm(){
       var data = $('form').serializeArray();
@@ -87,7 +90,6 @@
           break;
         case CHOOSE_SCENE:
           sceneSelected();
-          $('#contact-details').modal();
           break;
         case ENTER_DETAILS:
           submitForm();
@@ -95,7 +97,7 @@
         default:
           console.error('wtf?');
       }
-      if(currentState < statesCount -2){
+      if(currentState < statesCount -1){
         $steps.addClass('hidden');
         $($steps[currentState]).removeClass('hidden');
       }

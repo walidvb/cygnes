@@ -39,7 +39,7 @@
         .sketcher
           .duck-list.ui-column
             - %w{aviateur bonnet casquette}.each do |src|
-              .duck.shadow{style: "background-image: url(/assets/duck/#{src}.png)", id: "accessoire-#{src}"}
+              .duck.shadow{style: "background-image: url(/assets/duck/#{src}.png)", id: "accessoire-#{src}", "data-duck" => src}
                 %img
           #canvasDiv
           .sketcher-ui.ui-column
@@ -48,53 +48,52 @@
               %a{href: '#canvas', data: { tool: 'eraser' }} eraser
               %a{href: '#canvas', data: { tool: 'marker' }} marker
 
-      .step#step-3.hidden
-        .container
+      .step#step-2.hidden
+        .question
+          %img{src: '/assets/scene-text.png'}
+        .scenes
           - %w{avion ski piscine skate voiture}.each do |src|
             .duck
-              %input{type: 'radio', value: src, name: 'scene', id: src}
-              %label.animated{for: src}
+              %input.imaged{type: 'radio', value: src, name: 'scene', id: src}
+              %label{for: src}
                 %img{src: "/assets/scenes/#{src}.png"}
+      .step#step-3.hidden
+        .question
+          %img{src: '/assets/scene-text.png'}
+        .form-content
+          .form-step#form-step-1
+            .form-group
+              %label{for: 'name'} Prénom
+              %input#name{type: 'text', name: 'name', placeholder: 'Prénom'}
+            .form-group
+              %label{for: 'day'} Date de Naissance
+              %select#day{type: 'select', name: 'day'}
+                - (1..31).each do |d|
+                  %option{value: d}= d
+              %select#month{type: 'select', name: 'month'}
+                - [['Janvier', 1], ['Février', 2], ['Mars', 3], ['Avril', 4], ['Mai', 5], ['Juin', 6], ['Juillet', 7], ['Août', 8], ['Septembre', 9], ['Octobre', 10], ['Novembre', 11], ['Décembre', 12]].each do |d|
+                  %option{value: d[1]}= d[0]
+              %select#day{type: 'select', name: 'year'}
+                - (1996..2016).each do |d|
+                  %option{value: d}= d
+              %input#contest{type: 'checkbox', name: 'contest'}
+              %label.for-checkbox{for: 'contest'} Je participe au concours!
+          .form-step#form-step-2
+            .form-group
+              %label{for: 'surname'} Nom
+              %input#surname.form-control{type: 'text', name: 'surname', placeholder: 'Nom'}
+            .form-group
+              %label{for: 'address'} Adresse
+              %input#address.form-control{type: 'text', name: 'address', placeholder: 'Addresse'}
+            .form-group
+              %label{for: 'email'} Email
+              %input#email.form-control{type: 'email', name: 'email', placeholder: 'Email'}
       #result
         #anims2_hype_container{style: "margin:auto;position:relative;width:100vw;height:100vh;overflow:hidden;", "aria-live"=>"polite"}
           %script{type: "text/javascript", charset:"utf-8", src:"anims2.hyperesources/anims2_hype_generated_script.js?13002"}
-      #reset.fa.fa-icon.fa-refresh{onclick: 'window.location.reload()'}
-      #next
-        .fa.fa-icon.fa-arrow-right
       #contact-details.modal.fade{"aria-labelledby" => "myModalLabel", :role => "dialog", :tabindex => "-1"}
         .modal-dialog{:role => "document"}
           .modal-content
-            .form-step#form-step-1
-              .modal-header.hidden
-                %button.close{"aria-label" => "Close", "data-dismiss" => "modal", :type => "button"}
-                  %span{"aria-hidden" => "true"} &#215;
-                %h4#myModalLabel.modal-title Modal title
-              .modal-body
-                .form-group
-                  %label{for: 'name'} Nom
-                  %input#name{type: 'text', name: 'name', placeholder: 'Nom'}
-                .form-group
-                  %label{for: 'day'} Date de Naissance
-                  %select#day{type: 'select', name: 'day'}
-                    - (1..31).each do |d|
-                      %option{value: d}= d
-                  %select#month{type: 'select', name: 'month'}
-                    - [['Janvier', 1], ['Février', 2], ['Mars', 3], ['Avril', 4], ['Mai', 5], ['Juin', 6], ['Juillet', 7], ['Août', 8], ['Septembre', 9], ['Octobre', 10], ['Novembre', 11], ['Décembre', 12]].each do |d|
-                      %option{value: d[1]}= d[0]
-                  %select#day{type: 'select', name: 'year'}
-                    - (1996..2016).each do |d|
-                      %option{value: d}= d
-              .modal-footer
-                %button.btn.btn-primary#next-form.disabled{:type => "button"} Je participe au concours!
-                %button.btn.btn-primary#no-contest.submit.disabled{:type => "button"} Voir mon dessin!
-            .form-step#form-step-2
-              .modal-body
-
-                .form-group
-                  %label{for: 'address'} Adresse
-                  %input#address.form-control{type: 'text', name: 'address', placeholder: 'Addresse'}
-                .form-group
-                  %label{for: 'email'} Email
-                  %input#email.form-control{type: 'email', name: 'email', placeholder: 'Email'}
-              .modal-footer
-                %button.btn.btn-primary.submit.disabled{:type => "button"} Envoyer!
+    #reset.fa.fa-icon.fa-refresh{onclick: 'window.location.reload()'}
+    #next
+      .fa.fa-icon.fa-arrow-right

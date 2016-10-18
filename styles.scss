@@ -13,7 +13,13 @@ html body{
     margin: 130px auto;
   }
   .ui-keyboard{
-    font-size: 28px;
+    font-size: 24px;
+    background: transparent;
+  }
+  button.ui-keyboard-button {
+    background: #FBE63A;
+    border-radius: 37px;
+    color: #111111;
   }
 }
 
@@ -37,11 +43,28 @@ html body{
 
 canvas{
   background: white;
+  padding: 1rem;
 }
 
 .step{
   display: flex;
   height: 100vh;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  padding-top: 15vh;
+}
+.question{
+  flex: 0 0 100%;
+  text-align: center;
+  margin-bottom: 5rem;
+  #step-2 &{
+    margin-bottom: 15rem;
+  }
+}
+#step-1{
+  padding-top: 0vh;
 }
 .shadow{
   box-shadow: 8px 8px 20px rgba(0,0,0,.25);
@@ -103,16 +126,19 @@ form{
   height: 100vh;
 }
 
-.modal-content{
+.form-content{
   display: flex;
   overflow: hidden;
+  background: white;
 }
 .form-step {
     display: inline-block;
     flex: 0 0 100%;
     padding: 2rem;
 }
-
+#step-3{
+  max-height: 0vh;
+}
 .color-picker{
   padding-top: 6rem;
   display: inline-flex;
@@ -158,8 +184,12 @@ form{
   max-width: 15rem;
 }
 
-.color:not(.sketch-active){
-  box-shadow: inset 0 0 3rem .2rem rgba(0,0,0, .25);
+.color{
+  box-shadow: inset 0 0 0 0 rgba(0,0,0, .25);
+  transition: all .1s ease-out;
+  &:not(.sketch-active){
+    box-shadow: inset 0 0 3rem .2rem rgba(0,0,0, .25);
+  }
 }
 label[for="day"]{
   display: block;
@@ -168,3 +198,5 @@ select.form-control{
   display: inline-block;
   width: auto;
 }
+
+.scenes{display: flex;}

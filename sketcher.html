@@ -33,13 +33,13 @@
       <div class="step" id="step-1">
         <div class="sketcher">
           <div class="duck-list ui-column">
-            <div class="duck shadow" id="accessoire-aviateur" style="background-image: url(/assets/duck/aviateur.png)">
+            <div class="duck shadow" data-duck="aviateur" id="accessoire-aviateur" style="background-image: url(/assets/duck/aviateur.png)">
               <img>
             </div>
-            <div class="duck shadow" id="accessoire-bonnet" style="background-image: url(/assets/duck/bonnet.png)">
+            <div class="duck shadow" data-duck="bonnet" id="accessoire-bonnet" style="background-image: url(/assets/duck/bonnet.png)">
               <img>
             </div>
-            <div class="duck shadow" id="accessoire-casquette" style="background-image: url(/assets/duck/casquette.png)">
+            <div class="duck shadow" data-duck="casquette" id="accessoire-casquette" style="background-image: url(/assets/duck/casquette.png)">
               <img>
             </div>
           </div>
@@ -53,37 +53,142 @@
           </div>
         </div>
       </div>
-      <div class="step hidden" id="step-3">
-        <div class="container">
+      <div class="step hidden" id="step-2">
+        <div class="question">
+          <img src="/assets/scene-text.png">
+        </div>
+        <div class="scenes">
           <div class="duck">
-            <input id="avion" name="scene" type="radio" value="avion">
-            <label class="animated" for="avion">
+            <input class="imaged" id="avion" name="scene" type="radio" value="avion">
+            <label for="avion">
               <img src="/assets/scenes/avion.png">
             </label>
           </div>
           <div class="duck">
-            <input id="ski" name="scene" type="radio" value="ski">
-            <label class="animated" for="ski">
+            <input class="imaged" id="ski" name="scene" type="radio" value="ski">
+            <label for="ski">
               <img src="/assets/scenes/ski.png">
             </label>
           </div>
           <div class="duck">
-            <input id="piscine" name="scene" type="radio" value="piscine">
-            <label class="animated" for="piscine">
+            <input class="imaged" id="piscine" name="scene" type="radio" value="piscine">
+            <label for="piscine">
               <img src="/assets/scenes/piscine.png">
             </label>
           </div>
           <div class="duck">
-            <input id="skate" name="scene" type="radio" value="skate">
-            <label class="animated" for="skate">
+            <input class="imaged" id="skate" name="scene" type="radio" value="skate">
+            <label for="skate">
               <img src="/assets/scenes/skate.png">
             </label>
           </div>
           <div class="duck">
-            <input id="voiture" name="scene" type="radio" value="voiture">
-            <label class="animated" for="voiture">
+            <input class="imaged" id="voiture" name="scene" type="radio" value="voiture">
+            <label for="voiture">
               <img src="/assets/scenes/voiture.png">
             </label>
+          </div>
+        </div>
+      </div>
+      <div class="step hidden" id="step-3">
+        <div class="question">
+          <img src="/assets/scene-text.png">
+        </div>
+        <div class="form-content">
+          <div class="form-step" id="form-step-1">
+            <div class="form-group">
+              <label for="name">Prénom</label>
+              <input id="name" name="name" placeholder="Prénom" type="text">
+            </div>
+            <div class="form-group">
+              <label for="day">Date de Naissance</label>
+              <select id="day" name="day" type="select">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+                <option value="23">23</option>
+                <option value="24">24</option>
+                <option value="25">25</option>
+                <option value="26">26</option>
+                <option value="27">27</option>
+                <option value="28">28</option>
+                <option value="29">29</option>
+                <option value="30">30</option>
+                <option value="31">31</option>
+              </select>
+              <select id="month" name="month" type="select">
+                <option value="1">Janvier</option>
+                <option value="2">Février</option>
+                <option value="3">Mars</option>
+                <option value="4">Avril</option>
+                <option value="5">Mai</option>
+                <option value="6">Juin</option>
+                <option value="7">Juillet</option>
+                <option value="8">Août</option>
+                <option value="9">Septembre</option>
+                <option value="10">Octobre</option>
+                <option value="11">Novembre</option>
+                <option value="12">Décembre</option>
+              </select>
+              <select id="day" name="year" type="select">
+                <option value="1996">1996</option>
+                <option value="1997">1997</option>
+                <option value="1998">1998</option>
+                <option value="1999">1999</option>
+                <option value="2000">2000</option>
+                <option value="2001">2001</option>
+                <option value="2002">2002</option>
+                <option value="2003">2003</option>
+                <option value="2004">2004</option>
+                <option value="2005">2005</option>
+                <option value="2006">2006</option>
+                <option value="2007">2007</option>
+                <option value="2008">2008</option>
+                <option value="2009">2009</option>
+                <option value="2010">2010</option>
+                <option value="2011">2011</option>
+                <option value="2012">2012</option>
+                <option value="2013">2013</option>
+                <option value="2014">2014</option>
+                <option value="2015">2015</option>
+                <option value="2016">2016</option>
+              </select>
+              <input id="contest" name="contest" type="checkbox">
+              <label class="for-checkbox" for="contest">Je participe au concours!</label>
+            </div>
+          </div>
+          <div class="form-step" id="form-step-2">
+            <div class="form-group">
+              <label for="surname">Nom</label>
+              <input class="form-control" id="surname" name="surname" placeholder="Nom" type="text">
+            </div>
+            <div class="form-group">
+              <label for="address">Adresse</label>
+              <input class="form-control" id="address" name="address" placeholder="Addresse" type="text">
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input class="form-control" id="email" name="email" placeholder="Email" type="email">
+            </div>
           </div>
         </div>
       </div>
@@ -92,122 +197,15 @@
           <script charset="utf-8" src="anims2.hyperesources/anims2_hype_generated_script.js?13002" type="text/javascript"></script>
         </div>
       </div>
-      <div class="fa fa-icon fa-refresh" id="reset" onclick="window.location.reload()"></div>
-      <div id="next">
-        <div class="fa fa-icon fa-arrow-right"></div>
-      </div>
       <div aria-labelledby="myModalLabel" class="modal fade" id="contact-details" role="dialog" tabindex="-1">
         <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="form-step" id="form-step-1">
-              <div class="modal-header hidden">
-                <button aria-label="Close" class="close" data-dismiss="modal" type="button">
-                  <span aria-hidden="true">&#215;</span>
-                </button>
-                <h4 class="modal-title" id="myModalLabel">Modal title</h4>
-              </div>
-              <div class="modal-body">
-                <div class="form-group">
-                  <label for="name">Nom</label>
-                  <input id="name" name="name" placeholder="Nom" type="text">
-                </div>
-                <div class="form-group">
-                  <label for="day">Date de Naissance</label>
-                  <select id="day" name="day" type="select">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8</option>
-                    <option value="9">9</option>
-                    <option value="10">10</option>
-                    <option value="11">11</option>
-                    <option value="12">12</option>
-                    <option value="13">13</option>
-                    <option value="14">14</option>
-                    <option value="15">15</option>
-                    <option value="16">16</option>
-                    <option value="17">17</option>
-                    <option value="18">18</option>
-                    <option value="19">19</option>
-                    <option value="20">20</option>
-                    <option value="21">21</option>
-                    <option value="22">22</option>
-                    <option value="23">23</option>
-                    <option value="24">24</option>
-                    <option value="25">25</option>
-                    <option value="26">26</option>
-                    <option value="27">27</option>
-                    <option value="28">28</option>
-                    <option value="29">29</option>
-                    <option value="30">30</option>
-                    <option value="31">31</option>
-                  </select>
-                  <select id="month" name="month" type="select">
-                    <option value="1">Janvier</option>
-                    <option value="2">Février</option>
-                    <option value="3">Mars</option>
-                    <option value="4">Avril</option>
-                    <option value="5">Mai</option>
-                    <option value="6">Juin</option>
-                    <option value="7">Juillet</option>
-                    <option value="8">Août</option>
-                    <option value="9">Septembre</option>
-                    <option value="10">Octobre</option>
-                    <option value="11">Novembre</option>
-                    <option value="12">Décembre</option>
-                  </select>
-                  <select id="day" name="year" type="select">
-                    <option value="1996">1996</option>
-                    <option value="1997">1997</option>
-                    <option value="1998">1998</option>
-                    <option value="1999">1999</option>
-                    <option value="2000">2000</option>
-                    <option value="2001">2001</option>
-                    <option value="2002">2002</option>
-                    <option value="2003">2003</option>
-                    <option value="2004">2004</option>
-                    <option value="2005">2005</option>
-                    <option value="2006">2006</option>
-                    <option value="2007">2007</option>
-                    <option value="2008">2008</option>
-                    <option value="2009">2009</option>
-                    <option value="2010">2010</option>
-                    <option value="2011">2011</option>
-                    <option value="2012">2012</option>
-                    <option value="2013">2013</option>
-                    <option value="2014">2014</option>
-                    <option value="2015">2015</option>
-                    <option value="2016">2016</option>
-                  </select>
-                </div>
-              </div>
-              <div class="modal-footer">
-                <button class="btn btn-primary disabled" id="next-form" type="button">Je participe au concours!</button>
-                <button class="btn btn-primary submit disabled" id="no-contest" type="button">Voir mon dessin!</button>
-              </div>
-            </div>
-            <div class="form-step" id="form-step-2">
-              <div class="modal-body">
-                <div class="form-group">
-                  <label for="address">Adresse</label>
-                  <input class="form-control" id="address" name="address" placeholder="Addresse" type="text">
-                </div>
-                <div class="form-group">
-                  <label for="email">Email</label>
-                  <input class="form-control" id="email" name="email" placeholder="Email" type="email">
-                </div>
-              </div>
-              <div class="modal-footer">
-                <button class="btn btn-primary submit disabled" type="button">Envoyer!</button>
-              </div>
-            </div>
-          </div>
+          <div class="modal-content"></div>
         </div>
       </div>
     </form>
+    <div class="fa fa-icon fa-refresh" id="reset" onclick="window.location.reload()"></div>
+    <div id="next">
+      <div class="fa fa-icon fa-arrow-right"></div>
+    </div>
   </body>
 </html>
