@@ -8,16 +8,6 @@ var drawingApp = (function () {
 
 
   function initInterface(canvas){
-    var colorPicker = $('.color-picker');
-    function addMarker(color, crayonType){
-      var marker = $('<a href="#'+canvas.id+'" data-color="'+color+'" class="color" />');
-      marker.css('backgroundColor', color);
-      marker.appendTo(colorPicker)
-    }
-    for (var i = 0; i < colors.length; i++) {
-      addMarker(colors[i], 'marker')
-    }
-    return colorPicker;
   }
 
   return {

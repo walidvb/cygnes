@@ -28,7 +28,7 @@
     <script src="/js/scripts.js"></script>
     <script src="anims2.hyperesources/snowfall.min.js" type="text/javascript"></script>
   </head>
-  <body class="test">
+  <body>
     <form>
       <div class="step" id="step-1">
         <div class="sketcher">
@@ -48,10 +48,31 @@
           </div>
           <div id="canvasDiv"></div>
           <div class="sketcher-ui ui-column">
-            <div class="color-picker"></div>
+            <div class="color-picker">
+              <a class="color picker" data-color="#0074D9" href="#canvas" style="background-color: #0074D9"></a>
+              <a class="color picker" data-color="#3D9970" href="#canvas" style="background-color: #3D9970"></a>
+              <a class="color picker" data-color="#FFDC00" href="#canvas" style="background-color: #FFDC00"></a>
+              <a class="color picker" data-color="#FF851B" href="#canvas" style="background-color: #FF851B"></a>
+              <a class="color picker" data-color="#FF4136" href="#canvas" style="background-color: #FF4136"></a>
+              <a class="color picker" data-color="#F012BE" href="#canvas" style="background-color: #F012BE"></a>
+            </div>
             <div class="size-picker">
-              <a data-tool="eraser" href="#canvas">eraser</a>
-              <a data-tool="marker" href="#canvas">marker</a>
+              <a class="picker size" data-size="55" href="#canvas">
+                <span style="width:55px; height: 55px"></span>
+              </a>
+              <a class="picker size" data-size="40" href="#canvas">
+                <span style="width:40px; height: 40px"></span>
+              </a>
+              <a class="picker size" data-size="30" href="#canvas">
+                <span style="width:30px; height: 30px"></span>
+              </a>
+              <a class="picker size" data-size="20" href="#canvas">
+                <span style="width:20px; height: 20px"></span>
+              </a>
+              <a class="picker size" data-size="15" href="#canvas">
+                <span style="width:15px; height: 15px"></span>
+              </a>
+              <a class="picker eraser" data-tool="eraser" href="#canvas"></a>
             </div>
           </div>
         </div>

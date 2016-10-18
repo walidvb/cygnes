@@ -33,7 +33,7 @@
     %script{type:"text/javascript", src:"anims2.hyperesources/snowfall.min.js"}
 
 
-  %body{:class => %w{test}.join(' ')}
+  %body
     %form
       .step#step-1
         .sketcher
@@ -45,9 +45,13 @@
           #canvasDiv
           .sketcher-ui.ui-column
             .color-picker
+              - ["#0074D9", "#3D9970", "#FFDC00", "#FF851B", "#FF4136", "#F012BE"].each do |color|
+                %a.color.picker{href:"#canvas", "data-color"=>color, style: "background-color: #{color}"}
             .size-picker
-              %a{href: '#canvas', data: { tool: 'eraser' }} eraser
-              %a{href: '#canvas', data: { tool: 'marker' }} marker
+              - [15, 20, 30, 40, 55].reverse.each do |size|
+                %a.picker.size{href: '#canvas', "data-size" => size}
+                  %span{style: "width:#{size}px; height: #{size}px"}
+              %a.picker.eraser{href: '#canvas', data: { tool: 'eraser' }}
 
       .step#step-2.hidden
         .question
