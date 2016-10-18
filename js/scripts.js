@@ -59,14 +59,14 @@
     function finishPaint(){
       drawingApp.getDrawing(formData);
     };
-    function sceneSelected(){
-      formData.scene = $('input[name="scene"]').val();
-    };
+
     $('input[name="scene"]').on('change', function(){
       $('body').removeClass('hide-next')
+      formData.scene = $('input[name="scene"]:checked').val();
+      console.log(formData);
     });
     $('input[name="name"]').on('change keyup keydown', function(){
-      if($(this).val().length > 3){
+      if($(this).val().length >= 3){
         $('body').removeClass('hide-next')
       }
     })
@@ -95,15 +95,16 @@
     $('#submit').on('click', submitForm);
     $next.on('click', goToNextState);
     function goToNextState(){
-      console.log(currentState);
       switch(currentState){
         case PAINT:
           finishPaint();
+          $('body').removeClass('hide-previous');
           goToNext();
-          hideNext();
+          if(!formData.scene){
+            hideNext();
+          }
           break;
         case CHOOSE_SCENE:
-          sceneSelected();
           goToNext();
           hideNext();
           break;
@@ -135,7 +136,20 @@
       $steps.addClass('hidden');
       $($steps[currentState]).removeClass('hidden');
     }
-
+    $('#previous').click(function goToPrev(){
+      $('body').removeClass('hide-next');
+      if(currentState-- == CONTEST){
+        $('#form-step-1').animate({'marginLeft': "0%"});
+      }
+      else{
+        $steps.addClass('hidden');
+        $($steps[currentState]).removeClass('hidden');
+      }
+      currentState = Math.max(0, currentState);
+      if(currentState == PAINT){
+        $('body').addClass('hide-previous')
+      }
+    });
   }
   $(document).ready(init);
 })()

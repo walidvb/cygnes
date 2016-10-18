@@ -29,7 +29,7 @@
     %script{type:"text/javascript", src:"anims2.hyperesources/snowfall.min.js"}
 
 
-  %body
+  %body.hide-previous
     %form
       .step#step-1
         .sketcher
@@ -97,4 +97,6 @@
           .modal-content
     #reset.fa.fa-icon.fa-refresh{onclick: 'window.location.reload()'}
     #next
+      .fa.fa-icon.fa-arrow-right
+    #previous
       .fa.fa-icon.fa-arrow-right
