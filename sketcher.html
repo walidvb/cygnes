@@ -31,42 +31,29 @@
   <body class="test">
     <form>
       <div class="step" id="step-1">
-        <div class="container">
-          <div class="row">
-            <div class="col-xs-2">
-              <div class="duck-list">
-                <div class="duck">
-                  <input id="aviateur" name="duck" type="radio" value="aviateur">
-                  <label class="animated" for="aviateur">
-                    <img src="/assets/duck/aviateur.png">
-                  </label>
-                </div>
-                <div class="duck">
-                  <input id="bonnet" name="duck" type="radio" value="bonnet">
-                  <label class="animated" for="bonnet">
-                    <img src="/assets/duck/bonnet.png">
-                  </label>
-                </div>
-                <div class="duck">
-                  <input id="casquette" name="duck" type="radio" value="casquette">
-                  <label class="animated" for="casquette">
-                    <img src="/assets/duck/casquette.png">
-                  </label>
-                </div>
-                <div class="duck">
-                  <input id="neutre" name="duck" type="radio" value="neutre">
-                  <label class="animated" for="neutre">
-                    <img src="/assets/duck/neutre.png">
-                  </label>
-                </div>
-              </div>
+        <div class="sketcher">
+          <div class="duck-list ui-column">
+            <div class="duck shadow" id="accessoire-aviateur" style="background-image: url(/assets/duck/aviateur.png)">
+              <img>
             </div>
-            <div class="col-xs-10" id="canvasDiv"></div>
+            <div class="duck shadow" id="accessoire-bonnet" style="background-image: url(/assets/duck/bonnet.png)">
+              <img>
+            </div>
+            <div class="duck shadow" id="accessoire-casquette" style="background-image: url(/assets/duck/casquette.png)">
+              <img>
+            </div>
+          </div>
+          <div id="canvasDiv"></div>
+          <div class="sketcher-ui ui-column">
+            <div class="color-picker"></div>
+            <div class="size-picker">
+              <a data-tool="eraser" href="#canvas">eraser</a>
+              <a data-tool="marker" href="#canvas">marker</a>
+            </div>
           </div>
         </div>
       </div>
       <div class="step hidden" id="step-3">
-        <h1>STEP 3</h1>
         <div class="container">
           <div class="duck">
             <input id="avion" name="scene" type="radio" value="avion">
@@ -106,7 +93,9 @@
         </div>
       </div>
       <div class="fa fa-icon fa-refresh" id="reset" onclick="window.location.reload()"></div>
-      <div class="fa fa-icon fa-arrow-right" id="next"></div>
+      <div id="next">
+        <div class="fa fa-icon fa-arrow-right"></div>
+      </div>
       <div aria-labelledby="myModalLabel" class="modal fade" id="contact-details" role="dialog" tabindex="-1">
         <div class="modal-dialog" role="document">
           <div class="modal-content">

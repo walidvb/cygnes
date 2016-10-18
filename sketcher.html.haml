@@ -36,18 +36,19 @@
   %body{:class => %w{test}.join(' ')}
     %form
       .step#step-1
-        .container
-          .row
-            .col-xs-2
-              .duck-list
-                - %w{aviateur bonnet casquette neutre}.each do |src|
-                  .duck
-                    %input{type: 'radio', value: src, name: 'duck', id: src}
-                    %label.animated{for: src}
-                      %img{src: "/assets/duck/#{src}.png"}
-            .col-xs-10#canvasDiv
+        .sketcher
+          .duck-list.ui-column
+            - %w{aviateur bonnet casquette}.each do |src|
+              .duck.shadow{style: "background-image: url(/assets/duck/#{src}.png)", id: "accessoire-#{src}"}
+                %img
+          #canvasDiv
+          .sketcher-ui.ui-column
+            .color-picker
+            .size-picker
+              %a{href: '#canvas', data: { tool: 'eraser' }} eraser
+              %a{href: '#canvas', data: { tool: 'marker' }} marker
+
       .step#step-3.hidden
-        %h1 STEP 3
         .container
           - %w{avion ski piscine skate voiture}.each do |src|
             .duck
@@ -58,7 +59,8 @@
         #anims2_hype_container{style: "margin:auto;position:relative;width:100vw;height:100vh;overflow:hidden;", "aria-live"=>"polite"}
           %script{type: "text/javascript", charset:"utf-8", src:"anims2.hyperesources/anims2_hype_generated_script.js?13002"}
       #reset.fa.fa-icon.fa-refresh{onclick: 'window.location.reload()'}
-      #next.fa.fa-icon.fa-arrow-right
+      #next
+        .fa.fa-icon.fa-arrow-right
       #contact-details.modal.fade{"aria-labelledby" => "myModalLabel", :role => "dialog", :tabindex => "-1"}
         .modal-dialog{:role => "document"}
           .modal-content

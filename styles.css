@@ -2519,13 +2519,6 @@ img {
   max-width: 100%;
   height: auto; }
 
-input[type='radio'] {
-  display: none; }
-  input[type='radio'] + label {
-    opacity: 0.2; }
-  input[type='radio']:checked + label {
-    opacity: 1; }
-
 body {
   max-width: 100%;
   min-height: 100vh;
@@ -2560,7 +2553,8 @@ img {
 
 html body {
   overflow: hidden;
-  font-size: 32px; }
+  font-size: 32px;
+  background: url("/assets/logo.png") no-repeat 10rem 5rem/20rem, radial-gradient(ellipse at top left, #a7aeb2 0%, #8d8f99 100%); }
   html body .modal-dialog {
     margin: 130px auto; }
   html body .ui-keyboard {
@@ -2577,7 +2571,17 @@ html body {
     top: 0%; }
 
 #canvasDiv {
+  height: 80vh; }
+
+canvas {
+  background: white; }
+
+.step {
+  display: flex;
   height: 100vh; }
+
+.shadow {
+  box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.25); }
 
 .duck-list {
   display: flex;
@@ -2593,14 +2597,26 @@ form {
 
 #next, #reset {
   position: fixed;
-  font-size: 3rem;
-  bottom: 2rem; }
+  font-size: 7rem; }
 
 #next {
-  right: 2rem; }
+  right: 0;
+  bottom: 0;
+  background: url(/assets/coin.png);
+  width: 20rem;
+  height: 20rem;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  background-position: bottom right;
+  background-size: cover; }
+  #next .fa {
+    margin: 2rem; }
 
 #reset {
-  left: 2rem; }
+  left: 4rem;
+  top: 4rem;
+  font-size: 4rem; }
 
 #result {
   width: 100vw;
@@ -2622,6 +2638,44 @@ form {
   justify-content: space-around;
   height: 100%;
   vertical-align: top; }
+  .color-picker .color {
+    width: 8rem;
+    height: 8rem;
+    display: inline-block;
+    border-radius: 50%; }
+
+.sketcher {
+  height: 780px;
+  display: flex;
+  justify-content: space-around;
+  flex-basis: 100%;
+  margin: auto; }
+  .sketcher .duck-list {
+    display: flex;
+    justify-content: flex-end; }
+    .sketcher .duck-list .duck {
+      width: 18rem;
+      height: 18rem;
+      background: white;
+      margin: 3.5rem 0;
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat; }
+
+#accessoire-aviateur {
+  transform: rotate(-5deg); }
+
+#accessoire-bonnet {
+  transform: rotate(3deg) translateX(1rem); }
+
+#accessoire-casquette {
+  transform: rotate(-3deg) translateX(1rem); }
+
+.ui-column {
+  max-width: 15rem; }
+
+.color:not(.sketch-active) {
+  box-shadow: inset 0 0 3rem 0.2rem rgba(0, 0, 0, 0.25); }
 
 label[for="day"] {
   display: block; }

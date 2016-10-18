@@ -8,9 +8,9 @@ var drawingApp = (function () {
 
 
   function initInterface(canvas){
-    var colorPicker = $('<div class="color-picker"/>')
+    var colorPicker = $('.color-picker');
     function addMarker(color, crayonType){
-      var marker = $('<a href="#'+canvas.id+'" data-color="'+color+'"><img src="/assets/sketcher/'+crayonType+'-outline.png"/></a>');
+      var marker = $('<a href="#'+canvas.id+'" data-color="'+color+'" class="color" />');
       marker.css('backgroundColor', color);
       marker.appendTo(colorPicker)
     }
@@ -35,12 +35,11 @@ var drawingApp = (function () {
   			var canvasHeight = duck.height;
         container.css('height', canvasHeight)
 
-
-
   			canvas.setAttribute('id', 'canvas');
-        container.append(initInterface(canvas));
+        canvas.setAttribute('class', 'shadow');
+        target.appendChild(canvas);
+        initInterface(canvas);
 
-  			target.appendChild(canvas);
 
         sketch = $(canvas).sketch({
           outlineImageSrc: outlineImageSrc,
@@ -57,7 +56,6 @@ var drawingApp = (function () {
     },
     setOutlineImage: function(newSrc){
       sketch.setOutlineImage(newSrc);
-
     },
   }
 })()
