@@ -2543,7 +2543,7 @@ body {
   .on-screen #result {
     top: 0%; }
 
-#name {
+#kid-name {
   background-color: white;
   border-radius: 5px;
   border: 2px #DDDDDD solid;
@@ -2558,8 +2558,13 @@ img {
   max-width: 100%;
   height: auto; }
 
-body {
-  overflow: hidden; }
+html body {
+  overflow: hidden;
+  font-size: 32px; }
+  html body .modal-dialog {
+    margin: 130px auto; }
+  html body .ui-keyboard {
+    font-size: 28px; }
 
 #result {
   position: fixed;
@@ -2579,6 +2584,9 @@ body {
   flex-direction: column; }
   .duck-list .duck {
     padding: 0 1rem; }
+
+body label {
+  display: block; }
 
 form {
   height: 100vh; }

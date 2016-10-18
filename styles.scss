@@ -2,9 +2,18 @@
 @import './styles/base';
 @import './styles/shared';
 
-body{
+html body{
   overflow: hidden;
+  font-size: 32px;
+  .modal-dialog{
+    margin: 130px auto;
+  }
+  .ui-keyboard{
+    font-size: 28px;
+  }
 }
+
+
 
 #result{
   position: fixed;
@@ -29,6 +38,12 @@ body{
   }
 }
 
+
+body{
+  label{
+    display: block;
+  }
+}
 input + label img{
   @extend .animated;
 }

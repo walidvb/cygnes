@@ -70,16 +70,16 @@
               .modal-body
                 .form-group
                   %label{for: 'name'} Nom
-                  %input#name.form-control{type: 'text', name: 'name', placeholder: 'Nom'}
+                  %input#name{type: 'text', name: 'name', placeholder: 'Nom'}
                 .form-group
                   %label{for: 'day'} Date de Naissance
-                  %select#day.form-control{type: 'select', name: 'birthday'}
+                  %select#day{type: 'select', name: 'day'}
                     - (1..31).each do |d|
                       %option{value: d}= d
-                  %select#month.form-control{type: 'select', name: 'birthday'}
+                  %select#month{type: 'select', name: 'month'}
                     - [['Janvier', 1], ['Février', 2], ['Mars', 3], ['Avril', 4], ['Mai', 5], ['Juin', 6], ['Juillet', 7], ['Août', 8], ['Septembre', 9], ['Octobre', 10], ['Novembre', 11], ['Décembre', 12]].each do |d|
                       %option{value: d[1]}= d[0]
-                  %select#day.form-control{type: 'select', name: 'birthday'}
+                  %select#day{type: 'select', name: 'year'}
                     - (1996..2016).each do |d|
                       %option{value: d}= d
               .modal-footer

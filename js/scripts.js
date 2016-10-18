@@ -12,9 +12,16 @@
     duck: 'neutre'
   }
   function init(){
-    $('input').keyboard({
+    $('input[type="text"], input[type=""]').keyboard({
       usePreview : false,
+      autoAccept : true,
+      autoAcceptOnValid: true,
     });
+    $('input[name="name"]').on('change', function(){
+      if($('input[name="name"]').val().length >= 2){
+        $('#next-form, #no-contest').removeClass('disabled')
+      }
+    })
 
     var currentState = 0,
       $steps = $('.step'),
@@ -47,11 +54,6 @@
       formData.scene = $('input[name="scene"]').val();
     };
 
-    $('input[name="name"]').on('keyup', function(){
-      if($('input[name="name"]').val().length >= 2){
-        $('#next-form, #no-contest').removeClass('disabled')
-      }
-    })
     $(document).on('click', '#next-form:not(.disabled)',function(){
       $('.modal #form-step-1').animate({'marginLeft': "-100%"})
     });
