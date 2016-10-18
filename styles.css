@@ -35,7 +35,8 @@ label.for-checkbox {
 body {
   max-width: 100%;
   min-height: 100vh;
-  font-family: Helvetica; }
+  font-family: Helvetica;
+  background: url("/assets/logo.png") no-repeat 10rem 5rem/20rem, radial-gradient(ellipse at top left, #a7aeb2 0%, #8d8f99 100%); }
 
 #result {
   position: fixed;
@@ -46,7 +47,7 @@ body {
   transition: top .1s ease-out; }
   body:not(.on-screen) #result {
     top: 100% !important; }
-  .on-screen #result {
+  .on-screen #result, .watcher-page #result {
     top: 0%; }
 
 #kid-name {
@@ -66,10 +67,7 @@ img {
 
 html body {
   overflow: hidden;
-  font-size: 32px;
-  background: url("/assets/logo.png") no-repeat 10rem 5rem/20rem, radial-gradient(ellipse at top left, #a7aeb2 0%, #8d8f99 100%); }
-  html body .modal-dialog {
-    margin: 130px auto; }
+  font-size: 32px; }
   html body .ui-keyboard {
     font-size: 24px;
     background: transparent; }

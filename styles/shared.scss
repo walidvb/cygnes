@@ -2,6 +2,7 @@ body{
   max-width: 100%;
   min-height: 100vh;
   font-family: Helvetica;
+  background: url('/assets/logo.png') no-repeat 10rem 5rem/20rem, radial-gradient(ellipse at top left, #a7aeb2 0%,#8d8f99 100%);;
 }
 
 #result{
@@ -14,7 +15,7 @@ body{
   body:not(.on-screen) &{
     top: 100%!important;
   }
-  .on-screen &{
+  .on-screen &, .watcher-page &{
     top: 0%;
   }
 }

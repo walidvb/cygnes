@@ -1,7 +1,8 @@
 body {
   max-width: 100%;
   min-height: 100vh;
-  font-family: Helvetica; }
+  font-family: Helvetica;
+  background: url("/assets/logo.png") no-repeat 10rem 5rem/20rem, radial-gradient(ellipse at top left, #a7aeb2 0%, #8d8f99 100%); }
 
 #result {
   position: fixed;
@@ -12,7 +13,7 @@ body {
   transition: top .1s ease-out; }
   body:not(.on-screen) #result {
     top: 100% !important; }
-  .on-screen #result {
+  .on-screen #result, .watcher-page #result {
     top: 0%; }
 
 #kid-name {
@@ -43,6 +44,22 @@ img {
   transition: top .5s ease-out; }
   .on-screen #result {
     top: 0%; }
+
+.neutre img {
+  background-image: url("/anims2.hyperesources/neutre_fond.png");
+  background-size: cover; }
+
+.aviateur img {
+  background-image: url("/anims2.hyperesources/aviateur_fond.png");
+  background-size: cover; }
+
+.bonnet img {
+  background-image: url("/anims2.hyperesources/bonnet_fond.png");
+  background-size: cover; }
+
+.casquette img {
+  background-image: url("/anims2.hyperesources/casquette_fond.png");
+  background-size: cover; }
 
 #result-background {
   opacity: 0;

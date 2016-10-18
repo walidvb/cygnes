@@ -25,7 +25,8 @@ function initPage(){
   }, true);
 
   function drawing2DOM(d){
-    var elem = $(`<div class="drawing-item">
+    console.log(d);
+    var elem = $(`<div class="drawing-item ${d.duck}">
       <img width="534px" height="780px" class="drawing-image" src="${d.imagePath}">
       <div class="name"> ${d.name || 'Anonyme'}</div>
     </div>`);

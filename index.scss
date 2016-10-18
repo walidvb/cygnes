@@ -19,6 +19,14 @@
   }
 }
 
+$ducks: neutre aviateur bonnet casquette;
+@each $duck in $ducks{
+  .#{$duck} img{
+    background-image: url("/anims2.hyperesources/#{$duck}_fond.png");
+    background-size: cover;
+  }
+}
+
 #result-background{
   opacity: 0;
   pointer-events: none;

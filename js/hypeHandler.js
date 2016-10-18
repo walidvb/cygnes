@@ -19,7 +19,7 @@ function Hyper(){
       $('.HYPE_element.fond').css({
         backgroundImage: 'url(/anims2.hyperesources/'+drawing.duck+'_fond.png)',
       });
-      $('#name').text(drawing.name || 'Anonyme')
+      $('#kid-name').text(drawing.name || 'Anonyme')
     }
   }
 
