@@ -13,7 +13,7 @@
     duck: 'neutre'
   }
   function init(){
-    $('input[type="text"], input[type=""]').keyboard({
+    $('input[type="text"], input[type="email"]').keyboard({
       usePreview : false,
       autoAccept : true,
       autoAcceptOnValid: true,
@@ -40,11 +40,17 @@
 
     $('.duck-list .duck').on('click', duckSelected)
     function duckSelected(){
-      var selection = $(this).data('duck');
+      var selected = $(this).hasClass('selected');
+      $('.duck').removeClass('selected');
+      var selection;
+      if(selected){
+        selection = 'neutre';
+      }else{
+        selection = $(this).data('duck');
+        $(this).addClass('selected');
+      }
       formData.duck = selection;
-      console.log(formData);
       drawingApp.setOutlineImage('/assets/duck/'+selection+'.png')
-
     };
 
 
@@ -55,12 +61,14 @@
     function sceneSelected(){
       formData.scene = $('input[name="scene"]').val();
     };
-
-    $(document).on('click', '#next-form:not(.disabled)',function(){
-      $('#form-step-1').animate({'marginLeft': "-100%"})
+    $('input[name="scene"]').on('change', function(){
+      $('body').removeClass('hide-next')
     });
-
-    $(document).on('click', '.submit:not(.disabled)', submitForm);
+    $('input[name="name"]').on('change keyup keydown', function(){
+      if($(this).val().length > 3){
+        $('body').removeClass('hide-next')
+      }
+    })
     function submitForm(){
       var data = $('form').serializeArray();
       for(var i = 0; i < data.length; i++){
@@ -79,30 +87,49 @@
       $('.step').fadeOut(800, function(){
         hyper.play(formData, base64);
       });
-      $('#contact-details').modal('hide');
+      hideNext();
     };
     $('#submit').on('click', submitForm);
     $next.on('click', goToNextState);
     function goToNextState(){
-      switch(currentState++){
+      console.log(currentState);
+      switch(currentState){
         case PAINT:
           finishPaint();
+          goToNext();
+          hideNext();
           break;
         case CHOOSE_SCENE:
           sceneSelected();
+          goToNext();
+          hideNext();
           break;
         case ENTER_DETAILS:
+          if($('#contest').is(':checked')){
+            $('#form-step-1').animate({'marginLeft': "-100%"})
+          }else{
+            submitForm();
+          }
+          break;
+        case CONTEST:
           submitForm();
           break;
         default:
           console.error('wtf?');
       }
-      if(currentState < statesCount -1){
-        $steps.addClass('hidden');
-        $($steps[currentState]).removeClass('hidden');
-      }
+    }
+
+    function goToNext(){
+      currentState++;
+      $steps.addClass('hidden');
+      $($steps[currentState]).removeClass('hidden');
     }
 
   }
   $(document).ready(init);
 })()
+
+
+function hideNext(){
+  $('body').addClass('hide-next');
+}

@@ -39,8 +39,9 @@
         .sketcher
           .duck-list.ui-column
             - %w{aviateur bonnet casquette}.each do |src|
-              .duck.shadow{style: "background-image: url(/assets/accessories/#{src}.png)", id: "accessoire-#{src}", "data-duck" => src}
-                %img
+              .duck{'data-duck' => src}
+                .shadow{style: "background-image: url(/assets/accessories/#{src}.png)", id: "accessoire-#{src}", "data-duck" => src}
+                %img.hidden{src: "/assets/duck/#{src}.png"}
           #canvasDiv
           .sketcher-ui.ui-column
             .color-picker
