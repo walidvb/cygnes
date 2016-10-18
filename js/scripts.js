@@ -11,7 +11,8 @@
   var base64;
   var formData = {
     duck: 'neutre'
-  }
+  };
+  var privateData = {};
   function init(){
     $('input[type="text"], input[type="email"]').keyboard({
       usePreview : false,
@@ -69,18 +70,20 @@
         $('body').removeClass('hide-next')
       }
     })
-    function submitForm(){
-      var data = $('form').serializeArray();
-      for(var i = 0; i < data.length; i++){
-        var val = data[i];
-        formData[val.name] = val.value
-      }
+    function submitForm(contest){
       console.log('image uploaded!', formData);
-
-
       base64 = formData.base64.valueOf();
+      formData.name = $('[name="name"]').val();
+      formData.day = $('[name="day"]').val();
+      formData.month = $('[name="month"]').val();
+      formData.year = $('[name="year"]').val();
       delete formData.base64;
-      api.save(formData, function(){});
+      api.save(formData, function(key){
+        if(contest){
+          privateData.foreignKey = key
+          api.contest(privateData);
+        }
+      });
       displayResult();
     };
     function displayResult(){
@@ -106,13 +109,21 @@
           break;
         case ENTER_DETAILS:
           if($('#contest').is(':checked')){
-            $('#form-step-1').animate({'marginLeft': "-100%"})
+            $('#form-step-1').animate({'marginLeft': "-100%"});
+            currentState++;
           }else{
             submitForm();
           }
           break;
         case CONTEST:
-          submitForm();
+          var data = $('form').serializeArray();
+          for(var i = 0; i < data.length; i++){
+            var val = data[i];
+            privateData[val.name] = val.value
+          }
+          if(privateData.name.length && privateData.address.length && privateData.email.length){
+            submitForm(true);
+          }
           break;
         default:
           console.error('wtf?');

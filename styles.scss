@@ -1,7 +1,4 @@
-// A7AEB2
-// 8D8F99
 
-@import './lib/animate-min';
 @import './styles/base';
 @import './styles/shared';
 
@@ -85,13 +82,6 @@ body{
   label{
     display: block;
   }
-}
-input + label img{
-  @extend .animated;
-}
-
-input:checked + label img{
-  @extend .rubberBand;
 }
 
 form{

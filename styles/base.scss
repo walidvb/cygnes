@@ -42,6 +42,7 @@ input[type='radio']{
 }
 
 label.for-checkbox{
+  margin-top: 1em;
   &:before{
     font-size: 1em;
   }

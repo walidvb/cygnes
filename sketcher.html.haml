@@ -17,10 +17,6 @@
     %script{src:'https://cdnjs.cloudflare.com/ajax/libs/virtual-keyboard/1.26.5/js/jquery.keyboard.min.js'}
     / Latest compiled and minified CSS
     %link{:crossorigin => "anonymous", :href => "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css", :integrity => "sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u", :rel => "stylesheet"}/
-    / Optional theme
-    %link{:crossorigin => "anonymous", :href => "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css", :integrity => "sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp", :rel => "stylesheet"}/
-    / Latest compiled and minified JavaScript
-    %script{:crossorigin => "anonymous", :integrity => "sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa", :src => "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"}
     %link{:rel => "stylesheet", :href => "https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"}
     :javascript
       document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')
@@ -86,13 +82,13 @@
           .form-step#form-step-2
             .form-group
               %label{for: 'surname'} Nom
-              %input#surname.form-control{type: 'text', name: 'surname', placeholder: 'Nom'}
+              %input#surname{type: 'text', name: 'surname', placeholder: 'Nom'}
             .form-group
               %label{for: 'address'} Adresse
-              %input#address.form-control{type: 'text', name: 'address', placeholder: 'Addresse'}
+              %input#address{type: 'text', name: 'address', placeholder: 'Addresse'}
             .form-group
               %label{for: 'email'} Email
-              %input#email.form-control{type: 'email', name: 'email', placeholder: 'Email'}
+              %input#email{type: 'email', name: 'email', placeholder: 'Email'}
       #result
         #anims2_hype_container{style: "margin:auto;position:relative;width:100vw;height:100vh;overflow:hidden;", "aria-live"=>"polite"}
           %script{type: "text/javascript", charset:"utf-8", src:"anims2.hyperesources/anims2_hype_generated_script.js?13002"}

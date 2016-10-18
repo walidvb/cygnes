@@ -12,6 +12,7 @@ function Api(){
     storage = firebase.storage();
 
   var drawingsRef = db.ref('drawing/');
+  var contestRef = db.ref('contest/');
 
   function storeImage(data, cb){
     var now = new Date();
@@ -49,9 +50,13 @@ function Api(){
     save: function(data, cb){
       storeImage(data, function(dlUrl){
         data.imagePath = dlUrl;
-        drawingsRef.push(data);
-        cb();
+        var key = drawingsRef.push(data).then(function(res){
+          cb(res.key)
+        });
       });
     },
+    contest: function(privateData){
+      contestRef.push(privateData)
+    }
   }
 }
