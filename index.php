@@ -1,12 +1,42 @@
+<?php
+  error_reporting(0);
+  if(count($_GET) > 0){
+    $img_url = $_GET["imagePath"];
+    $duck = $_GET["duck"];
+    $scene = $_GET["scene"];
+    $name = $_GET["name"];
+    $day = $_GET["day"];
+    $month = $_GET["month"];
+    $year =  $_GET["year"];
+    $birthday = $_GET["day"] . "." . $_GET["month"] . "." . $_GET["year"];
+  }
+  else{
+    $img_url = '/assets/logo.png';
+  }
+?>
 <!DOCTYPE html>
 <html>
   <head>
     <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+    <script>
+      var requestedDrawing = {
+        duck: "<?php print $duck?>",
+        scene: "<?php print $scene?>",
+        imagePath: "<?php print $img_url?>",
+        day: "<?php print $day?>",
+        month: "<?php print $month?>",
+        year: "<?php print $year?>",
+        name: "<?php print $name?>",
+      };
+    </script>
     <title>Les Cygnes</title>
-    <meta content="The Pigeonhole" property="og:site_name">
-    <meta content="desc" name="description">
-    <meta content="desc" property="og:description">
-    <link href="/index.css" rel="stylesheet">
+    <meta content="" property="og:site_name">
+    <meta content="&lt;?php print $name?&gt; est passé au Centre Commercial des Cygnes!" name="description">
+    <meta content="&lt;?php print $name?&gt; est passé au Centre Commercial des Cygnes!" property="og:description">
+    <meta content="&lt;?php print $img_url?&gt;" property="og:image">
+    <meta content="&lt;?php print $img_url?&gt;" property="og:url">
+    <meta content="entertainment" property="og:type">
+    <meta content="Le Centre Commercial des Cygnes fête ses 25ans!" property="og:title">
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script src="//www.gstatic.com/firebasejs/3.4.1/firebase.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.1/isotope.pkgd.min.js"></script>
@@ -23,6 +53,7 @@
     <script src="/js/firebase.js"></script>
     <script src="/js/hypeHandler.js"></script>
     <script src="/js/index.js"></script>
+    <link href="/index.css" rel="stylesheet">
     <script src="anims2.hyperesources/snowfall.min.js" type="text/javascript"></script>
   </head>
   <body>
@@ -37,6 +68,13 @@
         <script charset="utf-8" src="anims2.hyperesources/anims2_hype_generated_script.js?13002" type="text/javascript"></script>
       </div>
       <div id="kid-name"></div>
+      <div class="sharers">
+        <div class="fa fa-icon fa-share"></div>
+        <a class="fa fa-icon fa-facebook share facebook" href="#" target="_blank"></a>
+        <a class="fa fa-icon fa-twitter share twitter" href="#" target="_blank"></a>
+        <a class="fa fa-icon fa-pinterest share pinterest" href="#" target="_blank"></a>
+        <a class="fa fa-icon fa-download download" href="#" target="_blank"></a>
+      </div>
     </div>
   </body>
 </html>

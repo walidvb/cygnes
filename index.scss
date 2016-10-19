@@ -1,9 +1,46 @@
 @import 'styles/shared';
 
+body{
+  color: white;
+}
 .drawing-item{
-  width: 20%;
+  width: 80vw;
+  height: 80vw;
+  @media #{$tablet}{
+    width: 20vw;
+    height: 20vw;
+  }
+  background-color: white;
   display: inline-block;
   text-align: center;
+  margin: 3rem;
+
+  img{
+    max-height: 100%;
+    width: auto;
+  }
+  transition: all .5s ease-out;
+}
+
+
+
+$angles: -2 5 -1 4 -3 1 -3.5 2;
+@each $angle in $angles {
+  $i: index($angles, $angle);
+  .drawing-item:nth-child(#{$i}n){
+    transform: rotate(#{$angle}deg);
+  }
+}
+
+.sharers{
+  .fa-share{
+    opacity: .5;
+  }
+  a{
+    color: white;
+    padding: .5rem .5rem;
+  }
+  float: right;
 }
 
 #result{
@@ -26,6 +63,8 @@ $ducks: neutre aviateur bonnet casquette;
     background-size: cover;
   }
 }
+
+
 
 #result-background{
   opacity: 0;

@@ -3,6 +3,7 @@ function initPage(){
   var listContainer = $('.list-container')
   function showDrawing(drawing){
     preserveAspect();
+    replaceShareUrls(drawing);
     hyper.play(drawing);
   };
 
@@ -13,9 +14,10 @@ function initPage(){
 
   api.listenToNew(function(elem){
     var img = new Image();
+    var domElem = drawing2DOM(elem);
+    listContainer.append(domElem).isotope('appended', domElem).isotope('layout');
     img.onload = function(){
-      var domElem = drawing2DOM(elem);
-      listContainer.append(domElem).isotope('appended', domElem).isotope('layout');
+      domElem.toggleClass('loading ready')
       domElem.on('click', function(){
         showDrawing(elem);
       });
@@ -25,10 +27,12 @@ function initPage(){
   }, true);
 
   function drawing2DOM(d){
-    console.log(d);
-    var elem = $(`<div class="drawing-item ${d.duck}">
+    var elem = $(`<div class="drawing-item loading ${d.duck}">
       <img width="534px" height="780px" class="drawing-image" src="${d.imagePath}">
-      <div class="name"> ${d.name || 'Anonyme'}</div>
+      <div class="info">
+        <div class="name"> ${d.name || 'Anonyme'}</div>
+        <div class="birthday"> ${d.day} ${d.month} ${d.year}</div>
+      </div>
     </div>`);
     return elem;
   };
@@ -36,8 +40,35 @@ function initPage(){
   $('#result-background').on('click', function(){
     $('body').removeClass('on-screen');
   })
+
+  function replaceShareUrls(drawing){
+    var rawUrl = `http://cygnes.vbbros.net?${$.param(drawing)}`;
+    var url = encodeURIComponent(rawUrl);
+    $('.download').attr('href', drawing.imagePath);
+    var twitterStatus = encodeURI(`Viens voir le cygne que j'ai dessiné pour les 25 ans des #cygnes! ${rawUrl}`);
+    $('.twitter').attr('href', `https://twitter.com/home?status=${twitterStatus}`);
+    $('.pinterest').attr('href', `https://pinterest.com/pin/create/button/?url=${url}`);
+    $('.facebook').attr('href', `https://www.facebook.com/sharer/sharer.php?u=${url}`);
+  }
+  
+  window.hypeLoaded = function(){
+    if(requestedDrawing){
+      showDrawing(requestedDrawing);
+    }
+  }
 };
 $(document).ready(initPage);
+$(document).on('click', '.sharers a.share', popup)
+function popup(e){
+  var height, left, top, url, width;
+  e.preventDefault();
+  url = e.target.href;
+  width = 626;
+  height = 336;
+  top = (window.innerHeight - height) / 2 + window.screenTop;
+  left = (window.innerWidth - width) / 2 + window.screenLeft;
+  return window.open(url, "", 'width=' + width + ',height=' + height + ',top=' + top + ',left=' + left);
+}
 function preserveAspect() {
   var scaled = $("#result");
 

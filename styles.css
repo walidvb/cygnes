@@ -59,11 +59,15 @@ body {
   right: 3rem;
   z-index: 1000;
   font-size: 3em;
-  padding: .5rem 2rem; }
+  padding: .5rem 2rem;
+  color: #111; }
 
 img {
   max-width: 100%;
   height: auto; }
+
+.shadow, .size-picker .picker {
+  box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.25); }
 
 html body {
   overflow: hidden;
@@ -111,9 +115,6 @@ canvas {
 
 #step-1 {
   padding-top: 0vh; }
-
-.shadow, .size-picker .picker {
-  box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.25); }
 
 .duck-list {
   display: flex;
