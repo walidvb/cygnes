@@ -44,10 +44,10 @@
               - ["#0074D9", "#3D9970", "#FFDC00", "#FF851B", "#FF4136", "#F012BE"].each do |color|
                 %a.color.picker{href:"#canvas", "data-color"=>color, style: "background-color: #{color}"}
             .size-picker
-              - [15, 20, 30, 40, 55].reverse.each do |size|
+              - [10, 20, 30, 40, 55].reverse.each do |size|
                 %a.picker.size{href: '#canvas', "data-size" => size}
                   %span{style: "width:#{size}px; height: #{size}px"}
-              %a.picker.eraser{href: '#canvas', data: { tool: 'eraser' }}
+              %a.picker.eraser{href: '#canvas', data: { color: 'white' }}
 
       .step#step-2.hidden
         .question

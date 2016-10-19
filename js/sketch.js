@@ -39,6 +39,16 @@ var drawingApp = (function () {
       duck.src = outlineImageSrc;
     },
     getDrawing: function(formData){
+      var context = canvas.getContext('2d');
+      var imgData = context.getImageData(0,0,canvas.width,canvas.height);
+      var data = imgData.data;
+      for(var i=0; i<data.length; i+=4) {
+        if(data[i] == 255 && data[i+1] == 255 && data[i+2] == 255){
+          data[i+3] = 0.25;
+        }
+      }
+      context.putImageData(imgData, 0, 0);
+
       var url = canvas.toBlob(function(blob){
         formData.image = blob;
       });
