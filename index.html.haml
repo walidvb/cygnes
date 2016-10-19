@@ -1,34 +1,36 @@
-:plain
-  <?php
-    error_reporting(0);
-    if(count($_GET) > 0){
-      $img_url = $_GET["imagePath"];
-      $duck = $_GET["duck"];
-      $scene = $_GET["scene"];
-      $name = $_GET["name"];
-      $day = $_GET["day"];
-      $month = $_GET["month"];
-      $year =  $_GET["year"];
-      $birthday = $_GET["day"] . "." . $_GET["month"] . "." . $_GET["year"];
-    }
-    else{
-      $img_url = '/assets/logo.png';
-    }
-  ?>
 !!!
 %html
   %head
     %meta{:content => "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no", :name => "viewport"}
+    :plain
+      <?php
+        error_reporting(0);
+        if(count($_GET) > 0){
+          $img_url = $_GET["imagePath"];
+          $duck = $_GET["duck"];
+          $scene = $_GET["scene"];
+          $name = $_GET["name"];
+          $day = $_GET["day"];
+          $month = $_GET["month"];
+          $year =  $_GET["year"];
+          $birthday = $_GET["day"] . "." . $_GET["month"] . "." . $_GET["year"];
+        }
+        else{
+          $img_url = '/assets/logo.png';
+        }
+      ?>
     :javascript
-      var requestedDrawing = {
-        duck: "<?php print $duck?>",
-        scene: "<?php print $scene?>",
-        imagePath: "<?php print $img_url?>",
-        day: "<?php print $day?>",
-        month: "<?php print $month?>",
-        year: "<?php print $year?>",
-        name: "<?php print $name?>",
-      };
+      if(count($_GET) > 0){
+        var requestedDrawing = {
+          duck: "<?php print $duck?>",
+          scene: "<?php print $scene?>",
+          imagePath: "<?php print $img_url?>",
+          day: "<?php print $day?>",
+          month: "<?php print $month?>",
+          year: "<?php print $year?>",
+          name: "<?php print $name?>",
+        };
+      }
     %title= "Les Cygnes"
     %meta{property:"og:site_name", content:""}
     - desc = "<?php print $name?> est passé au Centre Commercial des Cygnes!"

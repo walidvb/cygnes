@@ -13,17 +13,17 @@ function initWatcher(){
     drawings = elems.slice(0);
     notPlayed = elems.slice(0);
     playRandom();
-    timer = setInterval(playRandom, 10000);
+    timer = setInterval(playRandom, 45000);
   });
 
   api.listenToNew(function(elem){
     drawings.push(elem);
     clearInterval(timer);
     showDrawing(elem);
-    setTimeout(playRandom, 20000);
+    setTimeout(playRandom, 45000);
   })
 
-  
+
   function playRandom(){
     var index = Math.floor(Math.random()*notPlayed.length);
     var elem = notPlayed.pop(index);

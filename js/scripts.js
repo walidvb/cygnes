@@ -18,6 +18,12 @@
       usePreview : false,
       autoAccept : true,
       autoAcceptOnValid: true,
+      layout : 'custom',
+      customLayout: {
+        'normal': ['1 2 3 4 5 6 7 8 9 0 {b}', 'q w e r t z u i o p è {a}', 'a s d f g h j k l é à $', '{s} y x c v b n m , . - {s}', '{space}'],
+        'shift': ['+ " * ç % & / ( ) = {b}', 'Q W E R T Z U I O P ü {a}', 'A S D F G H J K L ö ä £', '{s} Y X C V B N M ; : _ {s}', '{space}'], 
+      }
+
     });
     $('input[name="name"]').on('change', function(){
       if($('input[name="name"]').val().length >= 2){
@@ -89,6 +95,7 @@
     function displayResult(){
       $('.step').fadeOut(800, function(){
         hyper.play(formData, base64);
+        setTimeout(reset, 45000);
       });
       hideNext();
     };
@@ -150,11 +157,17 @@
         $('body').addClass('hide-previous')
       }
     });
+
+    $('#reset').click(function(){
+      reset();
+    });
   }
   $(document).ready(init);
 })()
 
-
+function reset(){
+  window.location.reload();
+}
 function hideNext(){
   $('body').addClass('hide-next');
 }

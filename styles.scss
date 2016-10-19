@@ -3,16 +3,26 @@
 @import './styles/shared';
 
 html body{
+  cursor: none;
   overflow: hidden;
   font-size: 32px;
   .ui-keyboard{
-    font-size: 24px;
+    font-size: 20px;
     background: transparent;
+    border: none;
   }
   button.ui-keyboard-button {
     background: #FBE63A;
     border-radius: 37px;
     color: #111111;
+    margin: 4px;
+  }
+  button.ui-keyboard-actionkey {
+    border-radius: 8px;
+  }
+  .ui-keyboard-actionkey:not(.ui-keyboard-dec):not(.ui-keyboard-combo) span{
+    left: 0;
+    top: 0;
   }
 }
 
@@ -243,3 +253,31 @@ select.form-control{
 }
 
 .scenes{display: flex;}
+
+
+
+
+
+
+.field{
+  display: inline-block;
+  margin-bottom: 1.8em;
+  position: relative;
+  width: 100%;
+}
+.form-group label{
+  display: none;
+  position: absolute;
+  top: 0.75em;
+  left: 0.5em;
+  color: black;
+  transition: all 0.08s ease-out;
+}
+input[type="text"]{
+  padding: 10px 0px 10px 5px;
+  font: inherit;
+  width: calc(100% - 5px);
+  border: 0;
+  border-bottom: 1px solid grey;
+  border-radius: 0;
+}

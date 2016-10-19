@@ -64,15 +64,15 @@
         .form-content
           .form-step#form-step-1
             .form-group
-              %label{for: 'name'} Prénom
-              %input#name{type: 'text', name: 'name', placeholder: 'Prénom'}
+              %label{for: 'name'} Pr&eacute;nom
+              %input#name{type: 'text', name: 'name', placeholder: 'Prenom'}
             .form-group
               %label{for: 'day'} Date de Naissance
               %select#day{type: 'select', name: 'day'}
                 - (1..31).each do |d|
                   %option{value: d}= d
               %select#month{type: 'select', name: 'month'}
-                - [['Janvier', 1], ['Février', 2], ['Mars', 3], ['Avril', 4], ['Mai', 5], ['Juin', 6], ['Juillet', 7], ['Août', 8], ['Septembre', 9], ['Octobre', 10], ['Novembre', 11], ['Décembre', 12]].each do |d|
+                - [['Janvier', 1], ['F&eacute;vrier', 2], ['Mars', 3], ['Avril', 4], ['Mai', 5], ['Juin', 6], ['Juillet', 7], ['Août', 8], ['Septembre', 9], ['Octobre', 10], ['Novembre', 11], ['D&eacute;cembre', 12]].each do |d|
                   %option{value: d[1]}= d[0]
               %select#day{type: 'select', name: 'year'}
                 - (1996..2016).each do |d|
@@ -91,11 +91,11 @@
               %input#email{type: 'email', name: 'email', placeholder: 'Email'}
       #result
         #anims2_hype_container{style: "margin:auto;position:relative;width:100vw;height:100vh;overflow:hidden;", "aria-live"=>"polite"}
-          %script{type: "text/javascript", charset:"utf-8", src:"anims2.hyperesources/anims2_hype_generated_script.js?13002"}
+          %script{async: 'true', type: "text/javascript", charset:"utf-8", src:"anims2.hyperesources/anims2_hype_generated_script.js?13002"}
       #contact-details.modal.fade{"aria-labelledby" => "myModalLabel", :role => "dialog", :tabindex => "-1"}
         .modal-dialog{:role => "document"}
           .modal-content
-    #reset.fa.fa-icon.fa-refresh{onclick: 'window.location.reload()'}
+    #reset.fa.fa-icon.fa-refresh
     #next
       .fa.fa-icon.fa-arrow-right
     #previous
