@@ -58,6 +58,7 @@ canvas{
 }
 #step-1{
   padding-top: 0vh;
+  align-content: center;
 }
 
 
@@ -146,7 +147,7 @@ form{
   display: inline-flex;
   flex-direction: column;
   justify-content: space-around;
-  height: 100%;
+  min-height: 100%;
   vertical-align: top;
 }
 .picker{
