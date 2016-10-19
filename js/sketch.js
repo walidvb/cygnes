@@ -34,11 +34,15 @@ var drawingApp = (function () {
         sketch = $(canvas).sketch({
           outlineImageSrc: outlineImageSrc,
         }).data('sketch');
+        $('.picker.size').first().click();
+        $('.color.picker').first().click();
+
         sketch.context.drawImage(duck, 0, 0, duck.width, duck.height);
       }
       duck.src = outlineImageSrc;
     },
     getDrawing: function(formData){
+      // make white transparent, boom
       var context = canvas.getContext('2d');
       var imgData = context.getImageData(0,0,canvas.width,canvas.height);
       var data = imgData.data;

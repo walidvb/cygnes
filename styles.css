@@ -135,7 +135,7 @@ form {
 #next, #previous {
   right: 0;
   bottom: 0;
-  background: url(/assets/coin.png);
+  background-image: url(/assets/coin.png);
   width: 20rem;
   height: 20rem;
   display: flex;
@@ -153,7 +153,9 @@ form {
 
 #previous {
   right: auto;
-  transform: scaleX(-1); }
+  left: 0;
+  justify-content: flex-start;
+  background-image: url(/assets/coin-gauche.png); }
   .hide-previous #previous, .on-screen #previous {
     transform: translate3d(-100%, 100%, 0); }
 
