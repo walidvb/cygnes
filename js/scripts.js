@@ -20,8 +20,8 @@
       autoAcceptOnValid: true,
       layout : 'custom',
       customLayout: {
-        'normal': ['1 2 3 4 5 6 7 8 9 0 {b}', 'q w e r t z u i o p è {a}', 'a s d f g h j k l é à $', '{s} y x c v b n m , . - {s}', '{space}'],
-        'shift': ['+ " * ç % & / ( ) = {b}', 'Q W E R T Z U I O P ü {a}', 'A S D F G H J K L ö ä £', '{s} Y X C V B N M ; : _ {s}', '{space}'], 
+        'normal': ['1 2 3 4 5 6 7 8 9 0 {b}', 'q w e r t z u i o p è {a}', 'a s d f g h j k l é à $', '{s} y x c v b n m , . - {s}', '{space} @'],
+        'shift': ['+ " * ç % & / ( ) = {b}', 'Q W E R T Z U I O P ü {a}', 'A S D F G H J K L ö ä £', '{s} Y X C V B N M ; : _ {s}', '{space} @'], 
       }
 
     });

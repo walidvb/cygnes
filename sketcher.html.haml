@@ -64,10 +64,10 @@
         .form-content
           .form-step#form-step-1
             .form-group
-              %label{for: 'name'} Pr&eacute;nom
-              %input#name{type: 'text', name: 'name', placeholder: 'Prenom'}
+              %label.hidden{for: 'name'} Pr&eacute;nom
+              %input#name{type: 'text', name: 'name', placeholder: 'Prénom'}
             .form-group
-              %label{for: 'day'} Date de Naissance
+              %label.hidden{for: 'day'} Date de Naissance
               %select#day{type: 'select', name: 'day'}
                 - (1..31).each do |d|
                   %option{value: d}= d
@@ -81,13 +81,13 @@
               %label.for-checkbox{for: 'contest'} Je participe au concours!
           .form-step#form-step-2
             .form-group
-              %label{for: 'surname'} Nom
+              %label.hidden{for: 'surname'} Nom
               %input#surname{type: 'text', name: 'surname', placeholder: 'Nom'}
             .form-group
-              %label{for: 'address'} Adresse
+              %label.hidden{for: 'address'} Adresse
               %input#address{type: 'text', name: 'address', placeholder: 'Addresse'}
             .form-group
-              %label{for: 'email'} Email
+              %label.hidden{for: 'email'} Email
               %input#email{type: 'email', name: 'email', placeholder: 'Email'}
       #result
         #anims2_hype_container{style: "margin:auto;position:relative;width:100vw;height:100vh;overflow:hidden;", "aria-live"=>"polite"}

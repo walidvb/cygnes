@@ -14,7 +14,6 @@ html body{
     border: none;
   }
   button.ui-keyboard-button {
-    background: #FBE63A;
     border-radius: 37px;
     color: #111111;
     margin: 4px;
@@ -267,14 +266,7 @@ select.form-control{
   position: relative;
   width: 100%;
 }
-.form-group label{
-  display: none;
-  position: absolute;
-  top: 0.75em;
-  left: 0.5em;
-  color: black;
-  transition: all 0.08s ease-out;
-}
+
 input[type="text"]{
   padding: 10px 0px 10px 5px;
   font: inherit;
