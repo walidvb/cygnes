@@ -19,18 +19,19 @@
           $img_url = '/assets/logo.png';
         }
       ?>
-    :javascript
-      if(count($_GET) > 0){
-        var requestedDrawing = {
-          duck: "<?php print $duck?>",
-          scene: "<?php print $scene?>",
-          imagePath: "<?php print $img_url?>",
-          day: "<?php print $day?>",
-          month: "<?php print $month?>",
-          year: "<?php print $year?>",
-          name: "<?php print $name?>",
-        };
-      }
+      <?php if(count($_GET) > 0): ?>
+        <script>
+          var requestedDrawing = {
+            duck: "<?php print $duck?>",
+            scene: "<?php print $scene?>",
+            imagePath: "<?php print $img_url?>",
+            day: "<?php print $day?>",
+            month: "<?php print $month?>",
+            year: "<?php print $year?>",
+            name: "<?php print $name?>",
+          };
+        </script>
+      <?php endif; ?>
     %title= "Les Cygnes"
     %meta{property:"og:site_name", content:""}
     - desc = "<?php print $name?> est passé au Centre Commercial des Cygnes!"
@@ -52,6 +53,7 @@
     %link{:rel => "stylesheet", :href => "https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"}
     :javascript
       document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')
+    %script{src: '/js/fbPaginator.js'}
     %script{src: '/js/firebase.js'}
     %script{src: '/js/hypeHandler.js'}
     %script{src: '/js/index.js'}
@@ -62,13 +64,19 @@
 
 
   %body
+    %header
+      %img.logo{:src => "assets/logo.png", :alt => ""}/
+      .search-container
+        %input#search{type: 'search'}
+    .pager
+      .previous Previous
+      .next Next
     .list-container
-      .drawing-item
     #result-background
       .close.fa.fa-icon.fa-times
     #result
       #anims2_hype_container{style: "margin:auto;position:relative;width:100vw;height:100vh;overflow:hidden;", "aria-live"=>"polite"}
-        %script{type: "text/javascript", charset:"utf-8", src:"anims2.hyperesources/anims2_hype_generated_script.js?13002"}
+        %script{async: true, type: "text/javascript", charset:"utf-8", src:"anims2.hyperesources/anims2_hype_generated_script.js?13002"}
       #kid-name
       .sharers
         .fa.fa-icon.fa-share

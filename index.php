@@ -18,8 +18,8 @@
         $img_url = '/assets/logo.png';
       }
     ?>
-    <script>
-      if(count($_GET) > 0){
+    <?php if(count($_GET) > 0): ?>
+      <script>
         var requestedDrawing = {
           duck: "<?php print $duck?>",
           scene: "<?php print $scene?>",
@@ -29,8 +29,8 @@
           year: "<?php print $year?>",
           name: "<?php print $name?>",
         };
-      }
-    </script>
+      </script>
+    <?php endif; ?>
     <title>Les Cygnes</title>
     <meta content="" property="og:site_name">
     <meta content="&lt;?php print $name?&gt; est passé au Centre Commercial des Cygnes!" name="description">
@@ -52,6 +52,7 @@
     <script>
       document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')
     </script>
+    <script src="/js/fbPaginator.js"></script>
     <script src="/js/firebase.js"></script>
     <script src="/js/hypeHandler.js"></script>
     <script src="/js/index.js"></script>
@@ -59,15 +60,23 @@
     <script src="anims2.hyperesources/snowfall.min.js" type="text/javascript"></script>
   </head>
   <body>
-    <div class="list-container">
-      <div class="drawing-item"></div>
+    <header>
+      <img alt="" class="logo" src="assets/logo.png">
+      <div class="search-container">
+        <input id="search" type="search">
+      </div>
+    </header>
+    <div class="pager">
+      <div class="previous">Previous</div>
+      <div class="next">Next</div>
     </div>
+    <div class="list-container"></div>
     <div id="result-background">
       <div class="close fa fa-icon fa-times"></div>
     </div>
     <div id="result">
       <div aria-live="polite" id="anims2_hype_container" style="margin:auto;position:relative;width:100vw;height:100vh;overflow:hidden;">
-        <script charset="utf-8" src="anims2.hyperesources/anims2_hype_generated_script.js?13002" type="text/javascript"></script>
+        <script async charset="utf-8" src="anims2.hyperesources/anims2_hype_generated_script.js?13002" type="text/javascript"></script>
       </div>
       <div id="kid-name"></div>
       <div class="sharers">

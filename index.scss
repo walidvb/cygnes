@@ -2,7 +2,27 @@
 
 body{
   color: white;
+  background: radial-gradient(farthest-corner at 0 0, #a7aeb2 0%,#8d8f99 100%);
 }
+
+header{
+  width: 100%;
+  padding: 2rem 1rem;
+}
+.logo{
+  display: block;
+  margin: auto;
+}
+
+#search{
+  @media #{$tablet}{
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    max-width: 20rem;
+  }
+}
+
 .drawing-item{
   width: 80vw;
   height: 80vw;
