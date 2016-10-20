@@ -2,8 +2,10 @@
 @import './styles/base';
 @import './styles/shared';
 
+*{
+  cursor: none!important;
+}
 html body{
-  cursor: none;
   overflow: hidden;
   font-size: 32px;
   .ui-keyboard{
