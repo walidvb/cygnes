@@ -29,7 +29,9 @@ function initPage(){
       elems = elems.val()
       var results = []
       for(key in elems){
-        results.push(elems[key]);
+        var ee = elems[key];
+        ee.key = key;
+        results.push(ee);
       }
       results = results.sort(function(a, b){a.dateId < b.dateId})
       console.log(results);
@@ -60,11 +62,13 @@ function initPage(){
     $('.next').toggleClass('disabled', !pageRef.page.hasNext());
     $('.previous').toggleClass('disabled', !pageRef.page.hasPrev());
   }
-  function addElem(elem){
+  function addElem(elem, key){
     checkPaging();
     $('.loader').hide();
     if(elem.val){
+      var key = elem.key();
       elem = elem.val();
+      elem.key = key;
     }
     var img = new Image();
     var domElem = drawing2DOM(elem);
@@ -79,6 +83,7 @@ function initPage(){
     img.src = elem.imagePath;
   }
   function drawing2DOM(d){
+    console.log(d);
     var elem = $(`<div class="drawing-item loading ${d.duck} ">
       <div class="img-container">
         <img width="534px" height="780px" class="drawing-image" src="${d.imagePath}" />
@@ -88,6 +93,14 @@ function initPage(){
         <div class="birthday"> ${d.day} ${d.month} ${d.year}</div>
       </div>
     </div>`);
+    if(authorisedUser){
+      var deleter = $('<div class="delete">effacer</div>');
+      elem.find('.info').append(deleter);
+      deleter.on('click', function(e){
+        e.stopPropagation();
+        api.delete(d.key);
+      });
+    }
     return elem;
   };
 

@@ -32,6 +32,13 @@
           };
         </script>
       <?php endif; ?>
+      <script>
+        <?php if($_GET['auth'] == 'some-weird-password'): ?>
+          var authorisedUser = true;
+        <?php else: ?>
+          var authorisedUser = false;
+        <?php endif; ?>
+      </script>
     %title= "Les Cygnes"
     %meta{property:"og:site_name", content:""}
     - desc = "<?php print $name?> est passé au Centre Commercial des Cygnes!"

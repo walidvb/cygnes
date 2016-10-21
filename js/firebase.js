@@ -41,6 +41,11 @@ function Api(){
         initialItemsFetched = true;
       })
     },
+    delete: function(key){
+      if(confirm('Effacer ce dessin?')){
+        drawingsRef.child(key).remove();
+      }
+    },
     listenToNew: function(cb, hearAll){
         drawingsRef.on('child_added', function(elem){
           if(hearAll || initialItemsFetched){

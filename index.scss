@@ -184,7 +184,12 @@ $ducks: neutre aviateur bonnet casquette;
 
 .pager{
   font-size: 6rem;
-  .pager-item.disabled{
-    display: none;
+  .pager-item{
+    display: inline-block;
+    padding: .5rem;
+    .disabled{
+      visibility: hidden;
+      pointer-events: none;
+    }
   }
 }
