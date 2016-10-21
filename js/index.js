@@ -1,4 +1,5 @@
-var hyper = new Hyper();
+var hyper = new Hyper(), api = new Api();
+
 
 function initPage(){
   var listContainer = $('.list-container')
@@ -8,6 +9,24 @@ function initPage(){
 
   pageRef.page.next();
 
+  var searchTimer;
+  $('#search').on('change keyup', function(){
+    function search(query, cb){
+      $('.drawing-item').hide();
+      fb.orderByChild("name").startAt(query).endAt(query+'\uf8ff').on('child_added', cb);
+    };
+
+    var query = $(this).val();
+    if(query.length){
+      console.log('searching for', query);
+      search(query, showResult)
+    }
+
+    function showResult(elem){
+      console.log(elem.val().name);
+      addElem(elem);
+    };
+  });
   $('.next').click(function(){
     listContainer.find('.drawing-item').hide().addClass('remove');
     pageRef.page.next();
@@ -33,7 +52,6 @@ function initPage(){
     checkPaging();
     $('.loader').hide();
     elem = elem.val();
-    console.log('new', elem);
     var img = new Image();
     var domElem = drawing2DOM(elem);
     listContainer.append(domElem);

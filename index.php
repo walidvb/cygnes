@@ -41,6 +41,8 @@
     <meta content="Le Centre Commercial des Cygnes fête ses 25ans!" property="og:title">
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script src="https://cdn.firebase.com/js/client/2.3.2/firebase.js"></script>
+    <script src="https://cdn.firebase.com/js/client/2.3.2/firebase.js"></script>
+    <script src="//www.gstatic.com/firebasejs/3.4.1/firebase.js"></script>
     <script src="https://cdn.firebase.com/libs/firebase-util/0.2.5/firebase-util.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.1/isotope.pkgd.min.js"></script>
     <!-- Latest compiled and minified CSS -->

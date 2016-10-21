@@ -29,6 +29,7 @@ function Api(){
 
   return {
     firebase: firebase,
+    db: db,
     getDrawings: function(cb){
       drawingsRef.once('value', function(snapshot){
         var elems = []
