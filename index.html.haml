@@ -54,7 +54,6 @@
     %link{:rel => "stylesheet", :href => "https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"}
     :javascript
       document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')
-    %script{src: '/js/fbPaginator.js'}
     %script{src: '/js/firebase.js'}
     %script{src: '/js/hypeHandler.js'}
     %script{src: '/js/index.js'}
@@ -69,10 +68,13 @@
       %img.logo{:src => "assets/logo.png", :alt => ""}/
       .search-container
         %input#search{type: 'search'}
-    .pager
-      .pager-item.previous.disabled Previous
-      .pager-item.next Next
     .list-container
+      .loader.fa.fa-icon.fa-spinner.fa-spin
+    .pager
+      .pager-item.previous.disabled
+        .fa.fa-icon.fa-caret-left
+      .pager-item.next.disabled
+        .fa.fa-icon.fa-caret-right
     #result-background
       .close.fa.fa-icon.fa-times
     #result

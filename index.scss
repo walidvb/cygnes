@@ -14,26 +14,55 @@ header{
   margin: auto;
 }
 
+.search-container{
+  padding: 3rem;
+  width: 100%;
+}
 #search{
+  width: 100%;
   @media #{$tablet}{
     position: absolute;
     top: 2rem;
     right: 2rem;
     max-width: 20rem;
   }
+  border-radius: 8px;
 }
 
-.drawing-item{
-  width: 80vw;
-  height: 80vw;
+.list-container{
   @media #{$tablet}{
-    width: 20vw;
-    height: 20vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
   }
-  background-color: white;
-  display: inline-block;
+  min-height: 400px;
+}
+.drawing-item{
+  transform-origin: 50%;
+  cursor: pointer;
+  .img-container{
+    margin: auto;
+    width: 80vw;
+    height: 80vw;
+    @media #{$tablet}{
+      width: 33vw;
+      height: 33vw;
+    }
+    @media #{$md}{
+      width: 25vw;
+      height: 25vw;
+    }
+    background-color: white;
+    transition: all .2s ease-out;
+    transform: scale(1)
+  }
+  &:hover .img-container{
+    transform: scale(1.05);
+  }
+  display: block;
   text-align: center;
-  margin: 3rem;
+  margin: 3rem auto;
 
   img{
     max-height: 100%;
@@ -44,13 +73,15 @@ header{
 
 
 
-$angles: -2 5 -1 4 -3 1 -3.5 2;
-@each $angle in $angles {
-  $i: index($angles, $angle);
-  .drawing-item:nth-child(#{$i}n){
-    transform: rotate(#{$angle}deg);
+
+  $angles: -2 5 -1 4 -3 1 -3.5 2;
+  @each $angle in $angles {
+    $i: index($angles, $angle);
+    .drawing-item:nth-child(#{$i}n){
+      transform: rotate(#{$angle}deg);
+    }
   }
-}
+
 
 .sharers{
   .fa-share{
@@ -108,6 +139,7 @@ $ducks: neutre aviateur bonnet casquette;
 
 
 .pager{
+  font-size: 6rem;
   .pager-item.disabled{
     display: none;
   }

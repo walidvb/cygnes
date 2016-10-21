@@ -3,7 +3,7 @@ var hyper = new Hyper();
 function initPage(){
   var listContainer = $('.list-container')
   var fb = new Firebase('https://cygnes-8fced.firebaseio.com/drawing');
-  var pageRef = new Firebase.util.Paginate(fb, 'dateId', {pageSize: 2});
+  var pageRef = new Firebase.util.Paginate(fb, 'dateId', {pageSize: 10});
   pageRef.on('child_added', addElem);
 
   pageRef.page.next();
@@ -13,7 +13,7 @@ function initPage(){
     pageRef.page.next();
   });
   $('.previous').click(function(){
-    listContainer.find('.drawing-item').hide();
+    listContainer.find('.drawing-item').hide().addClass('remove');
     pageRef.page.prev();
   });
 
@@ -26,11 +26,12 @@ function initPage(){
   var isotoped = false;
 
   function checkPaging(){
-    $('.next').toggleClass('disabled', !pageRef.page.hasNext())
-    $('.previous').toggleClass('disabled', !pageRef.page.hasPrev())
+    $('.next').toggleClass('disabled', !pageRef.page.hasNext());
+    $('.previous').toggleClass('disabled', !pageRef.page.hasPrev());
   }
   function addElem(elem){
-    checkPaging()
+    checkPaging();
+    $('.loader').hide();
     elem = elem.val();
     console.log('new', elem);
     var img = new Image();
@@ -46,8 +47,10 @@ function initPage(){
     img.src = elem.imagePath;
   }
   function drawing2DOM(d){
-    var elem = $(`<div class="drawing-item loading ${d.duck}">
-      <img width="534px" height="780px" class="drawing-image" src="${d.imagePath}">
+    var elem = $(`<div class="drawing-item loading ${d.duck} ">
+      <div class="img-container">
+        <img width="534px" height="780px" class="drawing-image" src="${d.imagePath}" />
+      </div>
       <div class="info">
         <div class="name"> ${d.name || 'Anonyme'}</div>
         <div class="birthday"> ${d.day} ${d.month} ${d.year}</div>

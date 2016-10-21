@@ -53,7 +53,6 @@
     <script>
       document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')
     </script>
-    <script src="/js/fbPaginator.js"></script>
     <script src="/js/firebase.js"></script>
     <script src="/js/hypeHandler.js"></script>
     <script src="/js/index.js"></script>
@@ -67,11 +66,17 @@
         <input id="search" type="search">
       </div>
     </header>
-    <div class="pager">
-      <div class="pager-item previous disabled">Previous</div>
-      <div class="pager-item next">Next</div>
+    <div class="list-container">
+      <div class="loader fa fa-icon fa-spinner fa-spin"></div>
     </div>
-    <div class="list-container"></div>
+    <div class="pager">
+      <div class="pager-item previous disabled">
+        <div class="fa fa-icon fa-caret-left"></div>
+      </div>
+      <div class="pager-item next disabled">
+        <div class="fa fa-icon fa-caret-right"></div>
+      </div>
+    </div>
     <div id="result-background">
       <div class="close fa fa-icon fa-times"></div>
     </div>
