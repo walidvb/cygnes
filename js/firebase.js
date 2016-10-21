@@ -50,6 +50,9 @@ function Api(){
     save: function(data, cb){
       storeImage(data, function(dlUrl){
         data.imagePath = dlUrl;
+        var now = new Date();
+        var dateId = Date.UTC(2017, 1, 1, 1, 1, 1) - Date.UTC(now.getFullYear(), now.getMonth(), now.getDay(), now.getHours(), now.getMinutes(), now.getSeconds());
+        data.dateId = dateId;
         var key = drawingsRef.push(data).then(function(res){
           cb(res.key)
         });
