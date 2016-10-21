@@ -55,10 +55,10 @@
     <script>
       document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')
     </script>
-    <script src="/js/firebase.js"></script>
-    <script src="/js/hypeHandler.js"></script>
-    <script src="/js/index.js"></script>
-    <link href="/index.css" rel="stylesheet">
+    <script src="js/firebase.js"></script>
+    <script src="js/hypeHandler.js"></script>
+    <script src="js/index.js"></script>
+    <link href="index.css" rel="stylesheet">
     <script src="anims2.hyperesources/snowfall.min.js" type="text/javascript"></script>
   </head>
   <body>
@@ -66,6 +66,9 @@
       <img alt="" class="logo" src="assets/logo.png">
       <div class="search-container">
         <input id="search" type="search">
+        <label for="search">
+          <div class="fa fa-icon fa-search"></div>
+        </label>
       </div>
     </header>
     <div class="list-container">

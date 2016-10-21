@@ -17,32 +17,70 @@ header{
 .search-container{
   padding: 3rem;
   width: 100%;
-}
-#search{
-  width: 100%;
-  color: black;
+  position: relative;
   @media #{$tablet}{
     position: absolute;
     top: 2rem;
     right: 2rem;
     max-width: 20rem;
   }
-  border-radius: 8px;
+  label, input{
+    display: inline-block;
+  }
+  #search {
+    height: 4rem;
+    font-size: 1.2rem;
+    display: inline-block;
+    font-weight: 100;
+    letter-spacing: .1rem;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 3px;
+    padding-right: 60px;
+    width: 0px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: none;
+    z-index: 3;
+    transition: width .4s cubic-bezier(0.000, 0.795, 0.000, 1.000);
+    cursor: pointer;
+  }
+
+  #search:focus:hover {
+    border-bottom: 1px solid #BBB;
+  }
+
+  #search:focus {
+    width: calc(100% - 3rem);
+    @media #{$tablet}{
+      width: 20rem;
+    }
+    z-index: 1;
+    border-bottom: 1px solid #BBB;
+    cursor: text;
+  }
+  label{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+  }
 }
 
+
 .list-container{
-  @media #{$tablet}{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-  }
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
   min-height: 400px;
 }
 .drawing-item{
   transform-origin: 50%;
   cursor: pointer;
   .img-container{
+    margin: 2rem;
     margin: auto;
     width: 80vw;
     height: 80vw;
@@ -64,6 +102,9 @@ header{
   display: block;
   text-align: center;
   margin: 3rem auto;
+  @media #{$tablet}{
+    margin: 3rem;
+  }
 
   img{
     max-height: 100%;

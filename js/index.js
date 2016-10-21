@@ -13,18 +13,30 @@ function initPage(){
   $('#search').on('change keyup', function(){
     function search(query, cb){
       $('.drawing-item').hide();
-      fb.orderByChild("name").startAt(query).endAt(query+'\uf8ff').on('child_added', cb);
+      fb.orderByChild("name").startAt(query).endAt(query+'\uf8ff').on('value', cb);
     };
-
+    clearTimeout(searchTimer);
     var query = $(this).val();
     if(query.length){
-      console.log('searching for', query);
-      search(query, showResult)
+      searchTimer = setTimeout(function(){search(query, showResult)}, 300)
+    }
+    else{
+      pageRef.page.setPage(2);
+      pageRef.page.next();
     }
 
-    function showResult(elem){
-      console.log(elem.val().name);
-      addElem(elem);
+    function showResult(elems){
+      elems = elems.val()
+      var results = []
+      for(key in elems){
+        results.push(elems[key]);
+      }
+      results = results.sort(function(a, b){a.dateId < b.dateId})
+      console.log(results);
+      for (var i = 0; i < results.length; i++) {
+        addElem(results[i]);
+      }
+
     };
   });
   $('.next').click(function(){
@@ -51,7 +63,9 @@ function initPage(){
   function addElem(elem){
     checkPaging();
     $('.loader').hide();
-    elem = elem.val();
+    if(elem.val){
+      elem = elem.val();
+    }
     var img = new Image();
     var domElem = drawing2DOM(elem);
     listContainer.append(domElem);
@@ -82,7 +96,7 @@ function initPage(){
   })
 
   function replaceShareUrls(drawing){
-    var rawUrl = `http://cygnes.vbbros.net?${$.param(drawing)}`;
+    var rawUrl = `http://www.lescygnes.ch/picky2016?${$.param(drawing)}`;
     var url = encodeURIComponent(rawUrl);
     $('.download').attr('href', drawing.imagePath);
     var twitterStatus = encodeURI(`Viens voir le cygne que j'ai dessiné pour les 25 ans des #cygnes! ${rawUrl}`);

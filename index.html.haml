@@ -56,11 +56,11 @@
     %link{:rel => "stylesheet", :href => "https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"}
     :javascript
       document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')
-    %script{src: '/js/firebase.js'}
-    %script{src: '/js/hypeHandler.js'}
-    %script{src: '/js/index.js'}
+    %script{src: 'js/firebase.js'}
+    %script{src: 'js/hypeHandler.js'}
+    %script{src: 'js/index.js'}
 
-    %link{:rel => "stylesheet", :href => "/index.css"}/
+    %link{:rel => "stylesheet", :href => "index.css"}/
     -# Hype scripts
     %script{type:"text/javascript", src:"anims2.hyperesources/snowfall.min.js"}
 
@@ -70,6 +70,8 @@
       %img.logo{:src => "assets/logo.png", :alt => ""}/
       .search-container
         %input#search{type: 'search'}
+        %label{for: 'search'}
+          .fa.fa-icon.fa-search
     .list-container
       .loader.fa.fa-icon.fa-spinner.fa-spin
     .pager
