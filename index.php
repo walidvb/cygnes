@@ -40,7 +40,8 @@
     <meta content="entertainment" property="og:type">
     <meta content="Le Centre Commercial des Cygnes fête ses 25ans!" property="og:title">
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-    <script src="//www.gstatic.com/firebasejs/3.4.1/firebase.js"></script>
+    <script src="https://cdn.firebase.com/js/client/2.3.2/firebase.js"></script>
+    <script src="https://cdn.firebase.com/libs/firebase-util/0.2.5/firebase-util.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.1/isotope.pkgd.min.js"></script>
     <!-- Latest compiled and minified CSS -->
     <link crossorigin="anonymous" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" rel="stylesheet">
@@ -67,8 +68,8 @@
       </div>
     </header>
     <div class="pager">
-      <div class="previous">Previous</div>
-      <div class="next">Next</div>
+      <div class="pager-item previous disabled">Previous</div>
+      <div class="pager-item next">Next</div>
     </div>
     <div class="list-container"></div>
     <div id="result-background">

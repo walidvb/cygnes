@@ -105,3 +105,10 @@ $ducks: neutre aviateur bonnet casquette;
     font-size: 4rem;
   }
 }
+
+
+.pager{
+  .pager-item.disabled{
+    display: none;
+  }
+}

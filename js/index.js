@@ -1,6 +1,22 @@
-var api = new Api(), hyper = new Hyper();
+var hyper = new Hyper();
+
 function initPage(){
   var listContainer = $('.list-container')
+  var fb = new Firebase('https://cygnes-8fced.firebaseio.com/drawing');
+  var pageRef = new Firebase.util.Paginate(fb, 'dateId', {pageSize: 2});
+  pageRef.on('child_added', addElem);
+
+  pageRef.page.next();
+
+  $('.next').click(function(){
+    listContainer.find('.drawing-item').hide().addClass('remove');
+    pageRef.page.next();
+  });
+  $('.previous').click(function(){
+    listContainer.find('.drawing-item').hide();
+    pageRef.page.prev();
+  });
+
   function showDrawing(drawing){
     preserveAspect();
     replaceShareUrls(drawing);
@@ -8,14 +24,18 @@ function initPage(){
   };
 
   var isotoped = false;
-  listContainer.isotope({
-    itemSelector: '.drawing-item',
-  });
 
-  api.listenToNew(function(elem){
+  function checkPaging(){
+    $('.next').toggleClass('disabled', !pageRef.page.hasNext())
+    $('.previous').toggleClass('disabled', !pageRef.page.hasPrev())
+  }
+  function addElem(elem){
+    checkPaging()
+    elem = elem.val();
+    console.log('new', elem);
     var img = new Image();
     var domElem = drawing2DOM(elem);
-    listContainer.append(domElem).isotope('appended', domElem).isotope('layout');
+    listContainer.append(domElem);
     img.onload = function(){
       domElem.toggleClass('loading ready')
       domElem.on('click', function(){
@@ -24,8 +44,7 @@ function initPage(){
     }
     img.elem = elem
     img.src = elem.imagePath;
-  }, true);
-
+  }
   function drawing2DOM(d){
     var elem = $(`<div class="drawing-item loading ${d.duck}">
       <img width="534px" height="780px" class="drawing-image" src="${d.imagePath}">
@@ -50,14 +69,17 @@ function initPage(){
     $('.pinterest').attr('href', `https://pinterest.com/pin/create/button/?url=${url}`);
     $('.facebook').attr('href', `https://www.facebook.com/sharer/sharer.php?u=${url}`);
   }
-  
-  window.hypeLoaded = function(){
-    if(requestedDrawing){
-      showDrawing(requestedDrawing);
-    }
-  }
+
+
 };
 $(document).ready(initPage);
+
+
+window.hypeLoaded = function(){
+  if(requestedDrawing){
+    showDrawing(requestedDrawing);
+  }
+}
 $(document).on('click', '.sharers a.share', popup)
 function popup(e){
   var height, left, top, url, width;
