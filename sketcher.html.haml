@@ -75,21 +75,21 @@
               %select#day{type: 'select', name: 'year'}
                 - (1996..2016).each do |d|
                   %option{value: d}= d
-              %input#contest{type: 'checkbox', name: 'contest'}
-              %label.for-checkbox{for: 'contest'} Je participe au concours!
-          .form-step#form-step-2
-            .form-group
-              %label.hidden{for: 'surname'} Nom
-              %input#surname{type: 'text', name: 'surname', placeholder: 'Nom'}
-            .form-group
-              %label.hidden{for: 'address'} Adresse
-              %input#address{type: 'text', name: 'address', placeholder: 'Addresse'}
-            .form-group
-              %label.hidden{for: 'email'} Email
-              %input#email{type: 'email', name: 'email', placeholder: 'Email'}
-      -# .step#step-4.hidden
-      -#   .question
-      -#     %img{src: 'assets/thanks.png'}
+              -# %input#contest{type: 'checkbox', name: 'contest'}
+              -# %label.for-checkbox{for: 'contest'} Je participe au concours!
+          -# .form-step#form-step-2
+          -#   .form-group
+          -#     %label.hidden{for: 'surname'} Nom
+          -#     %input#surname{type: 'text', name: 'surname', placeholder: 'Nom'}
+          -#   .form-group
+          -#     %label.hidden{for: 'address'} Adresse
+          -#     %input#address{type: 'text', name: 'address', placeholder: 'Addresse'}
+          -#   .form-group
+          -#     %label.hidden{for: 'email'} Email
+          -#     %input#email{type: 'email', name: 'email', placeholder: 'Email'}
+      .step#step-4.hidden
+        .question
+          %img{src: 'assets/thanks.png'}
       #result
         #anims2_hype_container{style: "margin:auto;position:relative;width:100vw;height:100vh;overflow:hidden;", "aria-live"=>"polite"}
           %script{async: 'true', type: "text/javascript", charset:"utf-8", src:"anims2.hyperesources/anims2_hype_generated_script.js?13002"}

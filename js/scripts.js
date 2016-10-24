@@ -2,7 +2,7 @@
   var PAINT         = 0,
       CHOOSE_SCENE  = 1,
       ENTER_DETAILS = 2,
-      CONTEST       = 3,
+      THANKS       = 3,
       VIEW_RESULT   = 4;
   var statesCount   = 5;
 
@@ -21,7 +21,7 @@
       layout : 'custom',
       customLayout: {
         'normal': ["1 2 3 4 5 6 7 8 9 0 ' {b}", 'q w e r t z u i o p è {a}', 'a s d f g h j k l é à $', '{s} y x c v b n m , . - {s}', '{space} @'],
-        'shift': ['+ " * ç % & / ( ) = {b}', 'Q W E R T Z U I O P ü {a}', 'A S D F G H J K L ö ä £', '{s} Y X C V B N M ; : _ {s}', '{space} @'], 
+        'shift': ['+ " * ç % & / ( ) = {b}', 'Q W E R T Z U I O P ü {a}', 'A S D F G H J K L ö ä £', '{s} Y X C V B N M ; : _ {s}', '{space} @'],
       }
 
     });
@@ -77,7 +77,6 @@
       }
     })
     function submitForm(contest){
-      console.log('image uploaded!', formData);
       base64 = formData.base64.valueOf();
       formData.name = $('[name="name"]').val();
       formData.day = $('[name="day"]').val();
@@ -90,18 +89,18 @@
           api.contest(privateData);
         }
       });
-      displayResult();
     };
     function displayResult(){
       $('.step').fadeOut(800, function(){
         hyper.play(formData, base64);
-        setTimeout(reset, 45000);
+        setTimeout(reset, 40000);
       });
       hideNext();
     };
     $('#submit').on('click', submitForm);
     $next.on('click', goToNextState);
     function goToNextState(){
+      console.log(currentState);
       switch(currentState){
         case PAINT:
           finishPaint();
@@ -116,22 +115,13 @@
           hideNext();
           break;
         case ENTER_DETAILS:
-          if($('#contest').is(':checked')){
-            $('#form-step-1').animate({'marginLeft': "-100%"});
-            currentState++;
-          }else{
-            submitForm();
-          }
+          submitForm();
+          $('body').addClass('hide-previous')
+          goToNext();
+          hideNext();
+          setTimeout(displayResult, 10000)
           break;
-        case CONTEST:
-          var data = $('form').serializeArray();
-          for(var i = 0; i < data.length; i++){
-            var val = data[i];
-            privateData[val.name] = val.value
-          }
-          if(privateData.name.length && privateData.address.length && privateData.email.length){
-            submitForm(true);
-          }
+        case THANKS:
           break;
         default:
           console.error('wtf?');
@@ -145,7 +135,7 @@
     }
     $('#previous').click(function goToPrev(){
       $('body').removeClass('hide-next');
-      if(currentState-- == CONTEST){
+      if(currentState-- == THANKS){
         $('#form-step-1').animate({'marginLeft': "0%"});
       }
       else{
