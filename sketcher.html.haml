@@ -4,11 +4,11 @@
     %meta{:content => "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no", :name => "viewport"}
 
     %title= "Les Cygnes"
-    %meta{property:"og:site_name", content:"The Pigeonhole"}
+    %meta{property:"og:site_name", content:"Picky | Les Cygnes"}
     - desc = 'desc'
     %meta{:name => "description", content: desc}
     %meta{property:"og:description", content: desc}
-    %link{:rel => "stylesheet", :href => "/styles.css"}/
+    %link{:rel => "stylesheet", :href => "styles.css"}/
     %script{src:"//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"}
     %script{src:"//www.gstatic.com/firebasejs/3.4.1/firebase.js"}
 
@@ -18,13 +18,11 @@
     / Latest compiled and minified CSS
     %link{:crossorigin => "anonymous", :href => "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css", :integrity => "sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u", :rel => "stylesheet"}/
     %link{:rel => "stylesheet", :href => "https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"}
-    :javascript
-      document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')
-    %script{src: '/lib/sketchLib.js'}
-    %script{src: '/js/sketch.js'}
-    %script{src: '/js/firebase.js'}
-    %script{src: '/js/hypeHandler.js'}
-    %script{src: '/js/scripts.js'}
+    %script{src: 'lib/sketchLib.js'}
+    %script{src: 'js/sketch.js'}
+    %script{src: 'js/firebase.js'}
+    %script{src: 'js/hypeHandler.js'}
+    %script{src: 'js/scripts.js'}
     -# Hype scripts
     %script{type:"text/javascript", src:"anims2.hyperesources/snowfall.min.js"}
 
@@ -89,6 +87,9 @@
             .form-group
               %label.hidden{for: 'email'} Email
               %input#email{type: 'email', name: 'email', placeholder: 'Email'}
+      -# .step#step-4.hidden
+      -#   .question
+      -#     %img{src: 'assets/thanks.png'}
       #result
         #anims2_hype_container{style: "margin:auto;position:relative;width:100vw;height:100vh;overflow:hidden;", "aria-live"=>"polite"}
           %script{async: 'true', type: "text/javascript", charset:"utf-8", src:"anims2.hyperesources/anims2_hype_generated_script.js?13002"}
