@@ -50,7 +50,7 @@ function initPage(){
     pageRef.page.prev();
   });
 
-  function showDrawing(drawing){
+  window.showDrawing = function(drawing){
     preserveAspect();
     replaceShareUrls(drawing);
     hyper.play(drawing);
@@ -111,23 +111,23 @@ function initPage(){
   function replaceShareUrls(drawing){
     var rawUrl = `http://www.lescygnes.ch/picky2016?${$.param(drawing)}`;
     var url = encodeURIComponent(rawUrl);
-    $('.download').attr('href', drawing.imagePath);
+    $('.link').attr('href', rawUrl);
     var twitterStatus = encodeURI(`Viens voir le cygne que j'ai dessiné pour les 25 ans des #cygnes! ${rawUrl}`);
     $('.twitter').attr('href', `https://twitter.com/home?status=${twitterStatus}`);
     $('.pinterest').attr('href', `https://pinterest.com/pin/create/button/?url=${url}`);
     $('.facebook').attr('href', `https://www.facebook.com/sharer/sharer.php?u=${url}`);
   }
 
-
+  window.hypeLoaded = function(){
+    if(requestedDrawing){
+      showDrawing(requestedDrawing);
+    }
+  }
 };
 $(document).ready(initPage);
 
 
-window.hypeLoaded = function(){
-  if(requestedDrawing){
-    showDrawing(requestedDrawing);
-  }
-}
+
 $(document).on('click', '.sharers a.share', popup)
 function popup(e){
   var height, left, top, url, width;

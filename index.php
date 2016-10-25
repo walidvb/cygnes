@@ -67,7 +67,9 @@
   </head>
   <body>
     <header>
-      <img alt="" class="logo" src="assets/logo.png">
+      <a href="http://www.lescygnes.ch" target="_blank">
+        <img alt="" class="logo" src="assets/logo.png">
+      </a>
       <div class="search-container">
         <input id="search" type="search">
         <label for="search">
@@ -99,7 +101,7 @@
         <a class="fa fa-icon fa-facebook share facebook" href="#" target="_blank"></a>
         <a class="fa fa-icon fa-twitter share twitter" href="#" target="_blank"></a>
         <a class="fa fa-icon fa-pinterest share pinterest" href="#" target="_blank"></a>
-        <a class="fa fa-icon fa-download download" href="#" target="_blank"></a>
+        <a class="fa fa-icon fa-link link" href="#" target="_blank"></a>
       </div>
     </div>
   </body>

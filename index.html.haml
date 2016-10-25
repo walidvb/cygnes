@@ -72,7 +72,8 @@
 
   %body
     %header
-      %img.logo{:src => "assets/logo.png", :alt => ""}/
+      %a{href: 'http://www.lescygnes.ch', target: '_blank'}
+        %img.logo{:src => "assets/logo.png", :alt => ""}/
       .search-container
         %input#search{type: 'search'}
         %label{for: 'search'}
@@ -95,4 +96,4 @@
         %a.fa.fa-icon.fa-facebook.share.facebook{href: '#', target: '_blank'}
         %a.fa.fa-icon.fa-twitter.share.twitter{href: '#', target: '_blank'}
         %a.fa.fa-icon.fa-pinterest.share.pinterest{href: '#', target: '_blank'}
-        %a.fa.fa-icon.fa-download.download{href: '#', target: '_blank'}
+        %a.fa.fa-icon.fa-link.link{href: '#', target: '_blank'}
