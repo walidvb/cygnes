@@ -93,7 +93,10 @@
     function displayResult(){
       $('.step').fadeOut(800, function(){
         hyper.play(formData, base64);
-        setTimeout(reset, 40000);
+        setTimeout(function(){
+          goToNextState();
+          setTimeout(reset, 10000);
+        }, 20000)
       });
       hideNext();
     };
@@ -116,12 +119,14 @@
           break;
         case ENTER_DETAILS:
           submitForm();
-          $('body').addClass('hide-previous')
-          goToNext();
           hideNext();
-          setTimeout(displayResult, 10000)
+          displayResult();
+          currentState++;
+          $('body').addClass('hide-previous')
           break;
         case THANKS:
+          $('body').removeClass('on-screen');
+          $($steps[currentState]).removeClass('hidden');
           break;
         default:
           console.error('wtf?');
