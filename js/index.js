@@ -10,7 +10,7 @@ function initPage(){
   pageRef.page.next();
 
   var searchTimer;
-  $('#search').on('change keyup', function(){
+  $('#search').on('input', function(){
     function search(query, cb){
       $('.drawing-item').hide();
       fb.orderByChild("name").startAt(query).endAt(query+'\uf8ff').on('value', cb);
