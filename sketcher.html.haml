@@ -25,9 +25,18 @@
     %script{src: 'js/scripts.js'}
     -# Hype scripts
     %script{type:"text/javascript", src:"anims2.hyperesources/snowfall.min.js"}
+    :javascript
+      document.onmousedown=disableclick;
+      function disableclick(event)
+      {
+        if(event.button==2)
+         {
+         console.log('rightclick');
+           return false;
+         }
+      }
 
-
-  %body.hide-previous.sketcher-page
+  %body.hide-previous.sketcher-page{ oncontextmenu: 'console.log("rightclick2"); return false;'}
     %form
       .step#step-1
         .sketcher
