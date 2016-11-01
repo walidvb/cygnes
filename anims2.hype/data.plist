@@ -9,7 +9,7 @@
 	<key>createOfflineApplicationCache</key>
 	<false/>
 	<key>currentSceneContainer</key>
-	<string>167</string>
+	<string>1</string>
 	<key>customExportSlices</key>
 	<array>
 		<dict>
@@ -38,11 +38,11 @@
 			<key>sceneControllerOidsToExport</key>
 			<array>
 				<string>3</string>
-				<string>67</string>
+				<string>183</string>
 				<string>252</string>
 				<string>169</string>
 				<string>142</string>
-				<string>183</string>
+				<string>67</string>
 			</array>
 			<key>supportInternetExplorer6789</key>
 			<true/>
@@ -52,9 +52,9 @@
 	</array>
 	<key>displayedAttributes</key>
 	<array>
-		<string>kPropertiesMenuItemIdentifierPosition</string>
 		<string>RotationAngleZ</string>
 		<string>kPropertiesMenuItemIdentifierAnimated</string>
+		<string>kPropertiesMenuItemIdentifierPosition</string>
 	</array>
 	<key>documentVersion</key>
 	<string>530</string>
@@ -80,17 +80,17 @@
 	<key>hasManuallyChangedCSSPositioning</key>
 	<false/>
 	<key>lastCheckDate</key>
-	<date>2016-10-25T16:10:09Z</date>
+	<date>2016-10-26T13:21:40Z</date>
 	<key>layout</key>
 	<dict>
 		<key>currentInspectorPane</key>
-		<integer>1</integer>
+		<integer>7</integer>
 		<key>customizableLayout</key>
 		<dict>
 			<key>frame</key>
-			<string>{{0, 0}, {1218, 703}}</string>
+			<string>{{0, 0}, {1680, 924}}</string>
 			<key>identifier</key>
-			<string>container 169</string>
+			<string>container 24</string>
 			<key>isCustomizableViewContainer</key>
 			<true/>
 			<key>isCustomizableViewWrapper</key>
@@ -101,7 +101,7 @@
 			<array>
 				<dict>
 					<key>frame</key>
-					<string>{{0, 0}, {947, 703}}</string>
+					<string>{{0, 0}, {1409, 924}}</string>
 					<key>identifier</key>
 					<string>container 44</string>
 					<key>isCustomizableViewContainer</key>
@@ -114,7 +114,7 @@
 					<array>
 						<dict>
 							<key>frame</key>
-							<string>{{0, 0}, {676, 703}}</string>
+							<string>{{0, 0}, {1138, 924}}</string>
 							<key>identifier</key>
 							<string>container 33</string>
 							<key>isCustomizableViewContainer</key>
@@ -127,7 +127,7 @@
 							<array>
 								<dict>
 									<key>frame</key>
-									<string>{{0, 0}, {135, 703}}</string>
+									<string>{{0, 0}, {135, 924}}</string>
 									<key>identifier</key>
 									<string>container 23</string>
 									<key>isCustomizableViewContainer</key>
@@ -140,7 +140,7 @@
 									<array>
 										<dict>
 											<key>frame</key>
-											<string>{{0, 0}, {135, 703}}</string>
+											<string>{{0, 0}, {135, 924}}</string>
 											<key>identifier</key>
 											<string>sceneSelectorCustomizableContainer</string>
 											<key>isCustomizableViewContainer</key>
@@ -150,7 +150,7 @@
 								</dict>
 								<dict>
 									<key>frame</key>
-									<string>{{136, 0}, {540, 703}}</string>
+									<string>{{136, 0}, {1002, 924}}</string>
 									<key>identifier</key>
 									<string>container 24</string>
 									<key>isCustomizableViewContainer</key>
@@ -163,7 +163,7 @@
 									<array>
 										<dict>
 											<key>frame</key>
-											<string>{{136, 0}, {540, 135}}</string>
+											<string>{{136, 0}, {1002, 240}}</string>
 											<key>identifier</key>
 											<string>container 4</string>
 											<key>isCustomizableViewContainer</key>
@@ -176,7 +176,7 @@
 											<array>
 												<dict>
 													<key>frame</key>
-													<string>{{136, 0}, {540, 135}}</string>
+													<string>{{136, 0}, {1002, 240}}</string>
 													<key>identifier</key>
 													<string>timelineCustomizableContainer</string>
 													<key>isCustomizableViewContainer</key>
@@ -186,7 +186,7 @@
 										</dict>
 										<dict>
 											<key>frame</key>
-											<string>{{136, 136}, {540, 567}}</string>
+											<string>{{136, 241}, {1002, 683}}</string>
 											<key>identifier</key>
 											<string>container 3</string>
 											<key>isCustomizableViewContainer</key>
@@ -199,7 +199,7 @@
 											<array>
 												<dict>
 													<key>frame</key>
-													<string>{{136, 136}, {540, 567}}</string>
+													<string>{{136, 241}, {1002, 683}}</string>
 													<key>identifier</key>
 													<string>sceneEditorCustomizableContainer</string>
 													<key>isCustomizableViewContainer</key>
@@ -213,7 +213,7 @@
 						</dict>
 						<dict>
 							<key>frame</key>
-							<string>{{677, 0}, {270, 703}}</string>
+							<string>{{1139, 0}, {270, 924}}</string>
 							<key>identifier</key>
 							<string>container 32</string>
 							<key>isCustomizableViewContainer</key>
@@ -226,7 +226,7 @@
 							<array>
 								<dict>
 									<key>frame</key>
-									<string>{{677, 0}, {270, 703}}</string>
+									<string>{{1139, 0}, {270, 924}}</string>
 									<key>identifier</key>
 									<string>inspectorCustomizableContainer</string>
 									<key>isCustomizableViewContainer</key>
@@ -238,7 +238,7 @@
 				</dict>
 				<dict>
 					<key>frame</key>
-					<string>{{948, 0}, {270, 703}}</string>
+					<string>{{1410, 0}, {270, 924}}</string>
 					<key>identifier</key>
 					<string>container 43</string>
 					<key>isCustomizableViewContainer</key>
@@ -251,7 +251,7 @@
 					<array>
 						<dict>
 							<key>frame</key>
-							<string>{{948, 0}, {270, 703}}</string>
+							<string>{{1410, 0}, {270, 924}}</string>
 							<key>identifier</key>
 							<string>resourcesCustomizableContainer</string>
 							<key>isCustomizableViewContainer</key>
@@ -264,7 +264,7 @@
 		<key>keyframeTimelineHeight</key>
 		<real>99</real>
 		<key>mainWindowFrame</key>
-		<string>79 106 1218 747 0 0 1440 877 </string>
+		<string>0 59 1680 968 0 0 1680 1027 </string>
 		<key>openTabs</key>
 		<array>
 			<dict>
@@ -281,7 +281,7 @@
 			</dict>
 		</array>
 		<key>selectedTabIndex</key>
-		<integer>1</integer>
+		<integer>0</integer>
 		<key>showInspectorView</key>
 		<true/>
 		<key>showResourcesView</key>
@@ -355,10 +355,10 @@
 			<key>sceneControllerOidsToExport</key>
 			<array>
 				<string>3</string>
-				<string>183</string>
-				<string>252</string>
-				<string>142</string>
 				<string>67</string>
+				<string>252</string>
+				<string>183</string>
+				<string>142</string>
 			</array>
 			<key>supportInternetExplorer6789</key>
 			<true/>
@@ -4059,7 +4059,10 @@
 					<key>animationController</key>
 					<dict>
 						<key>expandedItems</key>
-						<array/>
+						<array>
+							<string>25</string>
+							<string>527</string>
+						</array>
 						<key>timeCursors</key>
 						<dict>
 							<key>kTimelineDefaultIdentifier</key>
@@ -4069,7 +4072,7 @@
 						<integer>20</integer>
 					</dict>
 					<key>canvasSize</key>
-					<string>{3201, 1491}</string>
+					<string>{3223, 1578}</string>
 					<key>hypeScene</key>
 					<dict>
 						<key>backgroundColor</key>
@@ -4094,7 +4097,7 @@
 					<key>rootSymbolControllerOid</key>
 					<string>2</string>
 					<key>scrollViewOffset</key>
-					<string>{354, 0}</string>
+					<string>{599, 44}</string>
 				</dict>
 			</array>
 		</dict>
@@ -4112,6 +4115,8 @@
 					<dict>
 						<key>expandedItems</key>
 						<array>
+							<string>111</string>
+							<string>85</string>
 							<string>526</string>
 						</array>
 						<key>timeCursors</key>
@@ -4123,7 +4128,7 @@
 						<integer>10</integer>
 					</dict>
 					<key>canvasSize</key>
-					<string>{1960, 1135}</string>
+					<string>{2004, 1366}</string>
 					<key>hypeScene</key>
 					<dict>
 						<key>backgroundColor</key>
@@ -4564,11 +4569,13 @@ function addToWindow(hypeDocument, element, event) {
 	<key>symbols</key>
 	<array>
 		<dict>
+			<key>currentGroupElement</key>
+			<string>25</string>
 			<key>documentIdentifier</key>
-			<string>70B14891-1CA7-4DBD-B1D4-B3DF3B10FEF0-9807-00017D072A8A3E4C</string>
+			<string>B674209F-B52F-450A-BF7E-921295DFC0C3-14865-0001891FEFA3B476</string>
 			<key>selectedObjects</key>
 			<array>
-				<string>527</string>
+				<string>56</string>
 			</array>
 			<key>symbol</key>
 			<dict>
@@ -5433,9 +5440,9 @@ function addToWindow(hypeDocument, element, event) {
 						</dict>
 						<dict>
 							<key>identifier</key>
-							<string>ClassType</string>
+							<string>RotationAngleZ</string>
 							<key>objectValue</key>
-							<string>Group</string>
+							<string>0deg</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
@@ -5511,9 +5518,9 @@ function addToWindow(hypeDocument, element, event) {
 						</dict>
 						<dict>
 							<key>identifier</key>
-							<string>RotationAngleZ</string>
+							<string>ClassType</string>
 							<key>objectValue</key>
-							<string>0deg</string>
+							<string>Group</string>
 						</dict>
 					</array>
 					<key>527</key>
@@ -5589,51 +5596,9 @@ function addToWindow(hypeDocument, element, event) {
 					<array>
 						<dict>
 							<key>identifier</key>
-							<string>DisplayName</string>
+							<string>TagName</string>
 							<key>objectValue</key>
-							<string>aviateur_fond</string>
-						</dict>
-						<dict>
-							<key>identifier</key>
-							<string>Position</string>
-							<key>objectValue</key>
-							<string>absolute</string>
-						</dict>
-						<dict>
-							<key>identifier</key>
-							<string>Parent</string>
-							<key>objectValue</key>
-							<string>25</string>
-						</dict>
-						<dict>
-							<key>identifier</key>
-							<string>OriginalWidth</string>
-							<key>objectValue</key>
-							<string>534px</string>
-						</dict>
-						<dict>
-							<key>identifier</key>
-							<string>SizeRatio</string>
-							<key>objectValue</key>
-							<string>0.684615</string>
-						</dict>
-						<dict>
-							<key>identifier</key>
-							<string>Left</string>
-							<key>objectValue</key>
-							<string>234px</string>
-						</dict>
-						<dict>
-							<key>identifier</key>
-							<string>OriginalHeight</string>
-							<key>objectValue</key>
-							<string>780px</string>
-						</dict>
-						<dict>
-							<key>identifier</key>
-							<string>Display</string>
-							<key>objectValue</key>
-							<string>inline</string>
+							<string>div</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
@@ -5643,21 +5608,21 @@ function addToWindow(hypeDocument, element, event) {
 						</dict>
 						<dict>
 							<key>identifier</key>
-							<string>Height</string>
+							<string>Display</string>
 							<key>objectValue</key>
-							<string>780px</string>
+							<string>inline</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
-							<string>Overflow</string>
+							<string>DomID</string>
 							<key>objectValue</key>
-							<string>visible</string>
+							<string>aviateur_fond</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
-							<string>Width</string>
+							<string>ClassType</string>
 							<key>objectValue</key>
-							<string>534px</string>
+							<string>Image</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
@@ -5667,15 +5632,9 @@ function addToWindow(hypeDocument, element, event) {
 						</dict>
 						<dict>
 							<key>identifier</key>
-							<string>BackgroundImageResourceGroupOid</string>
+							<string>Parent</string>
 							<key>objectValue</key>
-							<string>55</string>
-						</dict>
-						<dict>
-							<key>identifier</key>
-							<string>BackgroundSize</string>
-							<key>objectValue</key>
-							<string>100% 100%</string>
+							<string>25</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
@@ -5685,9 +5644,39 @@ function addToWindow(hypeDocument, element, event) {
 						</dict>
 						<dict>
 							<key>identifier</key>
-							<string>TagName</string>
+							<string>Position</string>
 							<key>objectValue</key>
-							<string>div</string>
+							<string>absolute</string>
+						</dict>
+						<dict>
+							<key>identifier</key>
+							<string>Height</string>
+							<key>objectValue</key>
+							<string>780px</string>
+						</dict>
+						<dict>
+							<key>identifier</key>
+							<string>BackgroundImageResourceGroupOid</string>
+							<key>objectValue</key>
+							<string>55</string>
+						</dict>
+						<dict>
+							<key>identifier</key>
+							<string>Left</string>
+							<key>objectValue</key>
+							<string>234px</string>
+						</dict>
+						<dict>
+							<key>identifier</key>
+							<string>SizeRatio</string>
+							<key>objectValue</key>
+							<string>0.684615</string>
+						</dict>
+						<dict>
+							<key>identifier</key>
+							<string>ClassName</string>
+							<key>objectValue</key>
+							<string>fond</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
@@ -5697,18 +5686,48 @@ function addToWindow(hypeDocument, element, event) {
 						</dict>
 						<dict>
 							<key>identifier</key>
-							<string>ClassType</string>
+							<string>Width</string>
 							<key>objectValue</key>
-							<string>Image</string>
+							<string>534px</string>
+						</dict>
+						<dict>
+							<key>identifier</key>
+							<string>BackgroundSize</string>
+							<key>objectValue</key>
+							<string>100% 100%</string>
+						</dict>
+						<dict>
+							<key>identifier</key>
+							<string>Overflow</string>
+							<key>objectValue</key>
+							<string>visible</string>
+						</dict>
+						<dict>
+							<key>identifier</key>
+							<string>DisplayName</string>
+							<key>objectValue</key>
+							<string>aviateur_fond</string>
+						</dict>
+						<dict>
+							<key>identifier</key>
+							<string>OriginalHeight</string>
+							<key>objectValue</key>
+							<string>780px</string>
+						</dict>
+						<dict>
+							<key>identifier</key>
+							<string>OriginalWidth</string>
+							<key>objectValue</key>
+							<string>534px</string>
 						</dict>
 					</array>
 					<key>58</key>
 					<array>
 						<dict>
 							<key>identifier</key>
-							<string>OriginalWidth</string>
+							<string>TagName</string>
 							<key>objectValue</key>
-							<string>534px</string>
+							<string>div</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
@@ -5826,9 +5845,9 @@ function addToWindow(hypeDocument, element, event) {
 						</dict>
 						<dict>
 							<key>identifier</key>
-							<string>TagName</string>
+							<string>OriginalWidth</string>
 							<key>objectValue</key>
-							<string>div</string>
+							<string>534px</string>
 						</dict>
 					</array>
 					<key>6</key>
@@ -8096,12 +8115,12 @@ function addToWindow(hypeDocument, element, event) {
 		</dict>
 		<dict>
 			<key>currentGroupElement</key>
-			<string>526</string>
+			<string>85</string>
 			<key>documentIdentifier</key>
-			<string>70B14891-1CA7-4DBD-B1D4-B3DF3B10FEF0-9807-00017D072A8A3E4C</string>
+			<string>B674209F-B52F-450A-BF7E-921295DFC0C3-14865-0001891FEFA3B476</string>
 			<key>selectedObjects</key>
 			<array>
-				<string>531</string>
+				<string>82</string>
 			</array>
 			<key>symbol</key>
 			<dict>
@@ -8444,9 +8463,9 @@ function addToWindow(hypeDocument, element, event) {
 					<array>
 						<dict>
 							<key>identifier</key>
-							<string>OriginalWidth</string>
+							<string>TagName</string>
 							<key>objectValue</key>
-							<string>215px</string>
+							<string>div</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
@@ -8576,18 +8595,18 @@ function addToWindow(hypeDocument, element, event) {
 						</dict>
 						<dict>
 							<key>identifier</key>
-							<string>TagName</string>
+							<string>OriginalWidth</string>
 							<key>objectValue</key>
-							<string>div</string>
+							<string>215px</string>
 						</dict>
 					</array>
 					<key>174</key>
 					<array>
 						<dict>
 							<key>identifier</key>
-							<string>TagName</string>
+							<string>OriginalWidth</string>
 							<key>objectValue</key>
-							<string>div</string>
+							<string>181px</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
@@ -8705,18 +8724,18 @@ function addToWindow(hypeDocument, element, event) {
 						</dict>
 						<dict>
 							<key>identifier</key>
-							<string>OriginalWidth</string>
+							<string>TagName</string>
 							<key>objectValue</key>
-							<string>181px</string>
+							<string>div</string>
 						</dict>
 					</array>
 					<key>175</key>
 					<array>
 						<dict>
 							<key>identifier</key>
-							<string>TagName</string>
+							<string>OriginalWidth</string>
 							<key>objectValue</key>
-							<string>div</string>
+							<string>181px</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
@@ -8834,9 +8853,9 @@ function addToWindow(hypeDocument, element, event) {
 						</dict>
 						<dict>
 							<key>identifier</key>
-							<string>OriginalWidth</string>
+							<string>TagName</string>
 							<key>objectValue</key>
-							<string>181px</string>
+							<string>div</string>
 						</dict>
 					</array>
 					<key>526</key>
@@ -8912,9 +8931,9 @@ function addToWindow(hypeDocument, element, event) {
 					<array>
 						<dict>
 							<key>identifier</key>
-							<string>OriginalWidth</string>
+							<string>TagName</string>
 							<key>objectValue</key>
-							<string>227px</string>
+							<string>div</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
@@ -9044,9 +9063,9 @@ function addToWindow(hypeDocument, element, event) {
 						</dict>
 						<dict>
 							<key>identifier</key>
-							<string>TagName</string>
+							<string>OriginalWidth</string>
 							<key>objectValue</key>
-							<string>div</string>
+							<string>227px</string>
 						</dict>
 					</array>
 					<key>69</key>
@@ -9422,15 +9441,15 @@ function addToWindow(hypeDocument, element, event) {
 					<array>
 						<dict>
 							<key>identifier</key>
-							<string>OriginalHeight</string>
+							<string>DisplayName</string>
 							<key>objectValue</key>
-							<string>274px</string>
+							<string>bouee</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
-							<string>OriginalWidth</string>
+							<string>TagName</string>
 							<key>objectValue</key>
-							<string>315px</string>
+							<string>div</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
@@ -9548,30 +9567,30 @@ function addToWindow(hypeDocument, element, event) {
 						</dict>
 						<dict>
 							<key>identifier</key>
-							<string>DisplayName</string>
+							<string>OriginalHeight</string>
 							<key>objectValue</key>
-							<string>bouee</string>
+							<string>274px</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
-							<string>TagName</string>
+							<string>OriginalWidth</string>
 							<key>objectValue</key>
-							<string>div</string>
+							<string>315px</string>
 						</dict>
 					</array>
 					<key>78</key>
 					<array>
 						<dict>
 							<key>identifier</key>
-							<string>OriginalHeight</string>
+							<string>DisplayName</string>
 							<key>objectValue</key>
-							<string>37px</string>
+							<string>nuage1</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
-							<string>OriginalWidth</string>
+							<string>TagName</string>
 							<key>objectValue</key>
-							<string>64px</string>
+							<string>div</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
@@ -9699,30 +9718,30 @@ function addToWindow(hypeDocument, element, event) {
 						</dict>
 						<dict>
 							<key>identifier</key>
-							<string>DisplayName</string>
+							<string>OriginalHeight</string>
 							<key>objectValue</key>
-							<string>nuage1</string>
+							<string>37px</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
-							<string>TagName</string>
+							<string>OriginalWidth</string>
 							<key>objectValue</key>
-							<string>div</string>
+							<string>64px</string>
 						</dict>
 					</array>
 					<key>79</key>
 					<array>
 						<dict>
 							<key>identifier</key>
-							<string>OriginalHeight</string>
+							<string>DisplayName</string>
 							<key>objectValue</key>
-							<string>80px</string>
+							<string>nuage2</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
-							<string>OriginalWidth</string>
+							<string>TagName</string>
 							<key>objectValue</key>
-							<string>201px</string>
+							<string>div</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
@@ -9846,30 +9865,30 @@ function addToWindow(hypeDocument, element, event) {
 						</dict>
 						<dict>
 							<key>identifier</key>
-							<string>DisplayName</string>
+							<string>OriginalHeight</string>
 							<key>objectValue</key>
-							<string>nuage2</string>
+							<string>80px</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
-							<string>TagName</string>
+							<string>OriginalWidth</string>
 							<key>objectValue</key>
-							<string>div</string>
+							<string>201px</string>
 						</dict>
 					</array>
 					<key>80</key>
 					<array>
 						<dict>
 							<key>identifier</key>
-							<string>OriginalHeight</string>
+							<string>DisplayName</string>
 							<key>objectValue</key>
-							<string>69px</string>
+							<string>nuage3</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
-							<string>OriginalWidth</string>
+							<string>TagName</string>
 							<key>objectValue</key>
-							<string>120px</string>
+							<string>div</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
@@ -9993,24 +10012,24 @@ function addToWindow(hypeDocument, element, event) {
 						</dict>
 						<dict>
 							<key>identifier</key>
-							<string>DisplayName</string>
+							<string>OriginalHeight</string>
 							<key>objectValue</key>
-							<string>nuage3</string>
+							<string>69px</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
-							<string>TagName</string>
+							<string>OriginalWidth</string>
 							<key>objectValue</key>
-							<string>div</string>
+							<string>120px</string>
 						</dict>
 					</array>
 					<key>82</key>
 					<array>
 						<dict>
 							<key>identifier</key>
-							<string>TagName</string>
+							<string>OriginalWidth</string>
 							<key>objectValue</key>
-							<string>div</string>
+							<string>534px</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
@@ -10128,18 +10147,18 @@ function addToWindow(hypeDocument, element, event) {
 						</dict>
 						<dict>
 							<key>identifier</key>
-							<string>OriginalWidth</string>
+							<string>TagName</string>
 							<key>objectValue</key>
-							<string>534px</string>
+							<string>div</string>
 						</dict>
 					</array>
 					<key>84</key>
 					<array>
 						<dict>
 							<key>identifier</key>
-							<string>OriginalWidth</string>
+							<string>TagName</string>
 							<key>objectValue</key>
-							<string>534px</string>
+							<string>div</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
@@ -10257,9 +10276,9 @@ function addToWindow(hypeDocument, element, event) {
 						</dict>
 						<dict>
 							<key>identifier</key>
-							<string>TagName</string>
+							<string>OriginalWidth</string>
 							<key>objectValue</key>
-							<string>div</string>
+							<string>534px</string>
 						</dict>
 					</array>
 					<key>85</key>
@@ -10428,9 +10447,9 @@ function addToWindow(hypeDocument, element, event) {
 					<array>
 						<dict>
 							<key>identifier</key>
-							<string>TagName</string>
+							<string>OriginalWidth</string>
 							<key>objectValue</key>
-							<string>div</string>
+							<string>534px</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
@@ -10548,18 +10567,18 @@ function addToWindow(hypeDocument, element, event) {
 						</dict>
 						<dict>
 							<key>identifier</key>
-							<string>OriginalWidth</string>
+							<string>TagName</string>
 							<key>objectValue</key>
-							<string>534px</string>
+							<string>div</string>
 						</dict>
 					</array>
 					<key>88</key>
 					<array>
 						<dict>
 							<key>identifier</key>
-							<string>OriginalWidth</string>
+							<string>TagName</string>
 							<key>objectValue</key>
-							<string>534px</string>
+							<string>div</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
@@ -10677,9 +10696,9 @@ function addToWindow(hypeDocument, element, event) {
 						</dict>
 						<dict>
 							<key>identifier</key>
-							<string>TagName</string>
+							<string>OriginalWidth</string>
 							<key>objectValue</key>
-							<string>div</string>
+							<string>534px</string>
 						</dict>
 					</array>
 				</dict>
@@ -10932,7 +10951,7 @@ function addToWindow(hypeDocument, element, event) {
 										<false/>
 									</dict>
 									<key>oid</key>
-									<string>5954E5DE-1C75-4A55-9418-5572D1139583-9807-00017D13E2487D9F</string>
+									<string>D2F39EDF-0044-4E31-B181-8AD4C0EA04E6-14865-0001891F6F289F72</string>
 								</dict>
 								<key>referenceOid</key>
 								<string>78</string>
@@ -11073,7 +11092,7 @@ function addToWindow(hypeDocument, element, event) {
 										<false/>
 									</dict>
 									<key>oid</key>
-									<string>5C242B9A-B482-4633-90A5-B56D4A9079B5-9807-00017D13E24B550B</string>
+									<string>F6CC3CB8-A7E2-49B5-85BD-02883C5222E9-14865-0001891F6F2BBE20</string>
 								</dict>
 								<key>referenceOid</key>
 								<string>531</string>
@@ -11140,7 +11159,7 @@ function addToWindow(hypeDocument, element, event) {
 										<false/>
 									</dict>
 									<key>oid</key>
-									<string>5C242B9A-B482-4633-90A5-B56D4A9079B5-9807-00017D13E24B550B</string>
+									<string>F6CC3CB8-A7E2-49B5-85BD-02883C5222E9-14865-0001891F6F2BBE20</string>
 								</dict>
 								<key>referenceOid</key>
 								<string>531</string>
@@ -11351,7 +11370,7 @@ function addToWindow(hypeDocument, element, event) {
 										<false/>
 									</dict>
 									<key>oid</key>
-									<string>01E8390C-F76C-45FD-AD4A-DCAF51A23DEF-9807-00017D13E2518F18</string>
+									<string>FFE92F32-0175-4F1A-89EE-F60E25842A6B-14865-0001891F6F2F1849</string>
 								</dict>
 								<key>referenceOid</key>
 								<string>79</string>
@@ -11372,6 +11391,42 @@ function addToWindow(hypeDocument, element, event) {
 								<integer>0</integer>
 								<key>uuid</key>
 								<string>6529CADB-960D-42F1-8C89-99A8AD01540F-30796-0000152EE79EBCC4</string>
+								<key>zIndex</key>
+								<integer>3</integer>
+							</dict>
+							<dict>
+								<key>duration</key>
+								<real>0.73333334922790527</real>
+								<key>endValue</key>
+								<dict>
+									<key>identifier</key>
+									<string>RotationAngleZ</string>
+									<key>objectValue</key>
+									<string>1deg</string>
+								</dict>
+								<key>identifier</key>
+								<string>RotationAngleZ</string>
+								<key>isRelative</key>
+								<false/>
+								<key>referenceOid</key>
+								<string>175</string>
+								<key>startTime</key>
+								<real>0.0</real>
+								<key>startValue</key>
+								<dict>
+									<key>identifier</key>
+									<string>RotationAngleZ</string>
+									<key>objectValue</key>
+									<string>0deg</string>
+								</dict>
+								<key>symbolElementActionAttributesBySymbolTimeline</key>
+								<dict/>
+								<key>timingFunctionOid</key>
+								<string>106</string>
+								<key>type</key>
+								<integer>0</integer>
+								<key>uuid</key>
+								<string>2778879C-02D0-4AEB-8FE7-D17A3ADB7CDB-3232-000030DF39897587</string>
 								<key>zIndex</key>
 								<integer>3</integer>
 							</dict>
@@ -11418,7 +11473,7 @@ function addToWindow(hypeDocument, element, event) {
 										<false/>
 									</dict>
 									<key>oid</key>
-									<string>5C242B9A-B482-4633-90A5-B56D4A9079B5-9807-00017D13E24B550B</string>
+									<string>F6CC3CB8-A7E2-49B5-85BD-02883C5222E9-14865-0001891F6F2BBE20</string>
 								</dict>
 								<key>referenceOid</key>
 								<string>531</string>
@@ -11480,42 +11535,6 @@ function addToWindow(hypeDocument, element, event) {
 							</dict>
 							<dict>
 								<key>duration</key>
-								<real>0.73333334922790527</real>
-								<key>endValue</key>
-								<dict>
-									<key>identifier</key>
-									<string>RotationAngleZ</string>
-									<key>objectValue</key>
-									<string>1deg</string>
-								</dict>
-								<key>identifier</key>
-								<string>RotationAngleZ</string>
-								<key>isRelative</key>
-								<false/>
-								<key>referenceOid</key>
-								<string>175</string>
-								<key>startTime</key>
-								<real>0.0</real>
-								<key>startValue</key>
-								<dict>
-									<key>identifier</key>
-									<string>RotationAngleZ</string>
-									<key>objectValue</key>
-									<string>0deg</string>
-								</dict>
-								<key>symbolElementActionAttributesBySymbolTimeline</key>
-								<dict/>
-								<key>timingFunctionOid</key>
-								<string>106</string>
-								<key>type</key>
-								<integer>0</integer>
-								<key>uuid</key>
-								<string>2778879C-02D0-4AEB-8FE7-D17A3ADB7CDB-3232-000030DF39897587</string>
-								<key>zIndex</key>
-								<integer>3</integer>
-							</dict>
-							<dict>
-								<key>duration</key>
 								<real>0.36666667461395264</real>
 								<key>endValue</key>
 								<dict>
@@ -11547,6 +11566,42 @@ function addToWindow(hypeDocument, element, event) {
 								<integer>0</integer>
 								<key>uuid</key>
 								<string>3B54032F-A390-4EE4-86E5-21FE43CF6824-3232-000030DF398A1BEE</string>
+								<key>zIndex</key>
+								<integer>4</integer>
+							</dict>
+							<dict>
+								<key>duration</key>
+								<real>0.56666666269302368</real>
+								<key>endValue</key>
+								<dict>
+									<key>identifier</key>
+									<string>RotationAngleZ</string>
+									<key>objectValue</key>
+									<string>-1deg</string>
+								</dict>
+								<key>identifier</key>
+								<string>RotationAngleZ</string>
+								<key>isRelative</key>
+								<false/>
+								<key>referenceOid</key>
+								<string>111</string>
+								<key>startTime</key>
+								<real>0.0</real>
+								<key>startValue</key>
+								<dict>
+									<key>identifier</key>
+									<string>RotationAngleZ</string>
+									<key>objectValue</key>
+									<string>0deg</string>
+								</dict>
+								<key>symbolElementActionAttributesBySymbolTimeline</key>
+								<dict/>
+								<key>timingFunctionOid</key>
+								<string>132</string>
+								<key>type</key>
+								<integer>0</integer>
+								<key>uuid</key>
+								<string>7513EF64-F998-4F27-AC0F-79FBC7FE9FF7-30796-000015893A6F2CE5</string>
 								<key>zIndex</key>
 								<integer>4</integer>
 							</dict>
@@ -11593,7 +11648,7 @@ function addToWindow(hypeDocument, element, event) {
 										<false/>
 									</dict>
 									<key>oid</key>
-									<string>14CE3BAB-9AD1-495C-A868-4E42515348F6-9807-00017D13E255B4A4</string>
+									<string>844E3560-86F7-4BBE-A0A0-74835E7E34B3-14865-0001891F6F3193A0</string>
 								</dict>
 								<key>referenceOid</key>
 								<string>80</string>
@@ -11670,7 +11725,7 @@ function addToWindow(hypeDocument, element, event) {
 										<false/>
 									</dict>
 									<key>oid</key>
-									<string>5954E5DE-1C75-4A55-9418-5572D1139583-9807-00017D13E2487D9F</string>
+									<string>D2F39EDF-0044-4E31-B181-8AD4C0EA04E6-14865-0001891F6F289F72</string>
 								</dict>
 								<key>referenceOid</key>
 								<string>78</string>
@@ -11747,7 +11802,7 @@ function addToWindow(hypeDocument, element, event) {
 										<false/>
 									</dict>
 									<key>oid</key>
-									<string>5954E5DE-1C75-4A55-9418-5572D1139583-9807-00017D13E2487D9F</string>
+									<string>D2F39EDF-0044-4E31-B181-8AD4C0EA04E6-14865-0001891F6F289F72</string>
 								</dict>
 								<key>referenceOid</key>
 								<string>78</string>
@@ -11770,42 +11825,6 @@ function addToWindow(hypeDocument, element, event) {
 								<string>DF30DC54-09E6-405F-B222-AE4B45966657-30796-000014D8FF1636B5</string>
 								<key>zIndex</key>
 								<integer>5</integer>
-							</dict>
-							<dict>
-								<key>duration</key>
-								<real>0.56666666269302368</real>
-								<key>endValue</key>
-								<dict>
-									<key>identifier</key>
-									<string>RotationAngleZ</string>
-									<key>objectValue</key>
-									<string>-1deg</string>
-								</dict>
-								<key>identifier</key>
-								<string>RotationAngleZ</string>
-								<key>isRelative</key>
-								<false/>
-								<key>referenceOid</key>
-								<string>111</string>
-								<key>startTime</key>
-								<real>0.0</real>
-								<key>startValue</key>
-								<dict>
-									<key>identifier</key>
-									<string>RotationAngleZ</string>
-									<key>objectValue</key>
-									<string>0deg</string>
-								</dict>
-								<key>symbolElementActionAttributesBySymbolTimeline</key>
-								<dict/>
-								<key>timingFunctionOid</key>
-								<string>132</string>
-								<key>type</key>
-								<integer>0</integer>
-								<key>uuid</key>
-								<string>7513EF64-F998-4F27-AC0F-79FBC7FE9FF7-30796-000015893A6F2CE5</string>
-								<key>zIndex</key>
-								<integer>4</integer>
 							</dict>
 							<dict>
 								<key>duration</key>
@@ -11850,7 +11869,7 @@ function addToWindow(hypeDocument, element, event) {
 										<false/>
 									</dict>
 									<key>oid</key>
-									<string>01E8390C-F76C-45FD-AD4A-DCAF51A23DEF-9807-00017D13E2518F18</string>
+									<string>FFE92F32-0175-4F1A-89EE-F60E25842A6B-14865-0001891F6F2F1849</string>
 								</dict>
 								<key>referenceOid</key>
 								<string>79</string>
@@ -11917,7 +11936,7 @@ function addToWindow(hypeDocument, element, event) {
 										<false/>
 									</dict>
 									<key>oid</key>
-									<string>01E8390C-F76C-45FD-AD4A-DCAF51A23DEF-9807-00017D13E2518F18</string>
+									<string>FFE92F32-0175-4F1A-89EE-F60E25842A6B-14865-0001891F6F2F1849</string>
 								</dict>
 								<key>referenceOid</key>
 								<string>79</string>
@@ -11984,7 +12003,7 @@ function addToWindow(hypeDocument, element, event) {
 										<false/>
 									</dict>
 									<key>oid</key>
-									<string>14CE3BAB-9AD1-495C-A868-4E42515348F6-9807-00017D13E255B4A4</string>
+									<string>844E3560-86F7-4BBE-A0A0-74835E7E34B3-14865-0001891F6F3193A0</string>
 								</dict>
 								<key>referenceOid</key>
 								<string>80</string>
@@ -12051,7 +12070,7 @@ function addToWindow(hypeDocument, element, event) {
 										<false/>
 									</dict>
 									<key>oid</key>
-									<string>14CE3BAB-9AD1-495C-A868-4E42515348F6-9807-00017D13E255B4A4</string>
+									<string>844E3560-86F7-4BBE-A0A0-74835E7E34B3-14865-0001891F6F3193A0</string>
 								</dict>
 								<key>referenceOid</key>
 								<string>80</string>
@@ -16394,6 +16413,42 @@ function addToWindow(hypeDocument, element, event) {
 								<key>endValue</key>
 								<dict>
 									<key>identifier</key>
+									<string>RotationAngleZ</string>
+									<key>objectValue</key>
+									<string>0deg</string>
+								</dict>
+								<key>identifier</key>
+								<string>RotationAngleZ</string>
+								<key>isRelative</key>
+								<false/>
+								<key>referenceOid</key>
+								<string>111</string>
+								<key>startTime</key>
+								<real>10</real>
+								<key>startValue</key>
+								<dict>
+									<key>identifier</key>
+									<string>RotationAngleZ</string>
+									<key>objectValue</key>
+									<string>0deg</string>
+								</dict>
+								<key>symbolElementActionAttributesBySymbolTimeline</key>
+								<dict/>
+								<key>timingFunctionOid</key>
+								<string>c</string>
+								<key>type</key>
+								<integer>0</integer>
+								<key>uuid</key>
+								<string>3F640BBD-445C-4539-9059-F8AA7E8FA863-30796-0000161D2C1A2FE5</string>
+								<key>zIndex</key>
+								<integer>46</integer>
+							</dict>
+							<dict>
+								<key>duration</key>
+								<real>0.0</real>
+								<key>endValue</key>
+								<dict>
+									<key>identifier</key>
 									<string>Top</string>
 									<key>objectValue</key>
 									<string>670px</string>
@@ -16426,20 +16481,20 @@ function addToWindow(hypeDocument, element, event) {
 							</dict>
 							<dict>
 								<key>duration</key>
-								<real>0.0</real>
+								<real>0.73333358764648438</real>
 								<key>endValue</key>
 								<dict>
 									<key>identifier</key>
 									<string>RotationAngleZ</string>
 									<key>objectValue</key>
-									<string>0deg</string>
+									<string>1deg</string>
 								</dict>
 								<key>identifier</key>
 								<string>RotationAngleZ</string>
 								<key>isRelative</key>
 								<false/>
 								<key>referenceOid</key>
-								<string>111</string>
+								<string>77</string>
 								<key>startTime</key>
 								<real>10</real>
 								<key>startValue</key>
@@ -16452,13 +16507,13 @@ function addToWindow(hypeDocument, element, event) {
 								<key>symbolElementActionAttributesBySymbolTimeline</key>
 								<dict/>
 								<key>timingFunctionOid</key>
-								<string>c</string>
+								<string>106</string>
 								<key>type</key>
 								<integer>0</integer>
 								<key>uuid</key>
-								<string>3F640BBD-445C-4539-9059-F8AA7E8FA863-30796-0000161D2C1A2FE5</string>
+								<string>B06F23FF-E146-458A-B0A4-57FF6C60ED27-30796-000013F9E2FA735C</string>
 								<key>zIndex</key>
-								<integer>46</integer>
+								<integer>47</integer>
 							</dict>
 							<dict>
 								<key>duration</key>
@@ -16534,20 +16589,20 @@ function addToWindow(hypeDocument, element, event) {
 							</dict>
 							<dict>
 								<key>duration</key>
-								<real>0.73333358764648438</real>
+								<real>0.56666660308837891</real>
 								<key>endValue</key>
 								<dict>
 									<key>identifier</key>
 									<string>RotationAngleZ</string>
 									<key>objectValue</key>
-									<string>1deg</string>
+									<string>-1deg</string>
 								</dict>
 								<key>identifier</key>
 								<string>RotationAngleZ</string>
 								<key>isRelative</key>
 								<false/>
 								<key>referenceOid</key>
-								<string>77</string>
+								<string>111</string>
 								<key>startTime</key>
 								<real>10</real>
 								<key>startValue</key>
@@ -16560,13 +16615,13 @@ function addToWindow(hypeDocument, element, event) {
 								<key>symbolElementActionAttributesBySymbolTimeline</key>
 								<dict/>
 								<key>timingFunctionOid</key>
-								<string>106</string>
+								<string>132</string>
 								<key>type</key>
 								<integer>0</integer>
 								<key>uuid</key>
-								<string>B06F23FF-E146-458A-B0A4-57FF6C60ED27-30796-000013F9E2FA735C</string>
+								<string>383E4E3D-2604-4FC5-9D1D-DA868B20A3A6-30796-000016DF2794C5C2</string>
 								<key>zIndex</key>
-								<integer>47</integer>
+								<integer>48</integer>
 							</dict>
 							<dict>
 								<key>duration</key>
@@ -16639,42 +16694,6 @@ function addToWindow(hypeDocument, element, event) {
 								<string>F3D9B407-E7E3-4BF2-8AFA-A27EE8DACE22-3232-00003115AF57A05A</string>
 								<key>zIndex</key>
 								<integer>49</integer>
-							</dict>
-							<dict>
-								<key>duration</key>
-								<real>0.56666660308837891</real>
-								<key>endValue</key>
-								<dict>
-									<key>identifier</key>
-									<string>RotationAngleZ</string>
-									<key>objectValue</key>
-									<string>-1deg</string>
-								</dict>
-								<key>identifier</key>
-								<string>RotationAngleZ</string>
-								<key>isRelative</key>
-								<false/>
-								<key>referenceOid</key>
-								<string>111</string>
-								<key>startTime</key>
-								<real>10</real>
-								<key>startValue</key>
-								<dict>
-									<key>identifier</key>
-									<string>RotationAngleZ</string>
-									<key>objectValue</key>
-									<string>0deg</string>
-								</dict>
-								<key>symbolElementActionAttributesBySymbolTimeline</key>
-								<dict/>
-								<key>timingFunctionOid</key>
-								<string>132</string>
-								<key>type</key>
-								<integer>0</integer>
-								<key>uuid</key>
-								<string>383E4E3D-2604-4FC5-9D1D-DA868B20A3A6-30796-000016DF2794C5C2</string>
-								<key>zIndex</key>
-								<integer>48</integer>
 							</dict>
 							<dict>
 								<key>duration</key>
@@ -19105,7 +19124,7 @@ function addToWindow(hypeDocument, element, event) {
 										<false/>
 									</dict>
 									<key>oid</key>
-									<string>3EFF71A9-D112-4EF9-B565-D874B5F86697-9807-00017D13E2E66C42</string>
+									<string>11CD0EDE-7993-4792-87F0-4C8EB0C04CD9-14865-0001891F6F80D63B</string>
 								</dict>
 								<key>referenceOid</key>
 								<string>78</string>
@@ -19172,7 +19191,7 @@ function addToWindow(hypeDocument, element, event) {
 										<false/>
 									</dict>
 									<key>oid</key>
-									<string>E2CFCA80-9D0E-4F98-85A8-EF987B235C58-9807-00017D13E2E82E51</string>
+									<string>32D1F2D3-E6D5-4597-B698-57BB0433C429-14865-0001891F6F824E77</string>
 								</dict>
 								<key>referenceOid</key>
 								<string>80</string>
@@ -19285,7 +19304,7 @@ function addToWindow(hypeDocument, element, event) {
 										<false/>
 									</dict>
 									<key>oid</key>
-									<string>3EFF71A9-D112-4EF9-B565-D874B5F86697-9807-00017D13E2E66C42</string>
+									<string>11CD0EDE-7993-4792-87F0-4C8EB0C04CD9-14865-0001891F6F80D63B</string>
 								</dict>
 								<key>referenceOid</key>
 								<string>78</string>
@@ -19362,7 +19381,7 @@ function addToWindow(hypeDocument, element, event) {
 										<false/>
 									</dict>
 									<key>oid</key>
-									<string>3EFF71A9-D112-4EF9-B565-D874B5F86697-9807-00017D13E2E66C42</string>
+									<string>11CD0EDE-7993-4792-87F0-4C8EB0C04CD9-14865-0001891F6F80D63B</string>
 								</dict>
 								<key>referenceOid</key>
 								<string>78</string>
@@ -19429,7 +19448,7 @@ function addToWindow(hypeDocument, element, event) {
 										<false/>
 									</dict>
 									<key>oid</key>
-									<string>E2CFCA80-9D0E-4F98-85A8-EF987B235C58-9807-00017D13E2E82E51</string>
+									<string>32D1F2D3-E6D5-4597-B698-57BB0433C429-14865-0001891F6F824E77</string>
 								</dict>
 								<key>referenceOid</key>
 								<string>80</string>
@@ -19496,7 +19515,7 @@ function addToWindow(hypeDocument, element, event) {
 										<false/>
 									</dict>
 									<key>oid</key>
-									<string>E2CFCA80-9D0E-4F98-85A8-EF987B235C58-9807-00017D13E2E82E51</string>
+									<string>32D1F2D3-E6D5-4597-B698-57BB0433C429-14865-0001891F6F824E77</string>
 								</dict>
 								<key>referenceOid</key>
 								<string>80</string>
@@ -19635,7 +19654,7 @@ function addToWindow(hypeDocument, element, event) {
 										<false/>
 									</dict>
 									<key>oid</key>
-									<string>2B4B36C6-9B06-426E-B4FE-9ABDDB55AD1D-9807-00017D13E2EEC2BF</string>
+									<string>4D421860-D17D-404E-96CE-205F7B426585-14865-0001891F6F86BA30</string>
 								</dict>
 								<key>referenceOid</key>
 								<string>79</string>
@@ -19702,7 +19721,7 @@ function addToWindow(hypeDocument, element, event) {
 										<false/>
 									</dict>
 									<key>oid</key>
-									<string>2B4B36C6-9B06-426E-B4FE-9ABDDB55AD1D-9807-00017D13E2EEC2BF</string>
+									<string>4D421860-D17D-404E-96CE-205F7B426585-14865-0001891F6F86BA30</string>
 								</dict>
 								<key>referenceOid</key>
 								<string>79</string>
@@ -19769,7 +19788,7 @@ function addToWindow(hypeDocument, element, event) {
 										<false/>
 									</dict>
 									<key>oid</key>
-									<string>2B4B36C6-9B06-426E-B4FE-9ABDDB55AD1D-9807-00017D13E2EEC2BF</string>
+									<string>4D421860-D17D-404E-96CE-205F7B426585-14865-0001891F6F86BA30</string>
 								</dict>
 								<key>referenceOid</key>
 								<string>79</string>
@@ -26675,140 +26694,6 @@ function addToWindow(hypeDocument, element, event) {
 								<key>endValue</key>
 								<dict>
 									<key>identifier</key>
-									<string>Left</string>
-									<key>objectValue</key>
-									<string>1733.5px</string>
-								</dict>
-								<key>identifier</key>
-								<string>Left</string>
-								<key>isRelative</key>
-								<false/>
-								<key>motionPath</key>
-								<dict>
-									<key>bezierPath</key>
-									<dict>
-										<key>allowEndPointModification</key>
-										<true/>
-										<key>bezierCurves</key>
-										<array>
-											<dict>
-												<key>endControlPoint</key>
-												<string>{1847, 456}</string>
-												<key>endPoint</key>
-												<string>{1847, 456}</string>
-												<key>startControlPoint</key>
-												<string>{1504, 161}</string>
-												<key>startPoint</key>
-												<string>{931, 161}</string>
-											</dict>
-										</array>
-										<key>interpolationPointCount</key>
-										<real>100</real>
-										<key>showAllControlPoints</key>
-										<false/>
-										<key>useIntegerValues</key>
-										<true/>
-										<key>useSmallStyle</key>
-										<false/>
-									</dict>
-									<key>oid</key>
-									<string>6CBAB07A-B871-4977-B6A2-77991C9BF3D7-9807-00017D13E3739AD6</string>
-								</dict>
-								<key>referenceOid</key>
-								<string>531</string>
-								<key>startTime</key>
-								<real>30</real>
-								<key>startValue</key>
-								<dict>
-									<key>identifier</key>
-									<string>Left</string>
-									<key>objectValue</key>
-									<string>817.5px</string>
-								</dict>
-								<key>symbolElementActionAttributesBySymbolTimeline</key>
-								<dict/>
-								<key>timingFunctionOid</key>
-								<string>b</string>
-								<key>type</key>
-								<integer>0</integer>
-								<key>uuid</key>
-								<string>EA088513-85F2-43BF-9DDD-EA50FBCE8B68-81397-00003E267AC2F1F0</string>
-								<key>zIndex</key>
-								<integer>143</integer>
-							</dict>
-							<dict>
-								<key>duration</key>
-								<real>30</real>
-								<key>endValue</key>
-								<dict>
-									<key>identifier</key>
-									<string>Top</string>
-									<key>objectValue</key>
-									<string>340px</string>
-								</dict>
-								<key>identifier</key>
-								<string>Top</string>
-								<key>isRelative</key>
-								<false/>
-								<key>motionPath</key>
-								<dict>
-									<key>bezierPath</key>
-									<dict>
-										<key>allowEndPointModification</key>
-										<true/>
-										<key>bezierCurves</key>
-										<array>
-											<dict>
-												<key>endControlPoint</key>
-												<string>{1847, 456}</string>
-												<key>endPoint</key>
-												<string>{1847, 456}</string>
-												<key>startControlPoint</key>
-												<string>{1504, 161}</string>
-												<key>startPoint</key>
-												<string>{931, 161}</string>
-											</dict>
-										</array>
-										<key>interpolationPointCount</key>
-										<real>100</real>
-										<key>showAllControlPoints</key>
-										<false/>
-										<key>useIntegerValues</key>
-										<true/>
-										<key>useSmallStyle</key>
-										<false/>
-									</dict>
-									<key>oid</key>
-									<string>6CBAB07A-B871-4977-B6A2-77991C9BF3D7-9807-00017D13E3739AD6</string>
-								</dict>
-								<key>referenceOid</key>
-								<string>531</string>
-								<key>startTime</key>
-								<real>30</real>
-								<key>startValue</key>
-								<dict>
-									<key>identifier</key>
-									<string>Top</string>
-									<key>objectValue</key>
-									<string>45px</string>
-								</dict>
-								<key>symbolElementActionAttributesBySymbolTimeline</key>
-								<dict/>
-								<key>timingFunctionOid</key>
-								<string>b</string>
-								<key>type</key>
-								<integer>0</integer>
-								<key>uuid</key>
-								<string>EB45E4B5-963D-4471-9D67-DF25779213AD-81397-00003E267AFB4C3E</string>
-								<key>zIndex</key>
-								<integer>142</integer>
-							</dict>
-							<dict>
-								<key>duration</key>
-								<real>30</real>
-								<key>endValue</key>
-								<dict>
-									<key>identifier</key>
 									<string>MotionPathRotation</string>
 									<key>objectValue</key>
 									<string>400deg</string>
@@ -26846,7 +26731,7 @@ function addToWindow(hypeDocument, element, event) {
 										<false/>
 									</dict>
 									<key>oid</key>
-									<string>6CBAB07A-B871-4977-B6A2-77991C9BF3D7-9807-00017D13E3739AD6</string>
+									<string>A328D85A-1A71-4638-A50D-D5F6C921EF44-14865-0001891F6FFD288A</string>
 								</dict>
 								<key>referenceOid</key>
 								<string>531</string>
@@ -26923,7 +26808,7 @@ function addToWindow(hypeDocument, element, event) {
 										<false/>
 									</dict>
 									<key>oid</key>
-									<string>C0A0DE31-0BF7-42A0-83B2-D4E3977A095B-9807-00017D13E3776711</string>
+									<string>BD7A2D2B-AEE9-4A78-981D-66D190906349-14865-0001891F70059E11</string>
 								</dict>
 								<key>referenceOid</key>
 								<string>78</string>
@@ -26990,7 +26875,7 @@ function addToWindow(hypeDocument, element, event) {
 										<false/>
 									</dict>
 									<key>oid</key>
-									<string>567761F3-579F-4F2D-959A-83717FF2BDB9-9807-00017D13E378C5ED</string>
+									<string>9285608B-AD1A-496A-AD39-4386949943CD-14865-0001891F700966FF</string>
 								</dict>
 								<key>referenceOid</key>
 								<string>80</string>
@@ -27301,6 +27186,140 @@ function addToWindow(hypeDocument, element, event) {
 								<string>3A71FD14-198F-463D-959B-DD92163622CD-30796-000016E70904C8D0</string>
 								<key>zIndex</key>
 								<integer>136</integer>
+							</dict>
+							<dict>
+								<key>duration</key>
+								<real>30</real>
+								<key>endValue</key>
+								<dict>
+									<key>identifier</key>
+									<string>Top</string>
+									<key>objectValue</key>
+									<string>340px</string>
+								</dict>
+								<key>identifier</key>
+								<string>Top</string>
+								<key>isRelative</key>
+								<false/>
+								<key>motionPath</key>
+								<dict>
+									<key>bezierPath</key>
+									<dict>
+										<key>allowEndPointModification</key>
+										<true/>
+										<key>bezierCurves</key>
+										<array>
+											<dict>
+												<key>endControlPoint</key>
+												<string>{1847, 456}</string>
+												<key>endPoint</key>
+												<string>{1847, 456}</string>
+												<key>startControlPoint</key>
+												<string>{1504, 161}</string>
+												<key>startPoint</key>
+												<string>{931, 161}</string>
+											</dict>
+										</array>
+										<key>interpolationPointCount</key>
+										<real>100</real>
+										<key>showAllControlPoints</key>
+										<false/>
+										<key>useIntegerValues</key>
+										<true/>
+										<key>useSmallStyle</key>
+										<false/>
+									</dict>
+									<key>oid</key>
+									<string>A328D85A-1A71-4638-A50D-D5F6C921EF44-14865-0001891F6FFD288A</string>
+								</dict>
+								<key>referenceOid</key>
+								<string>531</string>
+								<key>startTime</key>
+								<real>30</real>
+								<key>startValue</key>
+								<dict>
+									<key>identifier</key>
+									<string>Top</string>
+									<key>objectValue</key>
+									<string>45px</string>
+								</dict>
+								<key>symbolElementActionAttributesBySymbolTimeline</key>
+								<dict/>
+								<key>timingFunctionOid</key>
+								<string>b</string>
+								<key>type</key>
+								<integer>0</integer>
+								<key>uuid</key>
+								<string>EB45E4B5-963D-4471-9D67-DF25779213AD-81397-00003E267AFB4C3E</string>
+								<key>zIndex</key>
+								<integer>142</integer>
+							</dict>
+							<dict>
+								<key>duration</key>
+								<real>30</real>
+								<key>endValue</key>
+								<dict>
+									<key>identifier</key>
+									<string>Left</string>
+									<key>objectValue</key>
+									<string>1733.5px</string>
+								</dict>
+								<key>identifier</key>
+								<string>Left</string>
+								<key>isRelative</key>
+								<false/>
+								<key>motionPath</key>
+								<dict>
+									<key>bezierPath</key>
+									<dict>
+										<key>allowEndPointModification</key>
+										<true/>
+										<key>bezierCurves</key>
+										<array>
+											<dict>
+												<key>endControlPoint</key>
+												<string>{1847, 456}</string>
+												<key>endPoint</key>
+												<string>{1847, 456}</string>
+												<key>startControlPoint</key>
+												<string>{1504, 161}</string>
+												<key>startPoint</key>
+												<string>{931, 161}</string>
+											</dict>
+										</array>
+										<key>interpolationPointCount</key>
+										<real>100</real>
+										<key>showAllControlPoints</key>
+										<false/>
+										<key>useIntegerValues</key>
+										<true/>
+										<key>useSmallStyle</key>
+										<false/>
+									</dict>
+									<key>oid</key>
+									<string>A328D85A-1A71-4638-A50D-D5F6C921EF44-14865-0001891F6FFD288A</string>
+								</dict>
+								<key>referenceOid</key>
+								<string>531</string>
+								<key>startTime</key>
+								<real>30</real>
+								<key>startValue</key>
+								<dict>
+									<key>identifier</key>
+									<string>Left</string>
+									<key>objectValue</key>
+									<string>817.5px</string>
+								</dict>
+								<key>symbolElementActionAttributesBySymbolTimeline</key>
+								<dict/>
+								<key>timingFunctionOid</key>
+								<string>b</string>
+								<key>type</key>
+								<integer>0</integer>
+								<key>uuid</key>
+								<string>EA088513-85F2-43BF-9DDD-EA50FBCE8B68-81397-00003E267AC2F1F0</string>
+								<key>zIndex</key>
+								<integer>143</integer>
 							</dict>
 							<dict>
 								<key>duration</key>
@@ -27643,7 +27662,7 @@ function addToWindow(hypeDocument, element, event) {
 										<false/>
 									</dict>
 									<key>oid</key>
-									<string>C0A0DE31-0BF7-42A0-83B2-D4E3977A095B-9807-00017D13E3776711</string>
+									<string>BD7A2D2B-AEE9-4A78-981D-66D190906349-14865-0001891F70059E11</string>
 								</dict>
 								<key>referenceOid</key>
 								<string>78</string>
@@ -27720,7 +27739,7 @@ function addToWindow(hypeDocument, element, event) {
 										<false/>
 									</dict>
 									<key>oid</key>
-									<string>C0A0DE31-0BF7-42A0-83B2-D4E3977A095B-9807-00017D13E3776711</string>
+									<string>BD7A2D2B-AEE9-4A78-981D-66D190906349-14865-0001891F70059E11</string>
 								</dict>
 								<key>referenceOid</key>
 								<string>78</string>
@@ -27787,7 +27806,7 @@ function addToWindow(hypeDocument, element, event) {
 										<false/>
 									</dict>
 									<key>oid</key>
-									<string>567761F3-579F-4F2D-959A-83717FF2BDB9-9807-00017D13E378C5ED</string>
+									<string>9285608B-AD1A-496A-AD39-4386949943CD-14865-0001891F700966FF</string>
 								</dict>
 								<key>referenceOid</key>
 								<string>80</string>
@@ -27854,7 +27873,7 @@ function addToWindow(hypeDocument, element, event) {
 										<false/>
 									</dict>
 									<key>oid</key>
-									<string>567761F3-579F-4F2D-959A-83717FF2BDB9-9807-00017D13E378C5ED</string>
+									<string>9285608B-AD1A-496A-AD39-4386949943CD-14865-0001891F700966FF</string>
 								</dict>
 								<key>referenceOid</key>
 								<string>80</string>
@@ -28209,7 +28228,7 @@ function addToWindow(hypeDocument, element, event) {
 										<false/>
 									</dict>
 									<key>oid</key>
-									<string>CF56CC79-8D41-447D-AAFC-C94F47CE2606-9807-00017D13E38E9086</string>
+									<string>2F88C0FF-2443-48D2-9DFC-21C14D3C6FE3-14865-0001891F7023BEAC</string>
 								</dict>
 								<key>referenceOid</key>
 								<string>79</string>
@@ -28276,7 +28295,7 @@ function addToWindow(hypeDocument, element, event) {
 										<false/>
 									</dict>
 									<key>oid</key>
-									<string>CF56CC79-8D41-447D-AAFC-C94F47CE2606-9807-00017D13E38E9086</string>
+									<string>2F88C0FF-2443-48D2-9DFC-21C14D3C6FE3-14865-0001891F7023BEAC</string>
 								</dict>
 								<key>referenceOid</key>
 								<string>79</string>
@@ -28343,7 +28362,7 @@ function addToWindow(hypeDocument, element, event) {
 										<false/>
 									</dict>
 									<key>oid</key>
-									<string>CF56CC79-8D41-447D-AAFC-C94F47CE2606-9807-00017D13E38E9086</string>
+									<string>2F88C0FF-2443-48D2-9DFC-21C14D3C6FE3-14865-0001891F7023BEAC</string>
 								</dict>
 								<key>referenceOid</key>
 								<string>79</string>
@@ -35296,7 +35315,7 @@ function addToWindow(hypeDocument, element, event) {
 										<false/>
 									</dict>
 									<key>oid</key>
-									<string>DD0C819F-19FB-4D24-A494-2BADC3B175E3-9807-00017D13E46F4394</string>
+									<string>416841AC-9D07-4AF8-A081-F98AB1AF42ED-14865-0001891F70B6A1B4</string>
 								</dict>
 								<key>referenceOid</key>
 								<string>78</string>
@@ -35363,7 +35382,7 @@ function addToWindow(hypeDocument, element, event) {
 										<false/>
 									</dict>
 									<key>oid</key>
-									<string>126896DC-5D03-4D22-97D7-17E8488B8536-9807-00017D13E47124FF</string>
+									<string>C3AD4D3F-8804-4B5E-8E4B-81B084691898-14865-0001891F70B8437E</string>
 								</dict>
 								<key>referenceOid</key>
 								<string>79</string>
@@ -35430,7 +35449,7 @@ function addToWindow(hypeDocument, element, event) {
 										<false/>
 									</dict>
 									<key>oid</key>
-									<string>904EDA8F-D6F2-4301-99F0-9B465CA29C0E-9807-00017D13E4729CFE</string>
+									<string>38B007A2-FCB8-4BA2-95ED-BB8D990EA783-14865-0001891F70B961C6</string>
 								</dict>
 								<key>referenceOid</key>
 								<string>80</string>
@@ -35543,7 +35562,7 @@ function addToWindow(hypeDocument, element, event) {
 										<false/>
 									</dict>
 									<key>oid</key>
-									<string>DD0C819F-19FB-4D24-A494-2BADC3B175E3-9807-00017D13E46F4394</string>
+									<string>416841AC-9D07-4AF8-A081-F98AB1AF42ED-14865-0001891F70B6A1B4</string>
 								</dict>
 								<key>referenceOid</key>
 								<string>78</string>
@@ -35620,7 +35639,7 @@ function addToWindow(hypeDocument, element, event) {
 										<false/>
 									</dict>
 									<key>oid</key>
-									<string>DD0C819F-19FB-4D24-A494-2BADC3B175E3-9807-00017D13E46F4394</string>
+									<string>416841AC-9D07-4AF8-A081-F98AB1AF42ED-14865-0001891F70B6A1B4</string>
 								</dict>
 								<key>referenceOid</key>
 								<string>78</string>
@@ -35687,7 +35706,7 @@ function addToWindow(hypeDocument, element, event) {
 										<false/>
 									</dict>
 									<key>oid</key>
-									<string>126896DC-5D03-4D22-97D7-17E8488B8536-9807-00017D13E47124FF</string>
+									<string>C3AD4D3F-8804-4B5E-8E4B-81B084691898-14865-0001891F70B8437E</string>
 								</dict>
 								<key>referenceOid</key>
 								<string>79</string>
@@ -35754,7 +35773,7 @@ function addToWindow(hypeDocument, element, event) {
 										<false/>
 									</dict>
 									<key>oid</key>
-									<string>126896DC-5D03-4D22-97D7-17E8488B8536-9807-00017D13E47124FF</string>
+									<string>C3AD4D3F-8804-4B5E-8E4B-81B084691898-14865-0001891F70B8437E</string>
 								</dict>
 								<key>referenceOid</key>
 								<string>79</string>
@@ -35821,7 +35840,7 @@ function addToWindow(hypeDocument, element, event) {
 										<false/>
 									</dict>
 									<key>oid</key>
-									<string>904EDA8F-D6F2-4301-99F0-9B465CA29C0E-9807-00017D13E4729CFE</string>
+									<string>38B007A2-FCB8-4BA2-95ED-BB8D990EA783-14865-0001891F70B961C6</string>
 								</dict>
 								<key>referenceOid</key>
 								<string>80</string>
@@ -35888,7 +35907,7 @@ function addToWindow(hypeDocument, element, event) {
 										<false/>
 									</dict>
 									<key>oid</key>
-									<string>904EDA8F-D6F2-4301-99F0-9B465CA29C0E-9807-00017D13E4729CFE</string>
+									<string>38B007A2-FCB8-4BA2-95ED-BB8D990EA783-14865-0001891F70B961C6</string>
 								</dict>
 								<key>referenceOid</key>
 								<string>80</string>
@@ -42881,126 +42900,6 @@ function addToWindow(hypeDocument, element, event) {
 								<key>duration</key>
 								<real>0.0</real>
 								<key>identifier</key>
-								<string>Top</string>
-								<key>isRelative</key>
-								<false/>
-								<key>motionPath</key>
-								<dict>
-									<key>bezierPath</key>
-									<dict>
-										<key>allowEndPointModification</key>
-										<true/>
-										<key>bezierCurves</key>
-										<array>
-											<dict>
-												<key>endControlPoint</key>
-												<string>{1847.5, 456}</string>
-												<key>endPoint</key>
-												<string>{1847.5, 456}</string>
-												<key>startControlPoint</key>
-												<string>{1847.5, 456}</string>
-												<key>startPoint</key>
-												<string>{1847.5, 456}</string>
-											</dict>
-										</array>
-										<key>interpolationPointCount</key>
-										<real>100</real>
-										<key>showAllControlPoints</key>
-										<false/>
-										<key>useIntegerValues</key>
-										<true/>
-										<key>useSmallStyle</key>
-										<false/>
-									</dict>
-									<key>oid</key>
-									<string>6E0232E1-AB24-418F-885A-31D08BD3CB12-9807-00017D13E50BDE83</string>
-								</dict>
-								<key>referenceOid</key>
-								<string>531</string>
-								<key>startTime</key>
-								<real>60</real>
-								<key>startValue</key>
-								<dict>
-									<key>identifier</key>
-									<string>Top</string>
-									<key>objectValue</key>
-									<string>340px</string>
-								</dict>
-								<key>symbolElementActionAttributesBySymbolTimeline</key>
-								<dict/>
-								<key>timingFunctionOid</key>
-								<string>c</string>
-								<key>type</key>
-								<integer>0</integer>
-								<key>uuid</key>
-								<string>8B45A763-F562-45C2-975E-A51AF791BD36-81397-00003E23BA43F2BF</string>
-								<key>zIndex</key>
-								<integer>287</integer>
-							</dict>
-							<dict>
-								<key>duration</key>
-								<real>0.0</real>
-								<key>identifier</key>
-								<string>Left</string>
-								<key>isRelative</key>
-								<false/>
-								<key>motionPath</key>
-								<dict>
-									<key>bezierPath</key>
-									<dict>
-										<key>allowEndPointModification</key>
-										<true/>
-										<key>bezierCurves</key>
-										<array>
-											<dict>
-												<key>endControlPoint</key>
-												<string>{1847.5, 456}</string>
-												<key>endPoint</key>
-												<string>{1847.5, 456}</string>
-												<key>startControlPoint</key>
-												<string>{1847.5, 456}</string>
-												<key>startPoint</key>
-												<string>{1847.5, 456}</string>
-											</dict>
-										</array>
-										<key>interpolationPointCount</key>
-										<real>100</real>
-										<key>showAllControlPoints</key>
-										<false/>
-										<key>useIntegerValues</key>
-										<true/>
-										<key>useSmallStyle</key>
-										<false/>
-									</dict>
-									<key>oid</key>
-									<string>6E0232E1-AB24-418F-885A-31D08BD3CB12-9807-00017D13E50BDE83</string>
-								</dict>
-								<key>referenceOid</key>
-								<string>531</string>
-								<key>startTime</key>
-								<real>60</real>
-								<key>startValue</key>
-								<dict>
-									<key>identifier</key>
-									<string>Left</string>
-									<key>objectValue</key>
-									<string>1734px</string>
-								</dict>
-								<key>symbolElementActionAttributesBySymbolTimeline</key>
-								<dict/>
-								<key>timingFunctionOid</key>
-								<string>c</string>
-								<key>type</key>
-								<integer>0</integer>
-								<key>uuid</key>
-								<string>BEA6A971-B212-43F7-9734-5FBDDDC0A7AE-81397-00003E23BA1B9139</string>
-								<key>zIndex</key>
-								<integer>288</integer>
-							</dict>
-							<dict>
-								<key>duration</key>
-								<real>0.0</real>
-								<key>identifier</key>
 								<string>MotionPathRotation</string>
 								<key>isRelative</key>
 								<false/>
@@ -43033,7 +42932,7 @@ function addToWindow(hypeDocument, element, event) {
 										<false/>
 									</dict>
 									<key>oid</key>
-									<string>6E0232E1-AB24-418F-885A-31D08BD3CB12-9807-00017D13E50BDE83</string>
+									<string>65F62258-CAB2-4398-A440-100FC401778E-14865-0001891F712E6EF8</string>
 								</dict>
 								<key>referenceOid</key>
 								<string>531</string>
@@ -43093,7 +42992,7 @@ function addToWindow(hypeDocument, element, event) {
 										<false/>
 									</dict>
 									<key>oid</key>
-									<string>EFCC08EA-8781-4B92-88AC-794CFDC03445-9807-00017D13E50FCD2E</string>
+									<string>A107FAC8-D748-434D-8EE7-88684E0F7FD8-14865-0001891F71320734</string>
 								</dict>
 								<key>referenceOid</key>
 								<string>78</string>
@@ -43153,7 +43052,7 @@ function addToWindow(hypeDocument, element, event) {
 										<false/>
 									</dict>
 									<key>oid</key>
-									<string>EAFB614A-6644-4C36-B3AA-8E7ABAB1F24F-9807-00017D13E512630B</string>
+									<string>A59611C5-F83B-41E7-974C-E6622FB67C87-14865-0001891F71338853</string>
 								</dict>
 								<key>referenceOid</key>
 								<string>79</string>
@@ -43213,7 +43112,7 @@ function addToWindow(hypeDocument, element, event) {
 										<false/>
 									</dict>
 									<key>oid</key>
-									<string>AC757D9F-2512-4350-A6BF-C6F903D4B3FA-9807-00017D13E51445C2</string>
+									<string>E4E49AE6-4798-4B1D-B27F-C2E35464C979-14865-0001891F71354896</string>
 								</dict>
 								<key>referenceOid</key>
 								<string>80</string>
@@ -43352,6 +43251,126 @@ function addToWindow(hypeDocument, element, event) {
 								<string>58858F9C-F123-4AD8-852C-A1C6BFE71F41-30796-000016E90969379A</string>
 								<key>zIndex</key>
 								<integer>264</integer>
+							</dict>
+							<dict>
+								<key>duration</key>
+								<real>0.0</real>
+								<key>identifier</key>
+								<string>Top</string>
+								<key>isRelative</key>
+								<false/>
+								<key>motionPath</key>
+								<dict>
+									<key>bezierPath</key>
+									<dict>
+										<key>allowEndPointModification</key>
+										<true/>
+										<key>bezierCurves</key>
+										<array>
+											<dict>
+												<key>endControlPoint</key>
+												<string>{1847.5, 456}</string>
+												<key>endPoint</key>
+												<string>{1847.5, 456}</string>
+												<key>startControlPoint</key>
+												<string>{1847.5, 456}</string>
+												<key>startPoint</key>
+												<string>{1847.5, 456}</string>
+											</dict>
+										</array>
+										<key>interpolationPointCount</key>
+										<real>100</real>
+										<key>showAllControlPoints</key>
+										<false/>
+										<key>useIntegerValues</key>
+										<true/>
+										<key>useSmallStyle</key>
+										<false/>
+									</dict>
+									<key>oid</key>
+									<string>65F62258-CAB2-4398-A440-100FC401778E-14865-0001891F712E6EF8</string>
+								</dict>
+								<key>referenceOid</key>
+								<string>531</string>
+								<key>startTime</key>
+								<real>60</real>
+								<key>startValue</key>
+								<dict>
+									<key>identifier</key>
+									<string>Top</string>
+									<key>objectValue</key>
+									<string>340px</string>
+								</dict>
+								<key>symbolElementActionAttributesBySymbolTimeline</key>
+								<dict/>
+								<key>timingFunctionOid</key>
+								<string>c</string>
+								<key>type</key>
+								<integer>0</integer>
+								<key>uuid</key>
+								<string>8B45A763-F562-45C2-975E-A51AF791BD36-81397-00003E23BA43F2BF</string>
+								<key>zIndex</key>
+								<integer>287</integer>
+							</dict>
+							<dict>
+								<key>duration</key>
+								<real>0.0</real>
+								<key>identifier</key>
+								<string>Left</string>
+								<key>isRelative</key>
+								<false/>
+								<key>motionPath</key>
+								<dict>
+									<key>bezierPath</key>
+									<dict>
+										<key>allowEndPointModification</key>
+										<true/>
+										<key>bezierCurves</key>
+										<array>
+											<dict>
+												<key>endControlPoint</key>
+												<string>{1847.5, 456}</string>
+												<key>endPoint</key>
+												<string>{1847.5, 456}</string>
+												<key>startControlPoint</key>
+												<string>{1847.5, 456}</string>
+												<key>startPoint</key>
+												<string>{1847.5, 456}</string>
+											</dict>
+										</array>
+										<key>interpolationPointCount</key>
+										<real>100</real>
+										<key>showAllControlPoints</key>
+										<false/>
+										<key>useIntegerValues</key>
+										<true/>
+										<key>useSmallStyle</key>
+										<false/>
+									</dict>
+									<key>oid</key>
+									<string>65F62258-CAB2-4398-A440-100FC401778E-14865-0001891F712E6EF8</string>
+								</dict>
+								<key>referenceOid</key>
+								<string>531</string>
+								<key>startTime</key>
+								<real>60</real>
+								<key>startValue</key>
+								<dict>
+									<key>identifier</key>
+									<string>Left</string>
+									<key>objectValue</key>
+									<string>1734px</string>
+								</dict>
+								<key>symbolElementActionAttributesBySymbolTimeline</key>
+								<dict/>
+								<key>timingFunctionOid</key>
+								<string>c</string>
+								<key>type</key>
+								<integer>0</integer>
+								<key>uuid</key>
+								<string>BEA6A971-B212-43F7-9734-5FBDDDC0A7AE-81397-00003E23BA1B9139</string>
+								<key>zIndex</key>
+								<integer>288</integer>
 							</dict>
 							<dict>
 								<key>duration</key>
@@ -43505,7 +43524,7 @@ function addToWindow(hypeDocument, element, event) {
 										<false/>
 									</dict>
 									<key>oid</key>
-									<string>EFCC08EA-8781-4B92-88AC-794CFDC03445-9807-00017D13E50FCD2E</string>
+									<string>A107FAC8-D748-434D-8EE7-88684E0F7FD8-14865-0001891F71320734</string>
 								</dict>
 								<key>referenceOid</key>
 								<string>78</string>
@@ -43565,7 +43584,7 @@ function addToWindow(hypeDocument, element, event) {
 										<false/>
 									</dict>
 									<key>oid</key>
-									<string>EFCC08EA-8781-4B92-88AC-794CFDC03445-9807-00017D13E50FCD2E</string>
+									<string>A107FAC8-D748-434D-8EE7-88684E0F7FD8-14865-0001891F71320734</string>
 								</dict>
 								<key>referenceOid</key>
 								<string>78</string>
@@ -43625,7 +43644,7 @@ function addToWindow(hypeDocument, element, event) {
 										<false/>
 									</dict>
 									<key>oid</key>
-									<string>EAFB614A-6644-4C36-B3AA-8E7ABAB1F24F-9807-00017D13E512630B</string>
+									<string>A59611C5-F83B-41E7-974C-E6622FB67C87-14865-0001891F71338853</string>
 								</dict>
 								<key>referenceOid</key>
 								<string>79</string>
@@ -43685,7 +43704,7 @@ function addToWindow(hypeDocument, element, event) {
 										<false/>
 									</dict>
 									<key>oid</key>
-									<string>EAFB614A-6644-4C36-B3AA-8E7ABAB1F24F-9807-00017D13E512630B</string>
+									<string>A59611C5-F83B-41E7-974C-E6622FB67C87-14865-0001891F71338853</string>
 								</dict>
 								<key>referenceOid</key>
 								<string>79</string>
@@ -43745,7 +43764,7 @@ function addToWindow(hypeDocument, element, event) {
 										<false/>
 									</dict>
 									<key>oid</key>
-									<string>AC757D9F-2512-4350-A6BF-C6F903D4B3FA-9807-00017D13E51445C2</string>
+									<string>E4E49AE6-4798-4B1D-B27F-C2E35464C979-14865-0001891F71354896</string>
 								</dict>
 								<key>referenceOid</key>
 								<string>80</string>
@@ -43805,7 +43824,7 @@ function addToWindow(hypeDocument, element, event) {
 										<false/>
 									</dict>
 									<key>oid</key>
-									<string>AC757D9F-2512-4350-A6BF-C6F903D4B3FA-9807-00017D13E51445C2</string>
+									<string>E4E49AE6-4798-4B1D-B27F-C2E35464C979-14865-0001891F71354896</string>
 								</dict>
 								<key>referenceOid</key>
 								<string>80</string>
@@ -43964,7 +43983,7 @@ function addToWindow(hypeDocument, element, event) {
 		</dict>
 		<dict>
 			<key>documentIdentifier</key>
-			<string>70B14891-1CA7-4DBD-B1D4-B3DF3B10FEF0-9807-00017D072A8A3E4C</string>
+			<string>B674209F-B52F-450A-BF7E-921295DFC0C3-14865-0001891FEFA3B476</string>
 			<key>selectedObjects</key>
 			<array>
 				<string>525</string>
@@ -44346,9 +44365,9 @@ function addToWindow(hypeDocument, element, event) {
 					<array>
 						<dict>
 							<key>identifier</key>
-							<string>TagName</string>
+							<string>OriginalWidth</string>
 							<key>objectValue</key>
-							<string>div</string>
+							<string>534px</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
@@ -44466,18 +44485,18 @@ function addToWindow(hypeDocument, element, event) {
 						</dict>
 						<dict>
 							<key>identifier</key>
-							<string>OriginalWidth</string>
+							<string>TagName</string>
 							<key>objectValue</key>
-							<string>534px</string>
+							<string>div</string>
 						</dict>
 					</array>
 					<key>152</key>
 					<array>
 						<dict>
 							<key>identifier</key>
-							<string>TagName</string>
+							<string>OriginalWidth</string>
 							<key>objectValue</key>
-							<string>div</string>
+							<string>534px</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
@@ -44595,9 +44614,9 @@ function addToWindow(hypeDocument, element, event) {
 						</dict>
 						<dict>
 							<key>identifier</key>
-							<string>OriginalWidth</string>
+							<string>TagName</string>
 							<key>objectValue</key>
-							<string>534px</string>
+							<string>div</string>
 						</dict>
 					</array>
 					<key>153</key>
@@ -44679,9 +44698,9 @@ function addToWindow(hypeDocument, element, event) {
 					<array>
 						<dict>
 							<key>identifier</key>
-							<string>TagName</string>
+							<string>BorderWidthLeft</string>
 							<key>objectValue</key>
-							<string>div</string>
+							<string>0px</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
@@ -44835,9 +44854,9 @@ function addToWindow(hypeDocument, element, event) {
 						</dict>
 						<dict>
 							<key>identifier</key>
-							<string>BorderWidthLeft</string>
+							<string>TagName</string>
 							<key>objectValue</key>
-							<string>0px</string>
+							<string>div</string>
 						</dict>
 					</array>
 					<key>160</key>
@@ -44967,21 +44986,21 @@ function addToWindow(hypeDocument, element, event) {
 					<array>
 						<dict>
 							<key>identifier</key>
-							<string>BorderWidthLeft</string>
+							<string>TagName</string>
 							<key>objectValue</key>
-							<string>0px</string>
-						</dict>
-						<dict>
-							<key>identifier</key>
-							<string>ExplicitDimensions</string>
-							<key>objectValue</key>
-							<string>YES</string>
+							<string>div</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
 							<string>BorderColorBottom</string>
 							<key>objectValue</key>
 							<string>#D8DDE4</string>
+						</dict>
+						<dict>
+							<key>identifier</key>
+							<string>ExplicitDimensions</string>
+							<key>objectValue</key>
+							<string>YES</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
@@ -45117,15 +45136,15 @@ function addToWindow(hypeDocument, element, event) {
 						</dict>
 						<dict>
 							<key>identifier</key>
-							<string>BorderWidthBottom</string>
+							<string>BorderWidthLeft</string>
 							<key>objectValue</key>
 							<string>0px</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
-							<string>TagName</string>
+							<string>BorderWidthBottom</string>
 							<key>objectValue</key>
-							<string>div</string>
+							<string>0px</string>
 						</dict>
 					</array>
 					<key>163</key>
@@ -45366,21 +45385,21 @@ function addToWindow(hypeDocument, element, event) {
 					<array>
 						<dict>
 							<key>identifier</key>
-							<string>TagName</string>
+							<string>BorderWidthBottom</string>
 							<key>objectValue</key>
-							<string>div</string>
-						</dict>
-						<dict>
-							<key>identifier</key>
-							<string>BorderColorBottom</string>
-							<key>objectValue</key>
-							<string>#D8DDE4</string>
+							<string>0px</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
 							<string>ExplicitDimensions</string>
 							<key>objectValue</key>
 							<string>YES</string>
+						</dict>
+						<dict>
+							<key>identifier</key>
+							<string>BorderColorBottom</string>
+							<key>objectValue</key>
+							<string>#D8DDE4</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
@@ -45522,9 +45541,9 @@ function addToWindow(hypeDocument, element, event) {
 						</dict>
 						<dict>
 							<key>identifier</key>
-							<string>BorderWidthBottom</string>
+							<string>TagName</string>
 							<key>objectValue</key>
-							<string>0px</string>
+							<string>div</string>
 						</dict>
 					</array>
 					<key>177</key>
@@ -45648,9 +45667,9 @@ function addToWindow(hypeDocument, element, event) {
 					<array>
 						<dict>
 							<key>identifier</key>
-							<string>OriginalWidth</string>
+							<string>TagName</string>
 							<key>objectValue</key>
-							<string>295px</string>
+							<string>div</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
@@ -45774,9 +45793,9 @@ function addToWindow(hypeDocument, element, event) {
 						</dict>
 						<dict>
 							<key>identifier</key>
-							<string>TagName</string>
+							<string>OriginalWidth</string>
 							<key>objectValue</key>
-							<string>div</string>
+							<string>295px</string>
 						</dict>
 					</array>
 					<key>525</key>
@@ -46186,7 +46205,7 @@ function addToWindow(hypeDocument, element, event) {
 		</dict>
 		<dict>
 			<key>documentIdentifier</key>
-			<string>70B14891-1CA7-4DBD-B1D4-B3DF3B10FEF0-9807-00017D072A8A3E4C</string>
+			<string>B674209F-B52F-450A-BF7E-921295DFC0C3-14865-0001891FEFA3B476</string>
 			<key>selectedObjects</key>
 			<array/>
 			<key>symbol</key>
@@ -47683,7 +47702,7 @@ function addToWindow(hypeDocument, element, event) {
 		</dict>
 		<dict>
 			<key>documentIdentifier</key>
-			<string>70B14891-1CA7-4DBD-B1D4-B3DF3B10FEF0-9807-00017D072A8A3E4C</string>
+			<string>B674209F-B52F-450A-BF7E-921295DFC0C3-14865-0001891FEFA3B476</string>
 			<key>selectedObjects</key>
 			<array>
 				<string>524</string>
@@ -48641,9 +48660,9 @@ function addToWindow(hypeDocument, element, event) {
 					<array>
 						<dict>
 							<key>identifier</key>
-							<string>TagName</string>
+							<string>OriginalWidth</string>
 							<key>objectValue</key>
-							<string>div</string>
+							<string>534px</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
@@ -48761,18 +48780,18 @@ function addToWindow(hypeDocument, element, event) {
 						</dict>
 						<dict>
 							<key>identifier</key>
-							<string>OriginalWidth</string>
+							<string>TagName</string>
 							<key>objectValue</key>
-							<string>534px</string>
+							<string>div</string>
 						</dict>
 					</array>
 					<key>229</key>
 					<array>
 						<dict>
 							<key>identifier</key>
-							<string>TagName</string>
+							<string>OriginalWidth</string>
 							<key>objectValue</key>
-							<string>div</string>
+							<string>534px</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
@@ -48890,9 +48909,9 @@ function addToWindow(hypeDocument, element, event) {
 						</dict>
 						<dict>
 							<key>identifier</key>
-							<string>OriginalWidth</string>
+							<string>TagName</string>
 							<key>objectValue</key>
-							<string>534px</string>
+							<string>div</string>
 						</dict>
 					</array>
 					<key>230</key>
@@ -50184,7 +50203,7 @@ function addToWindow(hypeDocument, element, event) {
 		</dict>
 		<dict>
 			<key>documentIdentifier</key>
-			<string>70B14891-1CA7-4DBD-B1D4-B3DF3B10FEF0-9807-00017D072A8A3E4C</string>
+			<string>B674209F-B52F-450A-BF7E-921295DFC0C3-14865-0001891FEFA3B476</string>
 			<key>selectedObjects</key>
 			<array>
 				<string>523</string>
@@ -51025,9 +51044,9 @@ function addToWindow(hypeDocument, element, event) {
 					<array>
 						<dict>
 							<key>identifier</key>
-							<string>OriginalWidth</string>
+							<string>TagName</string>
 							<key>objectValue</key>
-							<string>534px</string>
+							<string>div</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
@@ -51145,18 +51164,18 @@ function addToWindow(hypeDocument, element, event) {
 						</dict>
 						<dict>
 							<key>identifier</key>
-							<string>TagName</string>
+							<string>OriginalWidth</string>
 							<key>objectValue</key>
-							<string>div</string>
+							<string>534px</string>
 						</dict>
 					</array>
 					<key>254</key>
 					<array>
 						<dict>
 							<key>identifier</key>
-							<string>OriginalWidth</string>
+							<string>TagName</string>
 							<key>objectValue</key>
-							<string>534px</string>
+							<string>div</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
@@ -51274,9 +51293,9 @@ function addToWindow(hypeDocument, element, event) {
 						</dict>
 						<dict>
 							<key>identifier</key>
-							<string>TagName</string>
+							<string>OriginalWidth</string>
 							<key>objectValue</key>
-							<string>div</string>
+							<string>534px</string>
 						</dict>
 					</array>
 					<key>256</key>
